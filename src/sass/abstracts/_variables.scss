@@ -1,0 +1,155 @@
+/*GLOBALS*/
+$cursor-disabled: default;
+/*GRID*/
+$gutter: 40px;
+$screen-tablet: 768px;
+$screen-sm-desktop: 992px;
+$screen-desktop: 1200px;
+$container-tablet: 750px;
+$container-sm-desktop: 970px;
+$container-desktop: 1170px;
+$page-padding-bottom: 6rem !default;
+$page-padding-top: 0px !default;
+
+$content-pad-standard: 1.5rem;
+
+/*Z-Index Mapping*/
+$z-index: (
+        'ppc-popup':6,
+        'site-overlay-header':6,
+        'site-overlay':5,
+        'menu':5,
+        'practice-ice-footer':4,
+        'credits-overlay':3,
+        'competition-heading':3,
+        'coach-search-popup':2,
+        'navbar':2,
+        'accordion-select-content':1,
+  // Music Player
+        'music-player-input':3,
+        'music-player-scrub-track':0,
+        'music-player-scrub-progress':2,
+        'music-player-scrub-buffer':1,
+);
+
+/*COLOR DEFINITIONS*/
+$USFSA-blue: #0055A5;
+$USFSA-blue-light: #138DF4;
+$blue-light-alt: #00a4e4;
+$blue-light-alt2: #2599F2;
+$state-green: #39b54a;
+$state-red: #e03c31;
+$gray-dark: #DADADA;
+$gray-light: #F3F3F3;
+$gray-97: #F9F9F9;
+$gray-med: #E2E2E2;
+$gray-80: #CCCCCC;
+$gray-76: #c2c2c2;
+$gray-58: #969696;
+$gray-37: #606060;
+$purple: #551a8b;
+$light-gray-text: #929292;
+$medium-gray-text: #6D6D6D;
+$alert-red: #e1161f;
+$element-overlay-background: rgba(white, .9);
+$bright-green: #acd373;
+$warning-text: #ff6600;
+$ada-green-bg: #008A13;
+$ada-orange-bg: #C25108;
+$ada-purple-bg: #38135C;
+
+$ada-green-text: $ada-green-bg;
+$ada-orange-text: #BA4B03;
+$ada-purple-text: #630077;
+$ada-red-text: #E31F2E;
+
+
+/*COLOR ASSIGNMENT*/
+$brand-primary: $USFSA-blue;
+$divider-color: $gray-dark;
+$secondary-divider-color: $gray-light;
+$headings-color: $USFSA-blue;
+$panel-link-border-color: $divider-color;
+$panel-list-border-color: $divider-color;
+$accordion-content-border-color: $divider-color;
+$link-visited-color: $USFSA-blue-light;
+$session-border-color: $divider-color;
+$success-color-alt: $bright-green;
+
+/*TYPOGRAPHY ASSIGNMENT*/
+$font-family-base: Futura;
+$link-text-decoration: none;
+$font-size-base: 1.4rem;
+$font-size-h1: 2.4rem;
+$font-size-h2: 2rem;
+$font-size-h3: 2rem;
+$headings-letter-spacing: 0; //.04em;
+$text-color: #333;
+$link-hover-color: $text-color;
+$font-size-page-title: 2.6rem;
+$line-height-standard: (17/14); //1.21428571429
+$line-height-copy-block: (24/14); // 1.7142
+
+/*MISCELLANEOUS*/
+$border-radius-base: 2px;
+$accordion-trigger-font-size: 1.4rem;
+$accordion-content-pad-h: 2rem;
+$accordion-content-pad-top: 0;
+$active-tab-trigger-border-color: $USFSA-blue-light;
+$tabs-border-bottom-color: $gray-med;
+$tab-trigger-color: $USFSA-blue;
+$tab-body-padding-top: 4rem;
+$accordion-trigger-padding-v: 2.3rem;
+$popup-border-color: $alert-red;
+$back-page-heading-pad-top: 1.5rem;
+$back-page-heading-title-margin-top: 3.7rem;
+$disabled-opacity: .45;
+
+$toggle-height: 20px;
+$toggle-channel-color: $light-gray-text;
+$toggle-active-channel-color: $USFSA-blue;
+$toggle-border-width: 1px;
+$toggle-border-color: $toggle-channel-color;
+$toggle-active-border-color: $toggle-active-channel-color;
+$toggle-channel-disc-offset: 0px;
+$toggle-disc-box-shadow-off: none;
+$toggle-disc-box-shadow-on: none;
+$toggle-transition-duration: 0; //.8s
+//$toggle-transition-easing://ease
+$toggle-disc-transition-duration: .2s;
+$toggle-channel-transition-duration: .8s;
+//$toggle-disabled-transition-duration: $toggle-transition-duration !default;
+
+/*FORM ASSIGNMENT*/
+$field-label-margin-bottom: 3px;
+$input-border-radius: $border-radius-base;
+$input-focus-border-color: $blue-light-alt;
+$input-success-border-color: $state-green;
+$input-error-border-color: $state-red;
+$error-message-text-color: $input-error-border-color;
+
+/*Navbar*/
+$nav-link-color: $USFSA-blue-light;
+$nav-divider-color: $gray-dark;
+$nav-logo-height: 31px;
+$nav-toggle-height: 18px;
+$nav-pad-top: 20px;
+$nav-pad-bottom: 15px;
+$nav-border-width: 1px;
+$nav-toggle-line-color: $alert-red;
+
+/*Checkout*/
+$checkout-step-label-pad: 1rem;
+$checkout-input-column-width: 12%;
+$checkout-element-max-width: 295px;
+
+/*Increment Inputs*/
+$increment-input-element-gutter: 0;
+$increment-input-value-color: $light-gray-text;
+
+/*Autosuggest*/
+$autosuggest-border-color: $gray-58;
+$autosuggest-hover-background-color: $gray-light;
+$autosuggest-active-background-color: $gray-dark;
+
+$accent-list-section-padding-top: 3rem;

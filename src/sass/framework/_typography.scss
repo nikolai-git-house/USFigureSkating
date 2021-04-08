@@ -1,0 +1,86 @@
+$font-family-base: "Helvetica Nueue", Helvetica, Arial, Helvetica, sans-serif !default;
+$text-color: #333 !default;
+$font-size-base: 1.6rem !default;
+$line-height-base: percentage(5/3) !default;
+$line-height-heading: 1.125 !default;
+$font-weight-heading: normal !default;
+$font-size-h1: 3.2rem !default;
+$font-size-h2: 2.6rem !default;
+$font-size-h3: 2.2rem !default;
+$font-size-h4: 1.8rem !default;
+$font-size-h5: 1.8rem !default;
+$font-size-h6: 1.8rem !default;
+$font-size-lead: 2rem !default;
+$line-height-lead: 1.3em !default;
+$font-weight-lead: lighter !default;
+$margin-v-heading: 1em;
+$link-color: $text-color !default;
+$link-visited-color: #551a8b !default;
+$headings-color: $text-color !default;
+$link-text-decoration: underline !default;
+$link-hover-color: lighten($link-color, 40%) !default;
+$headings-letter-spacing: 0 !default;
+
+body {
+  font-family: $font-family-base;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
+  color: $text-color;
+  -webkit-font-smoothing: antialiased;
+}
+
+.h1, h1,
+.h2, h2,
+.h3, h3,
+.h4, h4,
+.h5, h5,
+.h6, h6 {
+  line-height: $line-height-heading;
+  font-weight: $font-weight-heading;
+  margin: $margin-v-heading 0;
+  color: $headings-color;
+  letter-spacing: $headings-letter-spacing;
+}
+
+h1, .h1 {
+  font-size: $font-size-h1;
+}
+
+h2, .h2 {
+  font-size: $font-size-h2;
+}
+
+h3, .h3 {
+  font-size: $font-size-h3;
+}
+
+h4, .h4 {
+  font-size: $font-size-h4;
+}
+
+h5, .h5 {
+  font-size: $font-size-h5;
+}
+
+h6, .h6 {
+  font-size: $font-size-h6;
+}
+
+p.lead {
+  font-size: $font-size-lead;
+  line-height: $line-height-lead;
+  font-weight: $font-weight-lead;
+}
+
+a {
+  color: $link-color;
+  text-decoration: $link-text-decoration;
+  &:hover,
+  &:focus {
+    color: $link-hover-color;
+  }
+
+  &:focus {
+    @include tab-focus;
+  }
+}

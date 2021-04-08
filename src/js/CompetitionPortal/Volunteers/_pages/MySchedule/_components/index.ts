@@ -1,0 +1,2 @@
+export {default as MyVolunteerScheduleShiftCard} from './MyVolunteerScheduleShiftCard/MyVolunteerScheduleShiftCard.vue';
+export {default as MyVolunteerScheduleContactsOverlay} from './MyVolunteerScheduleContactsOverlay/MyVolunteerScheduleContactsOverlay.vue';

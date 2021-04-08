@@ -1,0 +1,88 @@
+.checkout-form {
+  .appearance & select.form-field {
+    background-position: calc(100% - 10px) center;
+  }
+}
+
+.checkout-form {
+  @include fieldset-reset;
+  padding-bottom: 1.2rem;
+  .form-group--half {
+    width: 50%;
+  }
+  .form-field {
+    padding-left: 1.2rem;
+    &:not(.card-input) {
+      padding-right: 1.2rem;
+    }
+  }
+  select.form-field {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+  .checkbox {
+    padding-top: 1.2rem;
+    input[type="checkbox"] {
+      margin-right: 1rem;
+    }
+  }
+  &__row {
+    padding-bottom: 1.5rem;
+    @include grid-row(15px);
+    .checkout-form__row {
+      padding-bottom: 0;
+    }
+  }
+
+  &--billing {
+    .form-group + .form-group {
+      margin-top: 1.4rem;
+    }
+  }
+  &--payment {
+    .form-group {
+      + .form-group {
+        margin-top: 0;
+      }
+      &--card-number {
+        @include grid-column(100%, 15px);
+      }
+      &--cvc {
+        @include grid-column(30%, 15px);
+      }
+      &--expiration {
+        @include grid-column(70%, 15px);
+      }
+      &--expiration-month {
+        @include grid-column(50%, 15px);
+      }
+      &--expiration-year {
+        @include grid-column(50%, 15px);
+      }
+    }
+  }
+}
+
+.address-form-actions {
+  padding-top: 3.5rem;
+  &__cancel {
+    @include grid-column(37%, 15px);
+  }
+  &__continue {
+    @include grid-column(63%, 15px);
+  }
+  &__notice{
+    text-align: right;
+    @include grid-column(100%, 15px);
+  }
+}
+
+.payment-form-actions {
+  padding-top: 1.5rem;
+  &__cancel {
+    @include grid-column(37%, 15px);
+  }
+  &__continue {
+    @include grid-column(63%, 15px);
+  }
+}

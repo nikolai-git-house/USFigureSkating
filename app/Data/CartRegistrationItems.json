@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Junior Ladies Short Program",
+    "cost": 20,
+    "description_lines": [
+      "2019 Skate Austin Bluebonnet",
+      "NQ-ENTRY FEE"
+    ],
+    "cart_item_type_key": "registration_fee",
+    "id": 1
+  },
+  {
+    "name": "Junior Ladies Free Skate",
+    "cost": 20,
+    "description_lines": [
+      "2019 Skate Austin Bluebonnet",
+      "NQ-ENTRY FEE"
+    ],
+    "cart_item_type_key": "registration_fee",
+    "id": 3
+  },
+  {
+    "id": 2,
+    "name": "Admin Fee",
+    "cost": 10,
+    "unremovable": true,
+    "cart_item_type_key": "fee"
+  }
+]

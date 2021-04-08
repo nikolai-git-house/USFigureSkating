@@ -1,0 +1,15 @@
+.teams-competition-registration-index-page {
+  &__no_configured_notice {
+    > p:first-child {
+      margin-top: 0;
+    }
+  }
+
+  .page-heading__title {
+    @media screen and (max-width: $screen-tablet - 1) {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 270px;
+    }
+  }
+}

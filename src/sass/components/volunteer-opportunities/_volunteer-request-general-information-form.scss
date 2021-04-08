@@ -1,0 +1,41 @@
+/**
+ * The form for editing general information during the request process
+ */
+.volunteer-request-general-information-form {
+  /**
+   * The summary data block on the form that can't be edited
+   */
+  &__summary {
+    padding-bottom: 3rem;
+    border-bottom: solid 1px $divider-color;
+    margin-bottom: 3rem;
+    /**
+     * The text description at the end of the summary
+     */
+    &__description {
+      margin: 0;
+      padding: 1.4rem 0.5rem 0;
+      line-height: (18/14);
+    }
+  }
+  /**
+   * Block containing form fields
+   */
+  &__fields {
+    padding: 0.5rem 0.5rem 0;
+    position: relative;
+    /**
+     * Override default positioning of external field header
+     */
+    .field-header--external {
+      top: 0.5rem;
+      right: 0.5rem;
+    }
+  }
+  /**
+   * Block containing submit/cancel controls
+   */
+  &__cta {
+    padding: 2rem 1rem;
+  }
+}

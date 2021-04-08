@@ -1,0 +1,51 @@
+$nav-toggle-height: 20px !default;
+$nav-toggle-line-color: #e1161f !default;
+.nav-toggle {
+  border: none;
+  appearance: none;
+  display: block;
+  width: 26px;
+  cursor: pointer;
+  padding: 0;
+  background: none;
+  touch-action: manipulation;
+  position: relative;
+  background: transparent;
+  height: $nav-toggle-height;
+  &__line {
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 27px;
+    background: $nav-toggle-line-color;
+    display: block;
+    transform-style: preserve-3d;
+    &--top {
+      top: 0;
+    }
+    &--middle {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &--bottom {
+      bottom: 0;
+    }
+  }
+  &.active {
+    .nav-toggle__line {
+      &--top {
+        top: 50%;
+        transform: translateY(-50%) rotate(-45deg);
+      }
+      &--middle {
+        width: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      &--bottom {
+        bottom: 50%;
+        transform: translateY(50%) rotate(45deg);
+      }
+    }
+  }
+}

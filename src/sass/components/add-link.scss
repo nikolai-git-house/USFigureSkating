@@ -1,0 +1,65 @@
+.add-link {
+  @extend .icon-add;
+  background-size: 21px 21px;
+  line-height: 21px;
+  white-space: nowrap;
+  background-position: left center;
+  display: inline-block;
+  padding: 0 30px;
+  text-decoration: underline;
+  color: $USFSA-blue-light;
+  &--reverse {
+    background-position: right center;
+    padding-left: 0;
+  }
+  &--muted {
+    &, &:active, &:hover, &:focus {
+      text-decoration: none;
+      color: $light-gray-text;
+    }
+  }
+  &--sm{
+    background-size: 16px 16px;
+    padding:0 2.2rem;
+  }
+}
+
+button.add-link {
+  cursor: pointer;
+  border: none;
+  appearance: none;
+  touch-action: manipulation;
+  user-select: none;
+  background-color: transparent;
+}
+
+.download-link {
+  overflow: visible;
+  display: inline-block;
+  padding: 0 0 0 29px;
+  text-decoration: none;
+  @include all-states {
+    color: $USFSA-blue-light;
+  }
+  position: relative;
+  &:before {
+    @include pseudo;
+    @extend .icon-download;
+    background-size: cover;
+    width: 19px;
+    height: 18px;
+    left: 0;
+    top: 0;
+  }
+  &--small {
+    font-size: 1.2rem;
+    overflow-y: visible;
+    padding-left: 17px;
+    &:before {
+      background-size: contain;
+      height: 13px;
+      top: 4px;
+      width: 13px;
+    }
+  }
+}

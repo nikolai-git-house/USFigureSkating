@@ -1,0 +1,66 @@
+#!/bin/sh
+
+# Pre-push hook that prevents a push if the files to be pushed don't
+# meet linting requirements.
+#
+# Use of this hook is discouraged.  Once files are committed,
+# the change set is obfuscated and additional commits are required to enable a push.
+#
+# Suggest use of pre-commit hook instead
+
+remote="$1"
+url="$2"
+
+z40=0000000000000000000000000000000000000000
+
+DIRNAME="$(git rev-parse --show-toplevel)"
+ESLINT="$DIRNAME/node_modules/.bin/eslint"
+PASS=true
+printf "\nValidating...\n"
+while read local_ref local_sha remote_ref remote_sha
+do
+	if [ "$local_sha" = $z40 ]
+	then
+		# Handle delete
+		:
+	else
+		if [ "$remote_sha" = $z40 ]
+		then
+			# New branch, examine all commits
+			range="$local_sha"
+		else
+			# Update to existing branch, examine new commits
+			range="$local_sha..$remote_sha"
+		fi
+
+		# Get list of files for push
+		FILES_FOR_PUSH=$(git diff --name-only "$range" --diff-filter=ACM)
+
+
+		if [[ "$FILES_FOR_PUSH" = "" ]]; then
+			printf "\t\033[32mNo files found to lint\033[0m"
+		  	exit 0
+		fi
+		#Lint each file set for push
+		for FILE in $FILES_FOR_PUSH
+		do
+  			"$ESLINT" "$FILE"
+
+			if [[ "$?" == 0 ]]; then
+				printf "\t\033[32m- ESLint Passed: $FILE\033[0m\n"
+			else
+				printf "\t\033[31m- ESLint Failed: $FILE\033[0m\n"
+				PASS=false
+			fi
+
+		done
+
+	fi
+done
+
+if ! $PASS; then
+  printf "\n\n\033[31mPUSH FAILED:\033[0m Your commit contains files that should pass ESLint but do not. Please fix the ESLint errors and try again.\n\n"
+  exit 1
+fi
+
+exit $?

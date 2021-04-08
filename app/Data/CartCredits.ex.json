@@ -1,0 +1,20 @@
+[
+  {
+    "amount":2,
+    "competition_id":5,
+    "competition_name":"Prepurchase Sales",
+    "cost":70,
+    "credit_type":"opi",
+    "event_id":13,
+    "event_name":"Intermediate Ladies"
+  },
+  {
+    "amount":1,
+    "competition_id":5,
+    "competition_name":"Prepurchase Sales",
+    "cost":30,
+    "credit_type":"upi",
+    "event_id":14,
+    "event_name":"Intermediate Pairs"
+  }
+]

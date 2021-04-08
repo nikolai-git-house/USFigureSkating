@@ -1,0 +1,44 @@
+$coach-result-content-gutter: 15px;
+$coach-result-floatpoint: 320px;
+.my-coaches-search-result {
+  background-color: white;
+  padding: 1.5rem 2rem;
+  border-radius: 2px;
+  &__info {
+    > p {
+      margin: 0;
+    }
+  }
+  &__actions {
+    padding-top: 1.5rem;
+    .button {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  &__number, &__club {
+    color: $light-gray-text;
+  }
+  @media screen and (min-width: $coach-result-floatpoint) {
+    &__content {
+      @include grid-row($coach-result-content-gutter);
+      @include flex-compatible {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+    &__info {
+      @include grid-column(70%, $coach-result-content-gutter);
+
+    }
+    &__actions {
+      padding-top: 0;
+      @include grid-column(30%, $coach-result-content-gutter);
+    }
+  }
+  + .my-coaches-search-result {
+    margin-top: 1.5rem;
+  }
+}

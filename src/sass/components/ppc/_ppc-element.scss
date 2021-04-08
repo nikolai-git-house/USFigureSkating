@@ -1,0 +1,27 @@
+.ppc-element {
+  background-color: white;
+  border-radius: $border-radius-base;
+  &__detail-content {
+    padding: 1.5rem $ppc-element-number-column-width 0.5rem;
+  }
+  &__detail-close {
+    @extend .tray-close;
+  }
+  &__detail-list {
+    padding: 0 $ppc-element-code-padding-h;
+    line-height: 1.55;
+  }
+  &__form {
+    padding: 1.5rem 2rem 3rem;
+    &--add {
+      padding-top: 2.5rem;
+    }
+  }
+  &--disabled {
+    .ppc-element-summary {
+      &__number, &__code {
+        opacity: .45;
+      }
+    }
+  }
+}

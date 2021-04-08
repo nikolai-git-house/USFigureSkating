@@ -1,0 +1,12 @@
+src/credit-card-shim.d.ts
+src/swiper-shim.d.ts
+src/vue-shims.d.ts
+githooks
+package.json
+package-lock.json
+src/views/style-guide.php
+**/*.scss
+app/**/*
+**/*.md
+public/**/*.*
+src/views/component-guide.php

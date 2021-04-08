@@ -1,0 +1,73 @@
+.support-documents {
+  $support-docs-screen-pad-h: 1rem;
+  $support-docs-return-rendered-height: 6.3rem;
+  position: relative;
+  transform: translateX(0); // set new fixed-position context
+  &__return {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    /*
+     * IE has an implementation that doesn't set a new fixed context on transformed elements.
+     * Offset the fixed positioning to account for offset from document top
+     */
+    @include ie-only {
+      top: $rendered-nav-height;
+    }
+
+    &__container {
+      background: white;
+    }
+    &:after {
+      @include pseudo;
+      bottom: 0;
+      left: -10px;
+      right: -10px;
+      height: 25%;
+      box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.11);
+      opacity: 0;
+      transition: opacity .1s ease-in;
+      z-index: -1;
+    }
+    &.is-scrolling:after {
+      opacity: 1;
+    }
+    &__content {
+      padding: 2.2rem $support-docs-screen-pad-h 1.8rem;
+    }
+  }
+  &__screen {
+    &--category {
+      padding: $support-docs-return-rendered-height $support-docs-screen-pad-h 0;
+    }
+  }
+}
+
+.support-documents-category {
+  &__name {
+    color: $text-color;
+    font-size: 1.8rem;
+    margin: 1.3rem 0 2rem;
+  }
+  &__subcategory {
+    padding: 1.1rem 0 0.8rem;
+    &--no-name {
+      padding-top: 0;
+    }
+  }
+  &__subcategory-name {
+    color: $text-color;
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  &__document-list {
+    @include list-reset;
+    padding: 0.5rem 0 0 1.5rem;
+  }
+  &__document-list-item {
+    padding: 10px 0;
+  }
+}
+

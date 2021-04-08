@@ -1,0 +1,53 @@
+.competition-management-compliance {
+  &--loaded {
+    background-color: $gray-light;
+  }
+  &__header {
+    padding-top: 1.5rem;
+    &__email {
+      margin-bottom: 1.5rem;
+      margin-top: 3rem;
+      &__description {
+        font-size: 1.2rem;
+        line-height: (16 / 12);
+        margin: 0.8rem 0 0;
+        padding-left: 3.2rem;
+        max-width: 275px;
+      }
+    }
+    &__links {
+      @include link-header;
+      padding-right: 1.5rem;
+    }
+  }
+  &__body {
+    padding-top: $accent-list-section-padding-top;
+    @extend .grid-container;
+  }
+  &__search {
+    margin-bottom: 3rem;
+    .form-field--search {
+      padding-right: 4rem;
+      padding-left: 1.5rem;
+    }
+  }
+  &__entities {
+
+  }
+  &__footer {
+    @extend .pagination-footer;
+  }
+
+  .email-overlay__content {
+    margin-top: -67px;
+  }
+  .page-alert__content-container {
+    padding: 1.5rem 2.8rem 2.3rem 2.1rem;
+    .small {
+      margin: 0.4rem 0 0;
+      display: block;
+      font-size: 1.2rem;
+      line-height: (18/12);
+    }
+  }
+}

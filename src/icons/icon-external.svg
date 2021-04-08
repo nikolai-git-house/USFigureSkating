@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 18.16">
+    <defs>
+        <clipPath id="a">
+            <path fill="none" clip-rule="evenodd" d="M10.38.17l.05 1.93 6.33.17.17 6.33 1.93.06L18.63.4 10.38.17z"/>
+        </clipPath>
+    </defs>
+    <g clip-path="url(#a)">
+        <path fill="#2599f2" d="M.81 14.04L.88.09 18.94 0l-.08 13.95-18.05.09z"/>
+    </g>
+    <path fill="none" stroke="#2599f2" stroke-linecap="square" stroke-miterlimit="10" stroke-width="2px" d="M17.22 1.82l-8.63 8.62"/>
+    <path fill="none" stroke="#2599f2" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2px" d="M1 16.16V1.59M18 16.16v-4.13M1 1.16h6.45"/>
+    <path fill="none" stroke="#2599f2" stroke-linecap="square" stroke-linejoin="round" stroke-width="2px" d="M1 17.16h17"/>
+</svg>

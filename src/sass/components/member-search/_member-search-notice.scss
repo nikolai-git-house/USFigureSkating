@@ -1,0 +1,48 @@
+/**
+ * Notice that displays in place of selection button for non-selectable member search results
+ */
+.member-result-notice {
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    background-position: center center;
+  }
+  &__text {
+    margin-top: 0.6rem;
+    display: inline-block;
+    text-align: center;
+    font-size: 1.0rem;
+    line-height: (12/10);
+    max-width: 74px;
+  }
+  &--alert, &--ineligible {
+    .member-result-notice__icon {
+      @extend .icon-alert-red;
+      width: 27px;
+      height: 23px;
+      background-size: 27px 23px;
+    }
+    .member-result-notice__text {
+      color: $alert-red;
+    }
+  }
+  &--ineligible {
+    .member-result-notice__text {
+      text-decoration: underline;
+    }
+  }
+  &--selected {
+    .member-result-notice__icon {
+      @extend .icon-check-tag;
+      width: 18px;
+      height: 20px;
+      background-size: 18px 20px;
+    }
+    .member-result-notice__text {
+      color: $USFSA-blue;
+    }
+  }
+}

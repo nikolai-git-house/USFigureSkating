@@ -1,0 +1,24 @@
+{
+  "moves": [
+    {
+      "level": 1,
+      "self_reported": true
+    }
+  ],
+  "free_skating": [
+  ],
+  "pair": [
+    {
+      "level": 2,
+      "self_reported": false
+    }
+  ],
+  "dance": [
+  ],
+  "free_dance": [
+  ],
+  "figure": [
+  ],
+  "testable_discipline_7": [
+  ]
+}

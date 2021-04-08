@@ -1,0 +1,17 @@
+.standings-granular-filter {
+  &__national-rank {
+    margin: 0 auto;
+    max-width: 210px;
+
+    .form-row--range {
+      &__pre-label, &__separator {
+        color: $text-color;
+      }
+
+      .form-field {
+        padding: 0.5rem 0.5rem 0;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.series-application-discipline {
+  $c: &;
+  $heading-margin: 0 0 1.8rem 1.3rem;
+  padding: 2rem 1rem 2.5rem;
+
+  &__header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: $heading-margin;
+  }
+
+  &__name {
+    color: $USFSA-blue;
+    font-size: 1.8rem;
+    line-height: (21/18);
+    margin: $heading-margin;
+
+    #{$c}__header & {
+      margin: 0;
+    }
+  }
+
+
+  &__document-link {
+    font-size: 1.2rem;
+  }
+
+  &__section {
+    & + & {
+      margin: 2.5rem 0 0;
+    }
+
+    &__add {
+      #{$c}__element-list + &,
+      #{$c}__section-name + & {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  &__section-notice {
+    font-size: 1.2rem;
+    line-height: (20/12);
+    margin: 1.5rem 0 0.7rem;
+    text-align: center;
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  &__section-name {
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (18/16);
+    margin: 0;
+    text-align: center;
+  }
+
+  &__element-list {
+    @include list-reset;
+    margin-top: 2.2rem;
+
+    #{$c}__section-notice + & {
+      margin-top: 0;
+    }
+
+    > li + li {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &__element-label {
+    color: $state-red;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    white-space: nowrap;
+  }
+
+  &__element {
+    align-items: center;
+    background-color: $gray-97;
+    border: solid 1px $gray-97;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3rem 1.3rem 1.3rem 2.1rem;
+
+    &--paid {
+      border-color: $state-green;
+    }
+
+    &--unpaid {
+      border-color: $state-red;
+    }
+
+    &.form-group {
+      padding-left: 1.5rem;
+    }
+
+    &__placeholder {
+      color: $light-gray-text;
+    }
+
+    &__action {
+      align-items: center;
+      box-sizing: content-box;
+      display: flex;
+      justify-content: center;
+      padding: 0;
+      text-align: center;
+      width: 22px;
+
+      .icon-button--delete[disabled] {
+        @extend .icon-delete--disabled;
+      }
+    }
+
+    &__payment-status {
+      align-items: center;
+      display: flex;
+      position: relative;
+
+      &--paid {
+        color: $state-green;
+      }
+
+      &--unpaid {
+        color: $alert-red;
+      }
+
+
+      &__text {
+        line-height: 1;
+      }
+
+      &__icon {
+        background-size: contain;
+        height: 11px;
+        margin-left: 8px;
+        width: 13px;
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.parented-checkbox-group {
+  margin: 2.2rem 0;
+  &:first-child {
+    margin-top: 0;
+  }
+  &__parent {
+    .usfsa-checkbox,
+    .usfsa-radio {
+      &__text {
+        font-size: 1.6rem;
+        padding-top: 2px;
+      }
+    }
+  }
+  &__children {
+    background-color: $gray-light;
+    list-style: none;
+    margin: 1.2rem 0 0;
+    padding: 1.5rem 0 1.5rem 1.7rem;
+    &__child {
+      padding: 1.3rem 1.3rem 1.4rem;
+    }
+    .usfsa-checkbox,
+    .usfsa-radio {
+      @include not-ie {
+        padding-left: 2.7rem;
+      }
+      &__text {
+        @include not-ie {
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+
+  @at-root .parented-checkbox-group--small & {
+    &__children {
+      padding: 1.5rem 2.2rem;
+      &__child {
+        padding: 0.8rem 0 0.7rem;
+        &:first-child {
+          padding-top: 0;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

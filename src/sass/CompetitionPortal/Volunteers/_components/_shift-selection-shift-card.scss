@@ -1,0 +1,49 @@
+.shift-selection-shift-card {
+  $action-column-width: 90px;
+  padding: 1.7rem 1.4rem 1.6rem;
+
+  &__status-action-column {
+    flex-basis: $action-column-width;
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+
+    .button.button--small {
+      padding-bottom: 0.1rem;
+      padding-top: 0.4rem;
+    }
+  }
+
+  &__secondary {
+    padding-top: 1.5rem;
+
+    .shift-card__datum--description {
+      margin-top: 0.5rem;
+    }
+  }
+
+  &__status {
+    background-position: left center;
+    display: inline-block;
+    font-size: 1.2rem;
+    line-height: 18px;
+
+    position: relative;
+    white-space: nowrap;
+
+    &--approved {
+      background-size: 14px 16px;
+      color: $ada-green-text;
+      @extend .icon-scheduled;
+      padding-left: 1.8rem;
+    }
+
+    &--pending {
+      background-position-y: calc(50% - 1px);
+      background-size: 15px 15px;
+      color: $ada-orange-text;
+      @extend .icon-pending;
+      padding-left: 1.8rem;
+    }
+  }
+}

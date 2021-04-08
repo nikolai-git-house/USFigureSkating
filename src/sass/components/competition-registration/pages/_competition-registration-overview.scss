@@ -1,0 +1,37 @@
+.competition-registration-overview {
+  &__competition-summary {
+    padding-top: 2.2rem;
+  }
+  &__prices {
+    padding-top: 2rem;
+    @extend .grid-container;
+    @media screen and (max-width: $screen-tablet - 1px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__tab-body {
+      padding: 0.7rem 0.7rem 0 0.8rem;
+      @include screen-tablet {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+    &__absent-notice {
+      color: $light-gray-text;
+      padding: 3rem 1.2rem 0 1.3rem;
+      margin: 0;
+    }
+    .trigger-extended {
+      letter-spacing: 2.7px;
+    }
+    .tabs {
+      &__tab-body {
+        padding-top: 0;
+      }
+    }
+  }
+  .competition-registration-terms .usfsa-checkbox {
+    // match comps, prevent orphan
+    padding-left: 2.5rem;
+  }
+}

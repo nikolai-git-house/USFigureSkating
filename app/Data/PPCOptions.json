@@ -1,0 +1,180 @@
+{
+  "type": {
+    "2": "Collegiate",
+    "3": "Death Spirals",
+    "4": "Intermediate",
+    "5": "Jumps",
+    "9": "Lifts",
+    "10": "Masters",
+    "11": "Novice",
+    "12": "Open Adult",
+    "13": "Open Collegiate",
+    "14": "Open Juvenile",
+    "15": "Pair Combo Spin",
+    "16": "Pair Spins",
+    "17": "Pattern Dance",
+    "18": "Pre-Juvenile",
+    "19": "Preliminary",
+    "22": "Spins",
+    "23": "Step Sequences",
+    "24": "Steps & Spirals",
+    "25": "Throws",
+    "26": "Twist Lifts",
+    "27": "Twizzles"
+  },
+  "elements": {
+    "1": {
+      "id": 1,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Single-Toeloop",
+      "code": "1T",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "2": {
+      "id": 2,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Single-Salchow",
+      "code": "1S",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "3": {
+      "id": 3,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Single-Loop",
+      "code": "1Lo",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "4": {
+      "id": 4,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Single-Flip",
+      "code": "1F",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "5": {
+      "id": 5,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Single-Lutz",
+      "code": "1Lz",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "25": {
+      "id": 25,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "2-Jump Combination",
+      "code": null,
+      "is_combo": true,
+      "is_transition": false,
+      "number_of_combos": 2,
+      "exclude_from_combos": true
+    },
+    "26": {
+      "id": 26,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "3-Jump Combination",
+      "code": null,
+      "is_combo": true,
+      "is_transition": false,
+      "number_of_combos": 3,
+      "exclude_from_combos": true
+    },
+    "27": {
+      "id": 27,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Jump Sequence",
+      "code": null,
+      "is_combo": true,
+      "is_transition": false,
+      "number_of_combos": 2,
+      "exclude_from_combos": true
+    },
+    "147": {
+      "id": 147,
+      "category_id": 1,
+      "type_id": 27,
+      "description": "Sequential Twizzles",
+      "code": "STw",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "148": {
+      "id": 148,
+      "category_id": 1,
+      "type_id": 27,
+      "description": "Synchronized Twizzles ",
+      "code": "STw",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "2112": {
+      "id": 2112,
+      "category_id": 5,
+      "type_id": 27,
+      "description": "Solo Twizzles",
+      "code": "SoTw",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": true
+    },
+    "2113": {
+      "id": 2113,
+      "category_id": 5,
+      "type_id": 27,
+      "description": "Juvenile Solo Twizzles",
+      "code": "pSoTw",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": true
+    },
+    "2118": {
+      "category_id": 1,
+      "type_id": 27,
+      "description": "Combination Set of Sequential Twizzles",
+      "code": "SqTw",
+      "is_combo": false,
+      "is_transition": false,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    },
+    "2119": {
+      "id": 2,
+      "category_id": 2,
+      "type_id": 5,
+      "description": "Transition",
+      "code": "T",
+      "is_combo": false,
+      "is_transition": true,
+      "number_of_combos": 0,
+      "exclude_from_combos": false
+    }
+  }
+}

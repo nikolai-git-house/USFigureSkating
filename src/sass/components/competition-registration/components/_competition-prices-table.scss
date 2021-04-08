@@ -1,0 +1,70 @@
+.competition-prices-table {
+  border-collapse: collapse;
+  width: 100%;
+  table-layout: fixed;
+  .cell {
+    text-align: center;
+    &--label {
+      text-align: left;
+      width: percentage(127/360);
+      @at-root #{selector-unify(&, th)} {
+        padding-left: 2rem;
+      }
+      @at-root #{selector-unify(&, td)} {
+        padding-left: 1.8rem;
+      }
+    }
+    &--price {
+      width: percentage(50/360);
+    }
+    &--combined {
+      width: percentage(83/360);
+    }
+    .label-value {
+      width: 80px;
+      box-sizing: content-box;
+      display: inline-block;
+    }
+  }
+  &__header {
+    background-color: #737373;
+    color: white;
+    font-size: 1.2rem;
+    line-height: (14/12);
+    font-weight: normal;
+    text-transform: uppercase;
+    th {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      white-space: nowrap;
+    }
+  }
+  &__row {
+    &:nth-child(odd) {
+      background-color: #F3F3F3;
+    }
+    .cell {
+      padding: 2.7rem 0;
+      line-height: (17/14);
+      &--price-combined {
+        padding-right: 0.5rem;
+      }
+      &--label {
+        font-size: 1.2rem;
+        line-height: (14/12);
+        color: #333333;
+        padding: 0;
+      }
+      &--notice {
+        font-size: 11px;
+        line-height: (13/11);
+        text-align: left;
+        padding: 2.2rem 0 2.2rem 1.3rem;
+        .notice-value {
+          display: inline-block;
+          width: 135px;
+        }
+      }
+    }
+  }
+}

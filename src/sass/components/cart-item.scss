@@ -1,0 +1,97 @@
+.cart-item {
+  background: white;
+  border-radius: $border-radius-base;
+  line-height: 155%;
+  &__info {
+    padding: 1rem 2rem;
+    .cart-item--fee & {
+      padding-top: 2.5rem;
+      padding-bottom: 2.5rem;
+    }
+  }
+  &__event-name {
+    margin-top: 1rem;
+    color: $light-gray-text;
+  }
+  &__cost {
+    font-size: 1.8rem;
+    color: $USFSA-blue;
+  }
+  &__details {
+    color: $light-gray-text;
+  }
+  &__session-description {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    @include clearfix;
+    li {
+      display: block;
+      float: left;
+      &:not(:last-child):after {
+        content: "|";
+        display: inline-block;
+        width: 25px;
+        text-align: center;
+        color: $light-gray-text;
+      }
+    }
+  }
+  &__time {
+    letter-spacing: -.05em;
+  }
+  &__remove {
+    @include button-reset;
+    border-top: solid 1px $gray-light;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    padding: 0.6rem 1rem;
+    &__text {
+      font-size: 1.2rem;
+      color: $USFSA-blue-light;
+      text-transform: uppercase;
+      padding-left: 1.5rem;
+      line-height: 1;
+      display: inline-block;
+      @extend .icon-x--blue;
+      background-position: left 2px;
+      background-size: 9px 9px;
+    }
+  }
+  &__heading {
+    @include grid-row(15px, true);
+    @include flex-compatible {
+      align-items: center;
+    }
+  }
+  &__competition-name,
+  &__name {
+    @include grid-column(85%, 15px, true);
+  }
+  &__cost {
+    @include grid-column(15%, 15px, true);
+    text-align: right;
+  }
+  &__details {
+    @include clearfix;
+  }
+  &__type-description {
+    float: left;
+  }
+  &__session-description {
+    float: right;
+  }
+  &__description {
+    font-size: 1.2rem;
+    color: $light-gray-text;
+    line-height: (14/12);
+    > p {
+      margin: 0;
+      + p {
+        margin-top: 0.3rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.session__name {
+  .session--scheduled &, .session--in-cart & {
+    position: relative;
+    &:before {
+      height: 100%;
+      background-position: center center;
+      position: absolute;
+      content: "";
+      display: block;
+      left: -22px;
+    }
+  }
+  .session--scheduled &:before {
+    width: 12px;
+    background-size: 12px 16px;
+    @extend .icon-bookmark;
+  }
+  .session--in-cart &:before {
+    width: 8px;
+    @extend .icon-dollar-sign;
+    background-size: 8px 15px;
+  }
+}

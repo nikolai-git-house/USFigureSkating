@@ -1,0 +1,73 @@
+.music-ppc-item {
+  padding: 4rem 1rem 2.2rem;
+  &__title {
+    margin: 0;
+    font-size: 1.8rem;
+    color: $text-color;
+  }
+  &__segment {
+    margin: 1.2rem 0 0.7rem;
+    color: $light-gray-text;
+    font-size: 1.4rem;
+  }
+  &__deadline-alert {
+    @extend .text--alert;
+    margin: 0 0 0.7rem;
+    font-size: 1.2rem;
+  }
+  border-bottom: solid 1px $divider-color;
+}
+
+$music-ppc-sub-item-data-gutter: 10px;
+$music-ppc-sub-item-status-width: 14px + $music-ppc-sub-item-data-gutter;
+$music-ppc-sub-item-floatpoint: 320px;
+.music-ppc-sub-item {
+  position: relative;
+  padding: 1.1rem 0;
+  &__data-content {
+    @include grid-row($music-ppc-sub-item-data-gutter);
+  }
+  &__status {
+    @include grid-column($music-ppc-sub-item-status-width, $music-ppc-sub-item-data-gutter);
+  }
+  &__description {
+    @include grid-column(calc(100% - #{$music-ppc-sub-item-status-width}), $music-ppc-sub-item-data-gutter);
+  }
+  &__name {
+    margin: 0;
+  }
+  &__information {
+    margin: 0;
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    &--notice {
+      color: $alert-red;
+    }
+  }
+  &__cta {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  @media screen and (min-width: $music-ppc-sub-item-floatpoint) {
+    @include grid-row(10px);
+    &__data {
+      @include grid-column(58.5%, 10px);
+    }
+    &__cta {
+      padding-top: 0.4rem;
+      padding-bottom: 0;
+      @include grid-column(41.5%, 10px);
+      .button {
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.music-ppc-sub-item .icon-status {
+  display: block;
+  height: auto;
+  width: auto;
+}

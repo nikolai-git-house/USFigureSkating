@@ -1,0 +1,1 @@
+<competition-schedule v-cloak></competition-schedule>

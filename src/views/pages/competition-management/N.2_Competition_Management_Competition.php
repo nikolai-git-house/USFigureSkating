@@ -1,0 +1,1 @@
+<competition-management-competition v-cloak></competition-management-competition>

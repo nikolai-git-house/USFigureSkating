@@ -1,0 +1,56 @@
+.series-registration-overview-page {
+  $c: &;
+
+  &__status-message {
+    margin-top: 0.7rem;
+
+    > span {
+      white-space: pre-wrap;
+    }
+  }
+
+  &__statement {
+    margin-bottom: 3rem;
+  }
+
+  &__contact {
+    margin-top: 3rem;
+    padding: 0 0 1.5rem;
+    text-align: center;
+
+    p {
+      margin: 0;
+
+      + p {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+
+  &__reports {
+    font-size: 1.2rem;
+    line-height: 2;
+    margin-top: 2rem;
+    text-align: center;
+
+    #{$c}__application + & {
+      margin-top: 3.5rem;
+    }
+
+    &__list {
+      @include list-reset;
+    }
+  }
+
+  &__footer {
+    @extend .pagination-footer;
+    padding-bottom: 2rem;
+    padding-top: 1rem;
+  }
+
+  .confirmation-overlay {
+    &__dialog {
+      width: 300px;
+    }
+  }
+}

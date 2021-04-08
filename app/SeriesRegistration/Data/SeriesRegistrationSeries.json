@@ -1,0 +1,71 @@
+[
+  {
+    "name": "Not Possible",
+    "_applications_open": true,
+    "_application_started": true,
+    "_standings_available": true
+  },
+  {
+    "name": "Not Possible",
+    "_applications_open": true,
+    "_application_started": false,
+    "_standings_available": true
+  },
+  {
+    "name": "Applications Open - Incomplete",
+    "_applications_open": true,
+    "_application_started": true,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Open - Paid",
+    "_applications_open": true,
+    "_application_started": true,
+    "_standings_available": false,
+    "_application_paid": true
+  },
+  {
+    "name": "Applications Open - Unpaid",
+    "_applications_open": true,
+    "_application_started": true,
+    "_standings_available": false,
+    "_application_paid": false
+  },
+  {
+    "name": "Applications Open - New",
+    "_applications_open": true,
+    "_application_started": false,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Closed - Unpaid",
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": false,
+    "_application_paid": false
+  },
+  {
+    "name": "Non-Participant Standings Unavailable",
+    "_applications_open": false,
+    "_application_started": false,
+    "_standings_available": false
+  },
+  {
+    "name": "Participant Standings Unavailable",
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": false
+  },
+  {
+    "name": "Participant Standings Available",
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": true
+  },
+  {
+    "name": "Non-Participant Standings Available",
+    "_applications_open": false,
+    "_application_started": false,
+    "_standings_available": true
+  }
+]

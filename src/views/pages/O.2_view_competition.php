@@ -1,0 +1,1 @@
+<view-competition></view-competition>

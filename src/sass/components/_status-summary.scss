@@ -1,0 +1,159 @@
+.status-summary {
+  $c: &;
+
+  &__heading {
+    color: $light-gray-text;
+    margin: 0;
+    padding-left: 2rem;
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      background-position: left center;
+      background-size: contain;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &--complete:before {
+      @extend .icon-status-check;
+      width: 17px;
+    }
+
+    &--incomplete:before {
+      @extend .icon-status-x;
+      width: 13px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    #{$c}__heading + & {
+      margin: 0.8rem 0 0 2rem;
+    }
+
+    /**
+     * List item
+     */
+    &__item {
+      padding: 0.6rem 0;
+    }
+  }
+
+  /**
+   * Status summary item
+   */
+  &__item {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+    &:before {
+      @include pseudo;
+      background-position: left center;
+      background-size: contain;
+      height: 100%;
+      left: 0;
+      position: absolute;
+      top: 0;
+    }
+
+    &--complete:before {
+      @extend .icon-status-check;
+      width: 13px;
+    }
+
+    &--incomplete:before {
+      @extend .icon-status-x;
+      width: 10px;
+    }
+
+    /**
+     * The item name
+     */
+    &__name {
+      color: $light-gray-text;
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      font-size: 1.2rem;
+      line-height: (14/12);
+      padding-left: 1.8rem;
+    }
+  }
+
+  &--with-columns {
+    $column-width: 5px;
+
+    #{$c} {
+      &__list {
+        @media screen and (min-width: 375px) {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -#{$column-width};
+          @include ie-only {
+            margin: 0;
+          }
+        }
+
+        &__item {
+          @media screen and (min-width: 375px) {
+            flex-basis: 50%;
+            flex-grow: 1;
+            flex-shrink: 1;
+            padding-left: $column-width;
+            padding-right: $column-width;
+            @include ie-only {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--inline {
+    $column-width: 20px;
+
+    #{$c} {
+      &__list {
+        @media screen and (min-width: 375px) {
+          display: flex;
+          flex-wrap: wrap;
+          margin: 0 -#{$column-width};
+          @include ie-only {
+            margin: 0;
+          }
+        }
+
+        &__item {
+          @media screen and (min-width: 375px) {
+            flex-grow:0;
+            flex-shrink: 0;
+            padding-left: $column-width;
+            padding-right: $column-width;
+            @include ie-only {
+              padding-left: 0;
+              padding-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  &--standard-text {
+    #{$c} {
+      &__item {
+        &__name {
+          color: $text-color;
+        }
+      }
+    }
+  }
+}

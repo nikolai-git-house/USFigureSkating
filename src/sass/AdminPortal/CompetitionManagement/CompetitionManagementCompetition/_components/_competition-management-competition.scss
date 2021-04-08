@@ -1,0 +1,21 @@
+/**
+ * Wrapper page component for Competition Management Competition Flow
+ */
+.competition-management-competition {
+  &__loading {
+    @extend .grid-container;
+  }
+  &__container {
+    position: relative;
+    &.subpage-parent {
+      overflow: visible; // permit overflow to enable check-in content to be visible
+    }
+    > .slide-right-enter-active,
+    > .slide-left-enter-active {
+      position: fixed !important;
+      width: 100%;
+      top: $rendered-nav-height;
+      height: calc(100vh - #{$rendered-nav-height}); // ensure content is only as tall as viewport when entering
+    }
+  }
+}

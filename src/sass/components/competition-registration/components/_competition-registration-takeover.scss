@@ -1,0 +1,87 @@
+$comp-reg-takeover-padding-l: 1.7rem;
+$comp-reg-takeover-padding-r: 1.8rem;
+$takeover-content-bottom-pad: 80px; // amount to offset ios controls overlay as well as reasonable bottom spacing
+$registration-takeover-header-height: 48px;
+$registration-takeover-actions-height-default: 83px;
+$site-overlay-content-top-offset: 87px;
+$competition-registration-takeover-min-height-offset: $registration-takeover-header-height + $site-overlay-content-top-offset;
+$competition-registration-takeover-content-section-min-height-offset: $competition-registration-takeover-min-height-offset + $registration-takeover-actions-height-default + $takeover-content-bottom-pad;
+.competition-registration-takeover {
+  &__actions {
+    padding-top: 3rem;
+  }
+  &__header {
+    @include grid-container;
+    padding-top: 1.7rem;
+    &__lead {
+      margin: 2.5rem 0 0;
+    }
+  }
+  &__header-divider {
+    border-width: 0 0 1px 0;
+    border-color: $divider-color;
+    margin: 2.5rem 0 2.5rem;
+  }
+  &__title {
+    margin: 0;
+    font-size: 2.4rem;
+    line-height: (31/24);
+    text-align: center;
+  }
+  /**
+   * Comp Reg Takeover always has 100vh (minus preceding content) min height
+   */
+  &__content {
+    &:not(.competition-registration-takeover__content--blank) {
+      padding-bottom: $takeover-content-bottom-pad;
+      min-height: calc(100vh - #{$competition-registration-takeover-min-height-offset});
+    }
+    &--skate-test,
+    &--event-requirements {
+      background-color: $gray-light;
+    }
+    &--partner-skate-test {
+      min-height: 0;
+    }
+  }
+  /**
+   * Min height sections
+   */
+  .select-representation__content {
+    min-height: calc(100vh - #{$competition-registration-takeover-content-section-min-height-offset});
+  }
+  .edit-profile__content {
+    padding-top: 4.5rem;
+    min-height: calc(100vh - #{$competition-registration-takeover-content-section-min-height-offset});
+  }
+  .partner-skate-test-history {
+    &__content {
+      padding-top: 3rem;
+      $partner-skate-test-heading-additional-height: 39px;
+      min-height: calc(100vh - #{$competition-registration-takeover-content-section-min-height-offset + $partner-skate-test-heading-additional-height});
+    }
+  }
+  /**
+   * Overrides
+   */
+  .partner-skate-test-history {
+    .skate-test-history {
+      padding-top: 2.2rem;
+      padding-bottom: 0.6rem;
+      padding-left: 0.7rem;
+    }
+  }
+  .edit-profile__section {
+    padding-left: $comp-reg-takeover-padding-l;
+    padding-right: $comp-reg-takeover-padding-r;
+  }
+  .member-search-results {
+    margin-top: 3.5rem;
+  }
+  .form-group + .form-group {
+    margin-top: 1.4rem;
+    &--increased-spacing {
+      margin-top: 3.4rem;
+    }
+  }
+}

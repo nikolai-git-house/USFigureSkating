@@ -1,0 +1,7 @@
+.email-form-recipient-select {
+  &__content {
+    @extend .grid-container;
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}

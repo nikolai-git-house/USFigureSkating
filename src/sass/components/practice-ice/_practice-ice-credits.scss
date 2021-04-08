@@ -1,0 +1,123 @@
+$practice-ice-credits-column-1-width: percentage(112/295);
+$practice-ice-credits-column-2-width: percentage(75/295);
+$practice-ice-credits-column-3-width: percentage(108/295);
+$practice-ice-footer-offset: 100px;
+$credit-section-max-width: 295px;
+
+.site-overlay--credits {
+  @include z-index('credits-overlay');
+  .site-overlay__content {
+    padding-top: 0;
+  }
+}
+
+.practice-ice-credits {
+  @include grid-container;
+  padding-bottom: $practice-ice-footer-offset;
+  &__section {
+    max-width: $credit-section-max-width;
+    margin: 0 auto;
+    &__heading {
+      text-align: center;
+      margin: 0;
+    }
+  }
+  &__divider {
+    border-color: $divider-color;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin: 2.7rem 0;
+  }
+  &__unscheduled-event {
+    padding-top: 1rem;
+  }
+  &__event-heading {
+    font-size: 1.6rem;
+    color: $text-color;
+    margin: 1.5rem 0;
+  }
+  &__unscheduled-list {
+    list-style: none;
+    line-height: 1;
+    padding: 0;
+    margin: 0;
+    color: $light-gray-text;
+    @include clearfix;
+    li {
+      @include grid-column($practice-ice-credits-column-1-width, 0);
+      &:nth-child(2) {
+        @include grid-column($practice-ice-credits-column-2-width, 0);
+      }
+      &:nth-child(3) {
+        @include grid-column($practice-ice-credits-column-3-width, 0);
+        text-align: center;
+      }
+    }
+  }
+
+}
+
+.purchase-credits {
+  &__event {
+    padding-top: 1rem;
+  }
+  &__cta {
+    padding: 2rem 0 3rem;
+    @include clearfix;
+  }
+  &__subtotal {
+    font-size: $button-font-size;
+    line-height: $line-height-base;
+    text-transform: uppercase;
+    text-align: right;
+    color: $light-gray-text;
+  }
+  &__button {
+    margin-top: 1.3rem;
+    text-align: right;
+    .button {
+      font-size: 1.4rem;
+      padding: 1rem 1.3rem .7rem;
+    }
+  }
+}
+
+.purchase-credits-table {
+  &__credit {
+    margin-top: 1rem;
+  }
+  &__row {
+    @include grid-row(0);
+    &--heading {
+      margin-bottom: 1rem;
+    }
+  }
+  &__cell {
+    line-height: $increment-input-small-height;
+    color: $light-gray-text;
+    &--label {
+      color: $text-color;
+      line-height: 1;
+      font-size: 1.2rem;
+    }
+    &--type {
+      @include grid-column($practice-ice-credits-column-1-width, 0);
+    }
+    &--price {
+      @include grid-column($practice-ice-credits-column-2-width, 0);
+    }
+    &--controls {
+      @include grid-column($practice-ice-credits-column-3-width, 0);
+    }
+  }
+  &__max-message {
+    font-size: 1.2rem;
+    color: $light-gray-text;
+    text-align: right;
+    margin: 0;
+    &--package {
+      text-align: left;
+      line-height: $increment-input-small-height;
+    }
+  }
+}

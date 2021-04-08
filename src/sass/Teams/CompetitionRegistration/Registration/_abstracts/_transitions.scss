@@ -1,0 +1,104 @@
+.team-registration-transition-container {
+  min-height: calc(100vh - #{$rendered-nav-height} + 1px);
+  overflow: hidden;
+  position: relative;
+
+  > * {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@mixin page-transition-in {
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: $rendered-nav-height;
+  transition: .25s ease transform;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+}
+
+@mixin page-transition-out {
+  transition: .24s ease transform;
+  -webkit-backface-visibility: hidden;
+}
+
+.team-registration-advance {
+  /**
+   * Active during entering phase
+   */
+  &-enter-active {
+    @include page-transition-in;
+    background-color: white;
+  }
+
+  /**
+   * Active during leaving phase
+   */
+  &-leave-active {
+    @include page-transition-out;
+    background-color: white;
+  }
+
+  /**
+   * Starting state for enter
+   */
+  &-enter {
+    transform: translate3d(100%, 0, 0);
+  }
+
+  /**
+   * Ending state for enter, starting state for leave
+   */
+  &-enter-to,
+  &-leave {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /**
+   * Ending state for leave.
+   */
+  &-leave-to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.team-registration-retreat {
+  /**
+   * Active during entering phase
+   */
+  &-enter-active {
+    @include page-transition-in;
+    background-color: white;
+  }
+
+  /**
+   * Active during leaving phase
+   */
+  &-leave-active {
+    @include page-transition-out;
+    background-color: white;
+  }
+
+  /**
+   * Starting state for enter
+   */
+  &-enter {
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  /**
+   * Ending state for enter, starting state for leave
+   */
+  &-enter-to,
+  &-leave {
+    transform: translate3d(0, 0, 0);
+  }
+
+  /**
+   * Ending state for leave.
+   */
+  &-leave-to {
+    transform: translate3d(100%, 0, 0);
+  }
+}

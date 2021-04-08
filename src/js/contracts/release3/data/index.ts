@@ -1,0 +1,1 @@
+export {DataNavigationLinkData} from './DataNavigationLinkDataContracts';

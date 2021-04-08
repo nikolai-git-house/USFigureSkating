@@ -1,0 +1,95 @@
+.page-my-coaches {
+  .site-overlay__content {
+    padding-top: 0;
+  }
+}
+
+$coach-cta-button-floatpoint: 300px;
+.my-coaches-category,
+.member-selection-category {
+  padding-bottom: 3.6rem;
+  padding-left: 1rem;
+  &:not(:first-child) {
+    padding-top: 3.8rem;
+  }
+  &:not(:last-child) {
+    border-bottom: solid 1px $divider-color;
+  }
+  &__title {
+    font-size: 1.8rem;
+    color: $text-color;
+    margin: 0 0 2rem;
+  }
+  &__cta {
+    &:not(:first-child) {
+      border-top: solid 1px $gray-light;
+    }
+    padding-top: 2rem;
+  }
+  &__content {
+    padding-left: 1rem;
+  }
+}
+
+.my-coaches-list {
+  &__notice {
+    padding: 0 1rem;
+  }
+}
+
+.my-coaches-coach,
+.member-selection-member {
+  border-top: solid 1px $gray-light;
+  padding: 1.3rem 0 2rem;
+  &:first-of-type {
+    border-top: none;
+    padding-top: 0;
+  }
+  &__description {
+    &--with-compliance {
+      &__status-icon {
+        width: 20px;
+        display: inline-block;
+        background-size: contain;
+        height: 20px;
+      }
+      &__summary {
+        display: flex;
+        padding: 0.7rem 3rem 0.7rem 0;
+        &__status {
+          padding-right: 4px;
+        }
+        &__entity-name {
+          padding-top: 2px;
+        }
+      }
+      &__data {
+        padding: 0 0 1.5rem 2.5rem;
+      }
+    }
+  }
+  &__name {
+    margin: 0;
+  }
+  &__cta {
+    max-width: 252px;
+    padding-top: 1rem;
+    @media screen and (min-width: $coach-cta-button-floatpoint) {
+      @include grid-row(16px);
+    }
+  }
+  &__cta-element {
+    padding-top: 1.5rem;
+    @media screen and (min-width: $coach-cta-button-floatpoint) {
+      padding-top: 0;
+      @include grid-column(50%, 16px);
+    }
+    &--centered {
+      text-align: center;
+    }
+  }
+}
+
+
+
+

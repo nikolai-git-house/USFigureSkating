@@ -1,0 +1,146 @@
+$music-item-gutter-width: 25px;
+$music-item-status-width: 50px + $music-item-gutter-width;
+$music-item-actions-width: 36px + $music-item-gutter-width;
+$music-item-editor-width: calc(100% - 85px);
+$music-item-padding-v: 2rem;
+$music-item-padding-h-r: 2rem;
+.music-item {
+  //Element Style
+  padding: $music-item-padding-v 0;
+  &--standalone {
+    padding: 0;
+  }
+  &--actions-expanded {
+    position: relative;
+  }
+  &__name {
+    display: block;
+    margin: 1.5rem 0 0;
+    line-height: 1.25;
+    @include flex-compatible {
+      margin-top: 0;
+    }
+  }
+  &__duration {
+    display: block;
+    font-size: 1.2rem;
+    line-height: 1;
+    margin: 0;
+    @include flex-compatible {
+      margin-top: 0.7rem;
+    }
+    color: $light-gray-text;
+  }
+  &__content {
+    @include grid-row($music-item-gutter-width, true);
+    @include flex-compatible {
+      align-items: center;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: $element-overlay-background;
+    z-index: 1;
+    padding: $music-item-padding-v $music-item-padding-h-r $music-item-padding-v 0;
+    padding-top: 0.5rem;
+    @include flex-compatible {
+      padding: 0.5rem $music-item-padding-h-r 0 0;
+    }
+  }
+  //Layout
+  &__status {
+    @include grid-column($music-item-status-width, $music-item-gutter-width, true);
+  }
+  &__description {
+    @include grid-column(calc(100% - #{$music-item-actions-width} - #{$music-item-status-width}), $music-item-gutter-width, true);
+    .music-item--standalone & {
+      @include grid-column(calc(100% - #{$music-item-status-width}), $music-item-gutter-width, true);
+    }
+    &--editor-active {
+      align-self: flex-start;
+    }
+  }
+  &__actions {
+    @include grid-column($music-item-actions-width, $music-item-gutter-width, true);
+    z-index: 2;
+    &:not(&--inline) {
+      align-self: flex-start;
+      .icon-button {
+        position: relative;
+        top: #{-1 * $icon-button-padding / 2};
+        right: #{-1 * $icon-button-padding / 2};
+      }
+    }
+  }
+  //Variants
+  &--hide-actions {
+    .music-item__actions {
+      display: none;
+    }
+    .music-item__description {
+      @include grid-column($music-item-editor-width, $music-item-gutter-width, true);
+    }
+  }
+  //Modify Sub Classes
+  .form-group {
+    .form-field {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+  .action-overlay {
+    height: 100%;
+
+  }
+  &__loading {
+    @extend .icon-loading;
+    background-position: center center;
+    @include button-reset;
+    padding: 0;
+    border: 0;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: inline-block;
+    @include hide-text;
+    cursor: default;
+  }
+  &--standalone {
+    .music-player {
+      margin-top: 1.5rem;
+      &__time {
+        display: none;
+      }
+    }
+  }
+}
+
+.music-item-list {
+  background: white;
+  padding: 0 1rem;
+  .music-item {
+    border-bottom: solid 1px $divider-color;
+    position: relative;
+    .music-player {
+      display: none;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      transform: translateY(50%);
+      &__time {
+        display: none;
+      }
+    }
+    &--is-playing {
+      .music-player {
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+$nav-pad-top: 20px !default;
+$nav-pad-bottom: 15px !default;
+$nav-border-width: 1px !default;
+$nav-divider-color: #222 !default;
+$nav-logo-height: 30px !default;
+$nav-toggle-top-offset: ($nav-logo-height - $nav-toggle-height) / 2 !default;
+$rendered-nav-height: $nav-logo-height + $nav-pad-top + $nav-pad-bottom + $nav-border-width !default;
+.navbar {
+  @include clearfix;
+  padding: $nav-pad-top 0 $nav-pad-bottom;
+  border-bottom: solid $nav-border-width $nav-divider-color;
+  &--no-border {
+    border-bottom-color: transparent;
+  }
+  &.menu-open {
+    border-bottom-color: transparent;
+  }
+  &__brand {
+    display: block;
+    float: left;
+    padding-left: 1px;
+  }
+  &__logo {
+    display: block;
+    height: $nav-logo-height;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__toggle {
+    margin-left: 5px;
+    display: block;
+    float: left;
+    margin-top: $nav-toggle-top-offset;
+    &.hidden {
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+  &__cart {
+    float: right;
+    margin-right: 5px;
+    &.hidden {
+      visibility: hidden;
+      pointer-events: none;
+    }
+  }
+  @include flex-compatible {
+    @include remove-clearfix;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__toggle, &__logo {
+      float: none;
+      margin-top: 0;
+    }
+    &__logo {
+      position: static;
+      transform: none;
+    }
+  }
+}

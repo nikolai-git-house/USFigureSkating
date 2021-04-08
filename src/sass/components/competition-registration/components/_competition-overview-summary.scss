@@ -1,0 +1,33 @@
+.competition-overview-summary {
+  &__content {
+    @include grid-row(0, true);
+  }
+  &__image {
+    @include grid-column(65px, 0, true);
+    > img {
+      display: block;
+      width: 100%;
+    }
+  }
+  &__description {
+    @include grid-column(calc(100% - 65px), 0, true);
+    padding-left: 1.3rem;
+  }
+  &__text {
+    margin: 0;
+    &--primary {
+      line-height: 17px;
+      font-size: 1.4rem;
+      margin: 0 0 0.5rem;
+    }
+    &--secondary {
+      line-height: 14px;
+      font-size: 1.2rem;
+      color: $light-gray-text;
+      margin: 0.5rem 0 0.6rem;
+      &:first-child {
+        margin-bottom: 0.7rem;
+      }
+    }
+  }
+}

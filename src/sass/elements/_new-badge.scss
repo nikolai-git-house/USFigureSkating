@@ -1,0 +1,30 @@
+.new-badge {
+  background-color: $ada-green-bg;
+  color: white;
+  content: 'New';
+  display: inline-block;
+  font-size: 1.2rem;
+  line-height: 1;
+  padding: 0.2rem 0.5rem;
+}
+
+.icon-new-badge {
+  background-color: $ada-green-bg;
+  display: inline-block;
+  height: 15px;
+  position: relative;
+  width: 36px;
+
+  &:after {
+    @include pseudo();
+    color: white;
+    content: 'New';
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: 1;
+    position: absolute;
+    text-align: center;
+    top: 2px;
+    width: 100%;
+  }
+}

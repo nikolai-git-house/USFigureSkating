@@ -1,0 +1,61 @@
+.event-card {
+  $actions-width: $gutter + 90px;
+  background-color: white;
+  padding: 1.7rem 1.7rem 1.5rem 2.2rem;
+  position: relative;
+  &--selected {
+    @extend .icon-star--blue;
+    background-size: 9px 9px;
+    background-position: 11px 18px;
+  }
+  &--registered {
+    @extend .icon-badge--blue-narrow;
+    background-size: 7px 9px;
+    background-position: 11px 19px;
+  }
+  &__content {
+    @include grid-row($gutter, true);
+    @include flex-compatible {
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__details {
+    @include grid-column(calc(100% - #{$actions-width}), $gutter, true);
+  }
+  &__actions {
+    @include grid-column($actions-width, $gutter, true);
+    text-align: right;
+  }
+  &__event-name {
+    font-size: 1.4rem;
+    line-height: (17/14);
+    margin: 0;
+  }
+  &__event-details {
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: (19/12);
+    margin: 0;
+  }
+
+  &__paid {
+    @extend .icon-status-check;
+    background-position: right center;
+    background-size: 11px;
+    color: $ada-green-bg;
+    padding-right: 1.3rem;
+    position: relative;
+  }
+
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .input-error {
+    position: absolute;
+    bottom: -0.5rem;
+    left: 2.2rem;
+    font-size: 1.2rem;
+  }
+}

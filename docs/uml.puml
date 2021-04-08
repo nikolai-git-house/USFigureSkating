@@ -1,0 +1,67 @@
+@startuml
+
+class User {
+    public name: String;
+    public id: Number;
+}
+
+class Competition{
+    public id: Number;
+    public dates: any;
+    public name: String;
+    public detail_link: string;
+    public icon: string;
+    public information_link: string;
+}
+
+class Rink{
+    String name
+}
+
+abstract class Session{
+    public name: string
+    public date: date
+    public time_start: string
+    public time_end: string
+    public slots_registered: number;
+    public slots_available: number;
+    public type_key: string;
+
+
+}
+
+class CompetitionService{
+
+}
+
+class Event{
+
+}
+
+class PracticeIce{
+
+}
+
+class Resurface{
+
+}
+
+class Credits {
+    public UPI: Number
+    public OPI: Number
+    public WU: Number
+}
+
+Credits --* User
+Competition "1..*" --o CompetitionService
+(Competition,CompetitionService) --. User
+Arena "1..*" ---* Competition
+Session "1..*" --* Arena
+Event "0..*" --o User
+PracticeIce "0..*" --o User
+Event --|> Session
+PracticeIce --|> Session
+Resurface --|> Session
+
+@enduml
+

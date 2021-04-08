@@ -1,0 +1,14 @@
+$pagination-height: 5rem;
+.pagination-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, .2);
+  padding: 1.5rem 0 1rem;
+}
+
+.pagination-footer-offset {
+  padding-bottom: $pagination-height;
+}

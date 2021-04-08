@@ -1,0 +1,78 @@
+$transition-duration-default: 0.0s !default; //.2s
+$slide-transition-duration: 0.0s !default; //.5s
+$transition-easing-default: ease !default;
+.button-hover {
+  transition: background-color $transition-duration-default $transition-easing-default;
+}
+
+.transition-form-field-state {
+  transition: border-color $transition-duration-default $transition-easing-default;
+}
+
+@mixin slideUpDown {
+  &.v-enter-active, &.v-leave-active {
+    transition: top $slide-transition-duration ease;
+  }
+  &.v-enter, &.v-leave-active {
+    top: 100%;
+  }
+}
+
+.nav-toggle__line {
+  //transition: all .2s ease;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s ease-in-out;
+}
+
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+
+/* ===========================================================================================================
+*                                              SLIDE TRANSITIONS
+* ===========================================================================================================*/
+/**
+* Elements slides in from, and out to, the left
+*/
+.slide-left {
+  // Leave endpoint/enter startpoint: 100% element-width translation to the left
+  &-leave-to, &-enter {
+    transform: translateX(-100%);
+  }
+}
+
+/**
+* Elements slides in from, and out to, the right
+*/
+.slide-right {
+  // Leave endpoint/enter startpoint: 100% element-width translation to the right
+  &-leave-to, &-enter {
+    transform: translateX(100%);
+  }
+}
+
+/**
+ * Shared slide left/right styles
+ */
+.slide-right, .slide-left {
+  // set transition when element is entering or leaving
+  &-enter-active, &-leave-active {
+    transition: transform .25s ease;
+  }
+  // absolutely position entering element to preserve content height of leaving element, and to allow elements to occupy the same DOM space
+  &-enter-active {
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    .slide-parent--fixed &{
+      position: fixed !important;
+    }
+  }
+  // relatively position to enable transformation
+  &-leave-active {
+    position: relative;
+  }
+}

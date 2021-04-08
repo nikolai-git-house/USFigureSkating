@@ -1,0 +1,19 @@
+.saved-address {
+  cursor: pointer;
+  @include clearfix;
+  &__content {
+    max-width: $checkout-element-max-width;
+  }
+  &__detail {
+    @include grid-row(15px, true);
+    @include flex-compatible {
+      align-items: center;
+    }
+    &__input {
+      @include grid-column($checkout-input-column-width, 15px, true);
+    }
+    &__address {
+      @include grid-column(88%, 15px, true);
+    }
+  }
+}

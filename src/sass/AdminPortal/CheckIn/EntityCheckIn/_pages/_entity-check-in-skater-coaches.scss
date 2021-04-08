@@ -1,0 +1,51 @@
+.entity-check-in-skater-coaches {
+  $content-border-offset: 10px; // use to create inset borders
+  /**
+   * Content wrapper block
+   */
+  &__content {
+    padding-bottom: 6rem;
+  }
+  /**
+   * Override spacing and alignment of member assignment components
+   */
+  .member-selection-category {
+    padding-bottom: 2.5rem;
+    padding-left: 0;
+    margin-left: $content-border-offset;
+    margin-right: $content-border-offset;
+    &:not(:first-child) {
+      padding-top: 2.5rem;
+    }
+    &__title, &__content {
+      margin-left: -$content-border-offset;
+      margin-right: -$content-border-offset;
+    }
+    &__content {
+      padding: 0 0.5rem 0 0;
+    }
+    &__cta {
+      padding-top: 0;
+      &:not(:first-child) {
+        border-top: none;
+      }
+    }
+    .add-link {
+      background-size: 16px 16px;
+      padding-left: 2.2rem;
+    }
+  }
+  /**
+   * Override member within page
+   */
+  .member-selection-member {
+    &__description {
+      margin-bottom: 5px;
+      padding-left: 1.8rem;
+    }
+    &__cta {
+      box-sizing: content-box;
+      padding-left: 2.2rem;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.practice-ice-information {
+  padding-bottom: .5rem;
+  &--text {
+    padding-left: 1.5rem;
+    padding-bottom: 0;
+    line-height: percentage(24/14);
+  }
+  > p {
+    margin-top: 2.5rem;
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__pricing {
+    padding-top: 0.5rem;
+    padding-left: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: solid 1px $divider-color;
+    &__message {
+      margin: 0;
+    }
+  }
+  &__sales-windows {
+    padding-left: 1.5rem;
+  }
+}

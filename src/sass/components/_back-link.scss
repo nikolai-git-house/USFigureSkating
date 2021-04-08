@@ -1,0 +1,12 @@
+.back-link {
+  @extend .icon-chevron-left;
+  background-size: 8px 13px;
+  line-height: 13px;
+  white-space: nowrap;
+  background-position: left center;
+  padding-top: 1px;
+  padding-left: 20px;
+  &, &:hover, &:active {
+    color: $USFSA-blue-light;
+  }
+}

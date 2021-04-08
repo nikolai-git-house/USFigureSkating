@@ -1,0 +1,50 @@
+/**
+ * Used in team roster edit, team coaches edit, team personnel edit, and coached skater list
+ */
+.entity-check-in-roster-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  &__item {
+    border-top: solid 1px $gray-light;
+    padding: 1.3rem 0 1.2rem;
+    &:last-child {
+      border-bottom: solid 1px $gray-light;
+    }
+    &.disabled {
+      .entity-check-in-roster-list__entity {
+        &, .text--muted {
+          color: $gray-80;
+        }
+      }
+    }
+  }
+  &__entity {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 22px;
+    &__description {
+      line-height: (18/14);
+    }
+    &__secondary-information {
+      color: $light-gray-text;
+    }
+    &__status {
+      font-size: 1.2rem;
+      line-height: (14/12);
+      &--success {
+        @extend .text--success;
+      }
+      &--error {
+        @extend .text--error
+      }
+      /**
+       * Proper box calculations for flex layout
+       */
+      .usfsa-checkbox {
+        display: block;
+      }
+    }
+  }
+}

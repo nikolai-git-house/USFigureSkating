@@ -1,0 +1,12 @@
+.session-skater-list {
+  &__label {
+    line-height: 150%;
+  }
+  &__value {
+    color: $light-gray-text;
+    line-height: 150%;
+  }
+  &__skater {
+    display: inline-block;
+  }
+}

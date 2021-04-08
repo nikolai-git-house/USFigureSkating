@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Denver Synchronicity",
+    "level": "Synchro Skills 1",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": true,
+      "validity_date_formatted": "2/30/2021"
+    },
+    "selection_information": {
+      "is_selectable": true
+    }
+  },
+  {
+    "id": 2,
+    "name": "Miami Synchronicity",
+    "level": "Juniors",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": true,
+      "validity_date_formatted": "2/30/2021"
+    },
+    "selection_information": {
+      "is_selectable": true
+    }
+  },
+  {
+    "id": 3,
+    "name": "Infinity",
+    "level": "Intermediate",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": false,
+      "validity_date_formatted": "6/23/2019"
+    },
+    "selection_information": {
+      "is_selectable": false,
+      "is_not_selectable_reason": "Renew Membership",
+      "not_selectable_link": "http://placehold.it/500x500&text=Renew+Membership"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Skaters of Colorado",
+    "level": "Intermediate",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": true,
+      "validity_date_formatted": "2/30/2021"
+    },
+    "selection_information": {
+      "is_selectable": true
+    }
+  },
+  {
+    "id": 5,
+    "name": "Synchronicity Skaters",
+    "level": "Masters",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": true,
+      "validity_date_formatted": "2/30/2021"
+    },
+    "selection_information": {
+      "is_selectable": true
+    }
+  },
+  {
+    "id": 6,
+    "name": "Skaters Teams",
+    "level": "Masters",
+    "member_number": "1234345",
+    "membership_status": {
+      "active": true,
+      "validity_date_formatted": "2/30/2021"
+    },
+    "selection_information": {
+      "is_selectable": true
+    }
+  }
+]

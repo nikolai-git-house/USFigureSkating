@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 10 2" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Open/Close" transform="translate(-5 -9)" fill="#138DF4">
+            <path id="Path" d="M5 9v2h10V9z"/>
+        </g>
+    </g>
+</svg>

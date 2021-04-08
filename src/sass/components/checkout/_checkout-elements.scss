@@ -1,0 +1,20 @@
+@import "checkout-elemements/checkout-address";
+@import "checkout-elemements/checkout-saved-addresses";
+@import "checkout-elemements/checkout-saved-address";
+@import "checkout-elemements/checkout-selected-address";
+@import "checkout-elemements/checkout-selected-card";
+
+.checkout-review {
+  &__instructions {
+    padding-top: 2rem;
+    margin: 0;
+    line-height: percentage(18/14);
+  }
+  &__actions {
+    padding-top: 1.7rem;
+  }
+}
+
+.checkout-cart-summary {
+  padding-top: 0.5rem;
+}

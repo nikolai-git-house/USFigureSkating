@@ -1,0 +1,17 @@
+$panel-list-border-color: #cccccc !default;
+$panel-list-pad-v: 1.5rem;
+$panel-list-pad-h: 1rem;
+
+.panel-list {
+  &__item {
+    border-bottom: solid 1px $panel-list-border-color;
+    padding: $panel-list-pad-v $panel-list-pad-h;
+    position: relative;
+    display: block;
+    &__content {
+    }
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

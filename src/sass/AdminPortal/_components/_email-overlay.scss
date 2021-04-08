@@ -1,0 +1,54 @@
+.email-overlay {
+  @include z-index('site-overlay');
+  background-color: white;
+  min-height: calc(100vh + 1px); // prevent unwanted ios scroll behavior
+  position: relative;
+  &--accent {
+    background-color: $gray-light;
+  }
+  &__sticky-header {
+    background-color: white;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+  &__content {
+    padding-top: $rendered-nav-height;
+  }
+  &__confirmation {
+    background-color: rgba($gray-light, .79);
+    left: 0;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+  }
+  .email-form-index__section--summary {
+    background-color: white;
+  }
+  /**
+   * Override confirmation overlay
+   */
+  .confirmation-overlay {
+    &__dialog {
+      max-width: 300px;
+      &__icon {
+        left: -3px;
+        margin-bottom: 0;
+        max-width: 95px;
+        position: relative;
+        top: -2px;
+        @at-root #{selector-replace(&, '.email-overlay', '.email-overlay .confirmation-overlay--submitting')} {
+          left: -1.5rem;
+          margin-top: 2rem;
+        }
+      }
+      .button {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 12 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Support-Documents" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="K2-Support_Documents/Admin" transform="translate(-44 -499)">
+            <g id="Entry-Info" transform="translate(30 445)">
+                <g id="-Icons/PDF/Blue_Small/option3" transform="translate(14 54)">
+                    <rect id="Rectangle-Copy-4" stroke="#2599F2" x="0.5" y="0.5" width="11" height="15" rx="1"/>
+                    <rect id="Rectangle" stroke="#2599F2" x="5.5" y="0.5" width="6" height="5" rx="1"/>
+                    <path id="Rectangle" stroke="#FFF" fill="#FFF" fill-rule="evenodd" d="M6.5.5h5v4h-5z"/>
+                    <path d="M11.5 5L6 .5" id="Line-4" stroke="#2599F2" stroke-linecap="round"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

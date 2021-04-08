@@ -1,0 +1,47 @@
+$carousel-navigation-icon-dimension: 30px;
+$carousel-navigation-icon-edge-offset: 10px;
+
+@mixin carousel-navigation() {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .grid-container {
+    position: relative;
+    height: 100%;
+  }
+}
+
+@mixin carousel-navigation-control() {
+  position: absolute;
+  top: 50%;
+  width: $carousel-navigation-icon-dimension;
+  height: $carousel-navigation-icon-dimension;
+  margin-top: floor($carousel-navigation-icon-dimension/-2);
+  z-index: 10;
+  cursor: pointer;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  &--next {
+    @extend .icon-chevron-circle-right;
+    right: $carousel-navigation-icon-edge-offset;
+    left: auto;
+  }
+  &--prev {
+    @extend .icon-chevron-circle-left;
+    left: $carousel-navigation-icon-edge-offset;
+    right: auto;
+  }
+}
+
+.carousel {
+  position: relative;
+  &__navigation {
+    @include carousel-navigation();
+    &__control {
+      @include carousel-navigation-control();
+    }
+  }
+}

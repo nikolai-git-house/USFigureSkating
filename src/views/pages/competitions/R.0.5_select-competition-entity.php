@@ -1,0 +1,1 @@
+<select-competition-entity-page></select-competition-entity-page>

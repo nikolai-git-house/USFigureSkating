@@ -1,0 +1,44 @@
+.skate-test-takeover {
+  &__section {
+    padding-bottom: 3.4rem;
+    padding-top: 3.4rem;
+    &--add-form {
+      background-color: white;
+      padding-left: $comp-reg-takeover-padding-l;
+      padding-right: $comp-reg-takeover-padding-r;
+    }
+  }
+  &__section-heading {
+    margin: 0.3rem 0 0;
+    font-size: 1.8rem;
+    line-height: (21/18);
+    &--padded {
+      padding-left: $comp-reg-takeover-padding-l;
+      padding-right: $comp-reg-takeover-padding-r;
+    }
+  }
+  &__self-reported-list {
+    @include list-reset;
+    margin-top: 1.7rem;
+    &__discipline {
+      &__list {
+        @include list-reset;
+      }
+      + #{&} {
+        border-top: solid 1px $divider-color;
+      }
+    }
+  }
+}
+
+.competition-registration-skate-tests {
+  &__tests {
+    padding: 2.2rem 0.2rem 1rem 0.6rem;
+  }
+  &__alert-content {
+    padding: 0.5rem 0 1.1rem 0.2rem;
+    p + p {
+      margin-top: 1rem;
+    }
+  }
+}

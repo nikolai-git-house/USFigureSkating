@@ -1,0 +1,1 @@
+export {SeriesManagedTeam} from './SeriesManagedTeam';

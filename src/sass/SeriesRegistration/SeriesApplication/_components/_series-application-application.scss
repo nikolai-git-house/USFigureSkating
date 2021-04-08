@@ -1,0 +1,58 @@
+.series-application-application {
+  $footer-height: 113px;
+
+  padding-bottom: $footer-height;
+
+  &__refund-information {
+    line-height: (21/14);
+    margin-bottom: 2.5rem;
+    margin-top: -1.5rem;
+    text-align: center;
+  }
+
+  &__information {
+    background-color: white;
+    margin-bottom: 4rem;
+  }
+
+  &__footer {
+    @extend .pagination-footer;
+    padding-bottom: 2rem;
+    padding-top: 1.2rem;
+
+    &__information {
+      align-items: flex-end;
+      display: flex;
+
+      &__price {
+        flex-grow: 1;
+        text-align: right;
+      }
+    }
+
+    &__cta {
+      $gutter: 8px;
+      align-items: flex-end;
+      display: flex;
+      margin: 0.5rem (-1 * $gutter) 0;
+
+      &__element {
+        flex-basis: 50%;
+        padding: 0 $gutter;
+        width: 50%;
+
+        .button--action[disabled] {
+          &, &:hover, &:active, &:focus {
+            background-color: $gray-dark;
+            border-color: $gray-dark;
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
+  .site-overlay {
+    left: 0;
+  }
+}

@@ -1,0 +1,14 @@
+@mixin has-competition-banners {
+  position: relative;
+  &__banners {
+    left: 0;
+    position: absolute;
+    top: 0;
+    transform: translateY(-50%);
+    transform-style: preserve-3d;
+    width: 100%;
+    .competition-tile-banner {
+      float: right;
+    }
+  }
+}

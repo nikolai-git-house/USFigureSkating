@@ -1,0 +1,47 @@
+.entity-check-in-roster-edit {
+  /**
+   * Information tray block
+   */
+  &__information {
+    margin-top: 2.5rem;
+  }
+  /**
+   * Roster rules list
+   */
+  &__rules-list {
+    line-height: (18/14);
+    margin: 2.5rem 0 0;
+    padding-left: 1.5rem;
+    > li {
+      padding: 2px 0;
+    }
+  }
+  /**
+   * Roster size display
+   */
+  &__roster-size {
+    align-items: center;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: flex-start;
+    line-height: (19/16);
+    margin: 4.2rem 0 0;
+    .count-badge {
+      margin-left: 8px;
+    }
+  }
+  /**
+   * Roster list section
+   */
+  &__roster {
+    padding-top: 1.2rem;
+  }
+  /**
+   * Submission error in footer
+   */
+  &__error {
+    color: $error-message-text-color;
+    line-height: (18/14);
+    margin: 0.3rem 0 1.4rem;
+  }
+}

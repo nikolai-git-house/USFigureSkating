@@ -1,0 +1,58 @@
+<svg viewBox="0 0 80 79" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style type="text/css">
+        #check{
+        stroke-dasharray:56;
+        transition:stroke-dashoffset .5s ease-in-out;
+        stroke-dashoffset:56;
+        transition-delay:.75s;
+        <!--animation: a-animated-check-check .5s ease-in-out;-->
+        <!--animation-delay: .75s;-->
+        <!--animation-fill-mode: forwards;-->
+        }
+
+
+        @keyframes a-animated-check-check {
+        to {
+        stroke-dashoffset: 0;
+        }
+        }
+
+        #circle{
+        transition:stroke-dashoffset .5s ease-in-out;
+        stroke-dasharray:244;
+        stroke-dashoffset:244;
+        <!--animation: a-animated-check-check .75s ease-in-out;-->
+
+        <!--animation-fill-mode: forwards;-->
+        }
+        .in > #circle{
+        stroke-dashoffset: 0;
+        }
+        .in > #check{
+
+        stroke-dashoffset: 0;
+        }
+    </style>
+    <defs>
+        <clipPath id="clip">
+            <path d="M31.1111488 52.6603235L18.5946724 40.0415294l4.8864705-4.8467823 7.6300059 7.6926353 22.9797177-23.1680648L58.9773371 24.5661z"/>
+        </clipPath>
+    </defs>
+
+    <g id="Group-11" transform="translate(1 1.165635)" fill="none" stroke="#3AB44A">
+        <path transform="translate(38.786028, 38.343630) rotate(-180.000000) translate(-38.786028, -38.343630)"
+              d="M38.7860276 76.52073c21.3642 0 38.6831824-17.0925529 38.6831824-38.1771 0-21.0847765-17.3189824-38.1771-38.6831824-38.1771S.1028453 17.2588535.1028453 38.34363c0 21.0845471 17.3189823 38.1771 38.6831823 38.1771z"
+              id="circle" stroke-width="1.7792" stroke-linecap="round" stroke-linejoin="round"/>
+        <path id="check" stroke-width="8" stroke-linecap="square"
+              d="M20.2851114 37.1297642l10.7567105 11.6100563 26.0580852-27.1708011"/>
+    </g>
+
+    <script>
+        // <![CDATA[
+        document.getElementById('Group-11').classList.add('in');
+          // ]]>
+    </script>
+</svg>
+
+
+

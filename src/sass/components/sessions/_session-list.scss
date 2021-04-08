@@ -1,0 +1,9 @@
+.session-list {
+  padding: 0 2rem;
+  background: white;
+  border-radius: $border-radius-base;
+}
+
+.session + .session {
+  border-top: solid 1px $session-border-color;
+}

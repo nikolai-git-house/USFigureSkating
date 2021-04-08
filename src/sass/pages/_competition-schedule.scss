@@ -1,0 +1,56 @@
+.competition-schedule {
+  position: relative;
+  z-index: 1; //create stacking context
+  &__filters {
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    margin: $content-pad-standard 0;
+    /**
+     * Overrides within filters
+     */
+    .accordion--select {
+      .accordion__content {
+        padding: 1rem 1.5rem 1.5rem;
+        .parented-checkbox-group {
+          margin: 0 0 1.5rem;
+        }
+      }
+    }
+  }
+  &__legend {
+    margin: $content-pad-standard 0 0;
+    .competition-schedule__filters + & {
+      margin-top: 3rem;
+    }
+  }
+  &__rink-sessions-carousel {
+    .swiper-slide {
+      min-height: 50vh;
+    }
+  }
+}
+
+.page-practice-ice,
+.competition-schedule-page {
+  /**
+   * On competition schedule pages, pad lead text to create gutter against sheet navigation icons
+   */
+  .page__lead,
+  .page-heading__lead {
+    padding-left: 30px;
+    padding-right: 30px;
+    /**
+     * Mockup-specific design override for message on CompetitionSchedule page.
+     * If text changes, this can be removed without issue
+     */
+    @at-root .competition-schedule-page#{&} {
+      max-width: 305px;
+      margin-left: auto;
+      margin-right: auto;
+      @at-root .page-coach-competition-schedule#{&} {
+        max-width: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.check-in-entity-card {
+  background: white;
+  margin: 2rem 0;
+  position: relative;
+  &__content {
+    padding: 2rem 1.5rem;
+  }
+  /**
+   * Primary two-column section
+   */
+  &__primary {
+    display: flex;
+    justify-content: space-between;
+    /**
+     * Section containing entity name, role and checkin info
+     */
+    &__info {
+      padding-right: 10px;
+    }
+    /**
+     * Section containing comments indicator button
+     */
+    &__comments {
+      padding-left: 10px;
+      padding-right: 9px;
+    }
+  }
+  /**
+   * Entity name
+   */
+  &__name {
+    line-height: (17 / 14);
+    margin: 0;
+  }
+  /**
+   * Entity role
+   */
+  &__role {
+    color: $USFSA-blue;
+    font-size: 1.2rem;
+    line-height: (19 / 12);
+    margin: 0;
+  }
+  /**
+   * List containing info about when entity was checked in and by whom
+   */
+  &__checkin-details {
+    font-size: 1.2rem;
+    line-height: (14 / 12);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    > li {
+      margin: 0.4rem 0;
+    }
+  }
+  /**
+   * Comments button element
+   */
+  &__comments-button {
+    @include button-reset();
+    background-color: white;
+    display: block;
+    padding: 0;
+    position: relative;
+    top: 6px;
+    .count-badge {
+      height: 19px;
+      position: absolute;
+      right: -8px;
+      top: -8px;
+      width: 19px;
+      &__content {
+        font-size: 1rem;
+        letter-spacing: -0.83px;
+        line-height: 20px;
+      }
+    }
+    /**
+     * Override comments icon size
+     */
+    .icon-comments {
+      height: 27px;
+      width: 25px;
+    }
+  }
+  /**
+   * Block containing buttons
+   */
+  &__actions {
+    > .button {
+      margin-top: 1rem;
+    }
+  }
+  /**
+   * Notice message in card
+   */
+  &__notice {
+    @extend .text--alert;
+    font-size: 1.1rem;
+    line-height: (12 / 11);
+    margin: 0.5rem 0 0;
+    max-width: 255px;
+    @media screen and (min-width: 675px) {
+      max-width: none;
+    }
+    /**
+     * When appearing after a button, add additional top margin
+     */
+    .button + & {
+      margin-top: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+$alternate-navbar-height: 80px;
+$alternate-navbar-padding-v: 20px; //needs to be in px for calculation purposes
+$alternate-navbar-logo-height: 40px;
+/* Accommodate fixed navbar on appropriate layouts */
+.app--header-pad {
+  padding-top: $rendered-nav-height;
+}
+
+.site-header {
+  .invisible-header & {
+    visibility: hidden;
+  }
+  &__navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: white;
+    @include z-index('navbar');
+  }
+  &__menu {
+    position: fixed;
+    top: $rendered-nav-height - 1;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    @include z-index('menu');
+    background: white;
+    .site-menu {
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  &--blank {
+    height: $alternate-navbar-height;
+    .site-header__inner {
+      text-align: center;
+      padding: $alternate-navbar-padding-v 0;
+    }
+    .site-header__logo {
+      display: block;
+      width: 140px;
+      height: $alternate-navbar-logo-height;
+      margin: 0 auto;
+    }
+  }
+}
+
+html.nav-active {
+  @include lock-body;
+}

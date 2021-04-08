@@ -1,0 +1,64 @@
+.email-form-index {
+  &__section {
+    padding-left: 15px;
+    padding-right: 15px;
+    @include screen-sm-desktop {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &--summary {
+      padding-bottom: 0.5rem;
+      padding-top: 0.3rem;
+    }
+    &--message {
+      background-color: $gray-light;
+      padding-top: 2.2rem;
+      padding-bottom: 6rem;
+    }
+  }
+  &__configurations,
+  &__message,
+  &__submit {
+    @extend .grid-container;
+  }
+  &__subject-edit {
+    height: 0;
+    overflow: hidden;
+    &.active {
+      height: auto;
+      padding-top: 0.5rem;
+    }
+    textarea.form-field {
+      padding: 1rem;
+    }
+  }
+  &__message-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0 4px 4px;
+    .has-error & > label {
+      color: $alert-red;
+    }
+  }
+  &__message-element {
+    background-color: $input-bg-color;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    .has-error & {
+      border-color: $input-error-border-color;
+    }
+    &__input {
+      @at-root textarea#{&} {
+        border: none;
+        height: 140px;
+        margin-top: 1.5rem;
+      }
+      .email-attachment-list + & {
+        margin-top: 0;
+      }
+    }
+  }
+  &__submit {
+    margin-top: 3rem;
+  }
+}

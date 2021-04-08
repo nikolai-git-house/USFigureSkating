@@ -1,0 +1,44 @@
+.team-registration-registration-overview {
+  &__information-list {
+    padding: 0.5rem 0 1rem 1.5rem;
+
+    a {
+      @extend .standard-link;
+    }
+
+    > li + li {
+      padding-top: 1rem;
+    }
+  }
+
+  &__prices {
+    @extend .grid-container;
+    @media screen and (max-width: $screen-tablet - 1px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    &__container {
+      padding: 0.7rem 0.7rem 0 0.8rem;
+      @include screen-tablet {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+
+    .team-registration-pricing-table {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .page-alert--notice .page-alert__content-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}

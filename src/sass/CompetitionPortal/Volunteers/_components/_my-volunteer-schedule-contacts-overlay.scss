@@ -1,0 +1,17 @@
+.my-volunteer-schedule-contacts-overlay {
+  padding-bottom: $page-padding-bottom;
+
+  &__lead {
+    margin: 2rem 0 3.5rem;
+  }
+
+  &__content {
+    margin: 3.5rem 0 0;
+
+    .panel-list {
+      &__item:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+}

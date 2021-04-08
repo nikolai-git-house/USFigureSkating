@@ -1,0 +1,11 @@
+.competition-management-index {
+  &__competitions-list {
+    padding-top: 2rem;
+    .panel-link {
+      padding-right: 0;
+    }
+  }
+  &__footer {
+    @extend .pagination-footer;
+  }
+}

@@ -1,0 +1,91 @@
+[
+  {
+    "name": "2019 Skate Austin Bluebonnet",
+    "icon": "/images/competition-icon.png",
+    "start_date": "11/16",
+    "end_date": "11/17",
+    "is_qualifying": false,
+    "series": null,
+    "city": "Shawnee",
+    "state": "KS",
+    "club": "Silver Blades FSC Inc. of Greater KC",
+    "user_registration_status": "new",
+    "competition_registration_status": "open",
+    "has_registration_deadline_warning": false,
+    "has_partner_events": true
+  },
+  {
+    "name": "2019 Skate Austin Bluebonnet",
+    "icon": "/images/competition-icon2.png",
+    "start_date": "11/16",
+    "end_date": "11/17",
+    "is_qualifying": false,
+    "series": null,
+    "city": "Shawnee",
+    "state": "KS",
+    "club": "Silver Blades FSC Inc. of Greater KC",
+    "user_registration_status": "new",
+    "competition_registration_status": "late",
+    "has_registration_deadline_warning": true,
+    "has_partner_events": false
+  },
+  {
+    "name": "2019 Skate Austin Bluebonnet",
+    "icon": "/images/competition-icon3.png",
+    "start_date": "11/16",
+    "end_date": "11/17",
+    "is_qualifying": false,
+    "series": null,
+    "city": "Shawnee",
+    "state": "KS",
+    "club": "Silver Blades FSC Inc. of Greater KC",
+    "user_registration_status": "in_progress",
+    "competition_registration_status": "open",
+    "has_registration_deadline_warning": false,
+    "has_partner_events": true
+  },
+  {
+    "name": "2019 Skate Austin Bluebonnet",
+    "icon": "/images/competition-icon4.png",
+    "start_date": "11/16",
+    "end_date": "11/17",
+    "is_qualifying": false,
+    "series": [
+      {
+        "name": "SDS"
+      }
+    ],
+    "city": "Shawnee",
+    "state": "KS",
+    "club": "Silver Blades FSC Inc. of Greater KC",
+    "user_registration_status": "registered",
+    "competition_registration_status": "open",
+    "has_registration_deadline_warning": false,
+    "has_partner_events": true
+  },
+  {
+    "name": "Future",
+    "icon": "/images/competition-icon.png",
+    "start_date": "11/16",
+    "end_date": "11/17",
+    "is_qualifying": false,
+    "series": [
+      {
+        "name": "SDS"
+      },
+      {
+        "name": "NQS"
+      },
+      {
+        "name": "Exel"
+      }
+    ],
+    "city": "Shawnee",
+    "state": "KS",
+    "club": "Silver Blades FSC Inc. of Greater KC",
+    "user_registration_status": "new",
+    "competition_registration_status": "future",
+    "has_registration_deadline_warning": false,
+    "has_partner_events": true
+  }
+]

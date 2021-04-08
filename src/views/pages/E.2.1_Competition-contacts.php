@@ -1,0 +1,1 @@
+<competition-contacts></competition-contacts>

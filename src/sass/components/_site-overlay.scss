@@ -1,0 +1,85 @@
+.site-overlay {
+  $c: #{&};
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: white;
+  height: 100vh;
+  @include z-index('site-overlay');
+
+  @include slideUpDown;
+  &--accent {
+    background-color: $gray-light;
+    &__standard-content {
+      background: white;
+    }
+  }
+  &--faded{
+    background-color: rgba($gray-light, .79);
+  }
+  &__header {
+    position: relative;
+    @include z-index('site-overlay-header');
+    height: $rendered-nav-height;
+    @extend .grid-container;
+    padding-top: $nav-pad-top;
+    .site-overlay--accent & {
+      background-color: white;
+    }
+    #{$c}--no-header > & {
+      display: none;
+    }
+  }
+  &__heading {
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1rem;
+    &--large {
+      margin: 0;
+      font-size: $font-size-page-title;
+      line-height: (31/26);
+      text-align: center;
+    }
+    .site-overlay--accent & {
+      padding-top: 2rem;
+    }
+  }
+  &__subheading {
+    color: $text-color;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0 0;
+  }
+  &__close {
+    margin-right: 5px;
+    display: block;
+    float: right;
+    margin-top: $nav-toggle-top-offset;
+  }
+  &__close-button {
+    @extend .nav-toggle;
+  }
+  &__content {
+    @include z-index('site-overlay');
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-top: $rendered-nav-height;
+    padding-top: 2rem;
+    .site-overlay--accent &,
+    &--no-top-pad {
+      padding-top: 0;
+    }
+    #{$c}--no-header > & {
+      margin-top: 0;
+    }
+  }
+}
+
+html.overlay-active {
+  @include lock-body;
+}

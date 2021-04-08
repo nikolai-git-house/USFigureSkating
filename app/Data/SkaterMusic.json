@@ -1,0 +1,72 @@
+{
+  "1": {
+    "1": {
+      "1": null
+    },
+    "2": {
+      "1": {
+        "id": 1,
+        "name": "Maid with the Flaxen Hair",
+        "has_been_played": true,
+        "file": {
+          "url": "/example-music/MaidWithTheFlaxenHair.mp3",
+          "id": 1
+        },
+        "copyrights": [
+          {
+            "title": "Copyright Title",
+            "artist": null,
+            "arrangement": null,
+            "record_label": null,
+            "duration_minutes": 2,
+            "duration_seconds": 50
+          }
+        ]
+      }
+    }
+  },
+  "2": {
+  },
+  "3": {
+    "1": {
+      "1": null
+    },
+    "2": {
+      "1": null
+    }
+  },
+  "6": {
+    "1": {
+      "1": null
+    },
+    "2": {
+      "1": null
+    }
+  },
+  "7": {
+    "1": {
+      "1": null
+    },
+    "2": {
+      "1": {
+        "id": 45,
+        "name": "Oh! By Jingo!",
+        "has_been_played": true,
+        "file": {
+          "url": "/example-music/All-Star_Trio_-_01_-_Oh_By_Jingo.mp3",
+          "id": 1
+        },
+        "copyrights": [
+          {
+            "title": "Copyright Title",
+            "artist": "Albert Von Tilzer",
+            "arrangement": "All-Star Trio",
+            "record_label": "Public Domain",
+            "duration_minutes": 4,
+            "duration_seconds": 0
+          }
+        ]
+      }
+    }
+  }
+}

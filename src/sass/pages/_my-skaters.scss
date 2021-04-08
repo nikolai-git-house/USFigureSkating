@@ -1,0 +1,25 @@
+.page-my-skaters {
+  .accordion__content {
+    padding-left: $accordion-trigger-padding-h * 2;
+  }
+  .my-skater-event:first-child {
+    padding-top: 0;
+  }
+}
+
+.my-skater-content {
+  padding-bottom: .7rem;
+  &__federation-letter {
+    line-height: 1;
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    margin: 0;
+    position: relative;
+    top: -1.8rem;
+    pointer-events: none;
+  }
+  &__events {
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+  }
+}

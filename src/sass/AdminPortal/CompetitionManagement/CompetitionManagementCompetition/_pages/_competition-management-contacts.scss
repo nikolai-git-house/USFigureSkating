@@ -1,0 +1,30 @@
+/**
+ * Wrapper page component for Competition Management Contacts
+ */
+.competition-management-contacts {
+  &--loaded {
+    background-color: $gray-light;
+  }
+  /**
+   * Block containing confirmation notice
+   */
+  &__confirmation {
+    @extend .grid-container;
+    &__container {
+      position: relative;
+    }
+    .session-feedback {
+      left: 0;
+      position: absolute;
+      top: -18px;
+      transform: translateY(-100%);
+      width: 100%;
+      &__content {
+        background-color: white;
+      }
+      &__text {
+        line-height: 1;
+      }
+    }
+  }
+}

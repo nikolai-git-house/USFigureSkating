@@ -1,0 +1,56 @@
+.checkout-steps {
+  background: white;
+  padding: 0 2rem;
+  border-radius: $border-radius-base;
+}
+
+.checkout-step {
+  padding: 2.8rem 0;
+  &:first-child {
+    padding-top: 2rem;
+  }
+  &--review {
+    &:not(.inactive) {
+      padding-bottom: 1.5rem;
+    }
+  }
+  &__heading {
+    margin: 0;
+    @include clearfix;
+    font-size: 2rem;
+    .inactive & {
+      color: $light-gray-text;
+    }
+  }
+  &__step-number {
+    border-right: solid 2px $divider-color;
+    padding-right: $checkout-step-label-pad;
+    display: block;
+    float: left;
+  }
+  &__step-name {
+    padding-left: $checkout-step-label-pad;
+    display: block;
+    float: left;
+  }
+  &__content {
+    padding-top: 2.2rem;
+  }
+  &__result {
+    padding: 1rem 0 1.2rem;
+    .checkout-step__actions {
+      padding-top: 2.5rem;
+    }
+  }
+  &__actions {
+    @include grid-row(15px);
+    .button {
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center;
+    }
+  }
+  + .checkout-step {
+    border-top: solid 1px $divider-color;
+  }
+}

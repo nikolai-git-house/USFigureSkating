@@ -1,0 +1,1 @@
+<competition-management-index></competition-management-index>

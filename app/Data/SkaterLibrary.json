@@ -1,0 +1,61 @@
+[
+  {
+    "id": 2,
+    "name": "Tiger Rag",
+    "has_been_played": true,
+    "file": {
+      "url": "/example-music/Friars_Society_Orchestra_-_Tiger_Rag.mp3",
+      "id": 1
+    },
+    "copyrights": [
+      {
+        "title": "Tiger Rag",
+        "artist": "Friars Society Orchestra",
+        "arrangement": "Friars Society Orchestra",
+        "record_label": null,
+        "duration_minutes": 0,
+        "duration_seconds": 39
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Tyrannosaurus",
+    "has_been_played": true,
+    "file": {
+      "url": "/example-music/TyrannosaurusRexRoar.mp3",
+      "id": 1
+    },
+    "copyrights": [
+      {
+        "title": "Tyrannosaurus Roar",
+        "artist": "CM 9380",
+        "arrangement": "Barnum Brown",
+        "record_label": "Field Museum of Natural History",
+        "duration_minutes": 0,
+        "duration_seconds": 2
+      }
+    ],
+    "is_assigned_to_program": false
+  },
+  {
+    "id": 4,
+    "name": "Who's Sorry Now?",
+    "has_been_played": true,
+    "file": {
+      "url": "/example-music/Memphis_Five_-_Whos_Sorry_Now.mp3",
+      "id": 1
+    },
+    "copyrights": [
+      {
+        "title": "Who's Sorry Now?",
+        "artist": "Memphis Five",
+        "arrangement": null,
+        "record_label": null,
+        "duration_minutes": 2,
+        "duration_seconds": 58
+      }
+    ],
+    "is_assigned_to_program": false
+  }
+]

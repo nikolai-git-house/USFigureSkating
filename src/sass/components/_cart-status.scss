@@ -1,0 +1,13 @@
+.cart-status {
+  display: block;
+  width: 28px;
+  height: 32px;
+  @extend .icon-cart;
+  background-position: center bottom;
+  text-align: center;
+  line-height: 1;
+  padding-left: 3px;
+  &, &:hover, &:active {
+    color: $alert-red;
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "abbreviations": [
+    {
+      "label": "OPI",
+      "value": "Official Practice Ice"
+    },
+    {
+      "label": "UPI",
+      "value": "Unofficial Practice Ice"
+    },
+    {
+      "label": "WU",
+      "value": "Warm Up"
+    }
+  ],
+  "color_key": [
+    {
+      "label": "Ladies/Girls",
+      "color": "#FF8FF3"
+    },
+    {
+      "label": "Combined",
+      "color": "#63035F"
+    },
+    {
+      "label": "Men/Boys",
+      "color": "#0072BC"
+    },
+    {
+      "label": "Synchro",
+      "color": "#F16B4E"
+    },
+    {
+      "label": "Pairs",
+      "color": "#3AB54B"
+    },
+    {
+      "label": "Resurface/other",
+      "color": "#8B8B8B"
+    },
+    {
+      "label": "Ice Dance",
+      "color": "#ECE413"
+    }
+  ]
+}

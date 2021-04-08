@@ -1,0 +1,28 @@
+/**
+ * Request component, containing general info and experience submodules
+ */
+.volunteer-opportunities-request {
+  padding-bottom: 4rem;
+  /**
+   * Consistent header for component
+   */
+  &__header {
+    padding-bottom: 3.5rem;
+  }
+  /**
+   * Content section of component
+   */
+  &__content {
+    padding-bottom: $page-padding-bottom;
+  }
+  /**
+   * Experience submodule
+   */
+  &__experience {
+    padding-top: 0.5rem;
+  }
+}
+
+@import "volunteer-request-general-information";
+@import "volunteer-request-general-information-form";
+@import "volunteer-request-experience-form";

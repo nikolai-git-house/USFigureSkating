@@ -1,0 +1,75 @@
+/**
+ * Competition Documents Component
+ */
+.competition-documents {
+  &__section {
+    padding: 0 0 2rem;
+    + #{&} {
+      border-top: solid 1px $divider-color;
+      padding-top: 2.5rem;
+    }
+    &:last-child {
+      padding-bottom: 0;
+    }
+  }
+  &__section-heading {
+    font-size: 1.6rem;
+    margin: 0 0 0.5rem;
+  }
+  &__section-lead {
+    color: $gray-37;
+    margin: 0.5rem 0;
+    font-weight: 300;
+    line-height: (18/14);
+  }
+  &__list {
+    $c: &;
+    list-style: none;
+    padding: 0;
+    &--action {
+      padding-top: 1rem;
+    }
+    &__item {
+      padding: 6px 0 7px;
+      &:last-child {
+        padding-bottom: 0;
+      }
+      #{$c}--reference & {
+        padding: 1rem 0;
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+  &__message {
+    margin-bottom: 0;
+  }
+}
+
+/**
+ * Action competition document element
+ */
+.action-competition-document {
+  &__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    &--information {
+      padding-right: 10px;
+    }
+    &--action {
+      padding: 1.2rem 0 1.2rem 1rem;
+    }
+  }
+  &__deadline {
+    margin: 0.3rem 0 0 2.1rem;
+    line-height: (22/14);
+  }
+  &__error {
+    font-size: 1.2rem;
+    text-align: right;
+  }
+}

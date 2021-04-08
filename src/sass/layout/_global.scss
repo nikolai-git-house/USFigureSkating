@@ -1,0 +1,39 @@
+.form-group + .button {
+  margin-top: 4rem;
+}
+
+.panel-link .competition-summary {
+  &__details-primary {
+    font-size: 1.4rem;
+  }
+}
+
+.download-schedule {
+  text-align: center;
+  margin: $content-pad-standard 0;
+  &__divider {
+    padding: 0 0.3rem;
+  }
+  &--competition-schedule {
+    @include clearfix;
+    > .info-link {
+      text-decoration: none;
+      user-select: none;
+      display: block;
+      float: left;
+    }
+  }
+}
+
+.inline-icon {
+  display: inline-block;
+  height: $font-size-base;
+  width: $font-size-base;
+  background-size: $font-size-base $font-size-base;
+  background-position: center center;
+  line-height: $line-height-base;
+  vertical-align: sub;
+  &.icon-comments {
+    background-size: contain;
+  }
+}

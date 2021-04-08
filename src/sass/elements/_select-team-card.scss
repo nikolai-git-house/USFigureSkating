@@ -1,0 +1,82 @@
+.select-team-card {
+  $card-floatpoint: 310px;
+  $card-flexpoint: 375px;
+
+  padding: 2.6rem 1.4rem 2.6rem 1.4rem;
+
+  &__title,
+  &__level {
+    margin: 0;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+  }
+
+  &__level {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+  }
+
+  &__data-list {
+    margin-top: 0.5rem;
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__cta {
+    margin-top: 2rem;
+
+    > .button {
+      padding: 0.5rem 0.5rem 0.1rem;
+    }
+  }
+
+  @media screen and (min-width: $card-floatpoint) and(max-width: $card-flexpoint - 1) {
+    &__cta {
+      margin-top: 0;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80px;
+
+      > .button {
+        margin-top: 3.5rem;
+
+        .select-team-card--no-level & {
+          margin-top: 0.5rem;
+        }
+
+      }
+
+      .member-result-notice {
+        left: 1.2rem;
+        position: relative;
+      }
+    }
+  }
+  @media screen and (min-width: $card-flexpoint) {
+    &__content {
+      align-items: center;
+      display: flex;
+    }
+
+    &__cta {
+      flex-basis: 80px;
+      margin: 0;
+      width: 80px;
+    }
+
+    &__data {
+      flex-grow: 1;
+    }
+  }
+
+  .member-result-notice {
+    a.member-result-notice__text {
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.music-song-editor {
+  .music-item {
+    padding-top: 0;
+    padding-bottom: 0;
+    .music-player {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      bottom: 0;
+      transform: translateY(50%);
+      &__time {
+        display: none;
+      }
+    }
+  }
+  &__upload-error-message {
+    color: $alert-red;
+    margin: 2rem 0 1rem;
+  }
+  &__play-notice {
+    font-size: 12px;
+    color: $light-gray-text;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateY(-100%);
+  }
+  .music-path-selection {
+    .button + .button {
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+.music-path-selection {
+  &__error {
+    margin: 1rem 0;
+  }
+}

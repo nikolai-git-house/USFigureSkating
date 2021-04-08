@@ -1,0 +1,10 @@
+.series-registration-index-page {
+
+  .panel-link {
+    padding-bottom: 2.4rem;
+
+    &:not(:first-child) {
+      padding-top: 2.4rem;
+    }
+  }
+}

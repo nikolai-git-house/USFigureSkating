@@ -1,0 +1,30 @@
+$nav-link-color: $link-color !default;
+.nav-list {
+  margin: 0;
+  list-style: none;
+  padding-left: 1rem;
+  font-size: 1.6rem;
+  > li {
+    &:not(:first-child) {
+      margin: 1.8rem 0;
+    }
+    > a {
+      &, &:hover, &:focus, &:active {
+        color: $nav-link-color;
+      }
+    }
+  }
+  &--small {
+    padding-left: 2.8rem;
+    font-size: 1.4rem;
+    > li:not(:first-child) {
+      margin: 1.5rem 0;
+    }
+  }
+  &__error {
+    color: $state-red;
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1;
+  }
+}

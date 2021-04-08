@@ -1,0 +1,2 @@
+export {default as CompetitionPortalPageHeading} from './CompetitionPortalPageHeading/CompetitionPortalPageHeading.vue';
+export {default as DataNavigationLink} from './DataNavigationLink/DataNavigationLink.vue';

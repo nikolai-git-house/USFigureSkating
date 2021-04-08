@@ -1,0 +1,8 @@
+.admin-portal-page-heading {
+  padding-top: $back-page-heading-pad-top;
+  &__page-title {
+    @extend .admin-portal-primary-heading;
+    text-align: center;
+    margin-top: $back-page-heading-title-margin-top;
+  }
+}

@@ -1,0 +1,101 @@
+.entity-check-in-roster-skater-info {
+  padding-bottom: 8rem;
+  /**
+   * Close button block
+   */
+  &__close {
+    margin-top: 12.5rem;
+  }
+  /**
+   * Primary summary info block
+   */
+  &__summary {
+    border-bottom: solid 1px $divider-color;
+    display: flex;
+    padding-bottom: 1.8rem;
+    &__icon {
+      margin-right: 8px;
+      .icon-status-primary {
+        height: 25px;
+        width: 25px;
+      }
+    }
+    &__name {
+      color: $USFSA-blue;
+      font-size: 1.8rem;
+      line-height: (22/18);
+      margin-left: 3px;
+    }
+    &__data {
+      display: flex;
+      list-style: none;
+      margin: 0.5rem 0 0;
+      padding: 0;
+      &__datum {
+        &:first-child {
+          margin-right: 2rem;
+        }
+      }
+    }
+  }
+  /**
+   * Body containing requirements and compliance information
+   */
+  &__body {
+    &__section {
+      &__summary {
+        color: $text-color;
+        font-size: 1.6rem;
+        line-height: (24/16);
+        margin: 0;
+        padding-left: 2.2rem;
+        padding-top: 0.1rem;
+        position: relative;
+        &:before {
+          @include pseudo;
+          @extend .icon-status-check;
+          background-size: contain;
+          background-position: left center;
+          height: 100%;
+          left: 0;
+          top: 0;
+          width: 17px;
+        }
+        &--no {
+          &:before {
+            @extend .icon-status-x;
+            left: 3px;
+            width: 13px;
+          }
+        }
+      }
+      &__list {
+        line-height: (24/14);
+        list-style: none;
+        margin: 1rem 0 0 2.5rem;
+        padding: 0;
+      }
+      #{&} + & {
+        margin-top: 5rem;
+      }
+    }
+    &__item {
+      background-position: left center;
+      padding-left: 1.8rem;
+      &--complete {
+        @extend .icon-status-check;
+        background-size: 14px 11px;
+      }
+      &--incomplete {
+        @extend .icon-status-x;
+        background-size: 12px 12px;
+      }
+      &__value {
+        color: $light-gray-text;
+        &--error {
+          color: $error-message-text-color;
+        }
+      }
+    }
+  }
+}

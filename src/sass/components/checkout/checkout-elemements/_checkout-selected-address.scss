@@ -1,0 +1,20 @@
+.selected-address {
+  address {
+    span {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  }
+}
+
+.selected-address-actions {
+  padding-right: $checkout-input-column-width;
+  &__reactivate {
+    @include grid-column(71%, 15px);
+  }
+  &__edit {
+    @include grid-column(27%, 15px);
+
+  }
+}

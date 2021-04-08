@@ -1,0 +1,47 @@
+.competition-roster-page-key {
+  &__list {
+    @include list-reset;
+    line-height: (22/14);
+    margin-top: 1rem;
+    padding-right: 0.8rem;
+
+    &__item {
+      margin-top: 1rem;
+      min-height: 2.7rem;
+      padding-left: 37px;
+      position: relative;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:before {
+        @include pseudo;
+        background-size: contain;
+        height: 27px;
+        left: 0;
+        top: 2px;
+        width: 27px;
+      }
+
+      &--complete {
+        &:before {
+          @extend .icon-status-primary-success;
+        }
+      }
+
+      &--incomplete {
+        &:before {
+          @extend .icon-status-primary-error;
+        }
+      }
+
+      &--ineligible {
+        &:before {
+          top: 4px;
+          @extend .icon-alert-red;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.competition-user-navigation {
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &--no-bottom-border & {
+    &__list {
+      > li:last-child {
+        .panel-link,
+        .data-navigation-link {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}

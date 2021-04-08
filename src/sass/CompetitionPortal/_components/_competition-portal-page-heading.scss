@@ -1,0 +1,56 @@
+/**
+ * Primary Component
+ */
+$competition-portal-heading-divider-color: $gray-80;
+.competition-portal-page-heading {
+  background: $gray-light;
+}
+
+/**
+ * Competition Heading Overrides within Primary Component
+ */
+.competition-page-heading {
+  $self: &;
+
+  @at-root .competition-portal-page-heading {
+    #{$self} {
+      &__secondary {
+        border-color: $competition-portal-heading-divider-color;
+      }
+    }
+
+    &--with-entity {
+      #{$self} {
+        padding-bottom: 0;
+
+        &__secondary {
+          border-top: none;
+          margin-top: 0.5rem;
+          padding-top: 0;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Entity Heading Overrides within Primary Component
+ */
+.page-entity-header {
+  $self: &;
+
+  @at-root .competition-portal-page-heading .competition-page-heading {
+    + #{$self} {
+      margin-top: 0.7rem;
+      padding-bottom: 1.2rem;
+
+      &--compliance-only {
+        padding-bottom: 0.3rem;
+      }
+
+      #{$self}__content {
+        border-top: solid 1px $competition-portal-heading-divider-color;
+      }
+    }
+  }
+}

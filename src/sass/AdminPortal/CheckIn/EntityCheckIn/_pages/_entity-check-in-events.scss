@@ -1,0 +1,32 @@
+.entity-check-in-events {
+  padding-bottom: 5rem;
+  /**
+   * Wrapping element for each event. Contains sub-segments
+   */
+  &__event-type {
+    &__name {
+      font-size: 1.6rem;
+      margin-top: 0;
+      padding-left: 0.4rem;
+    }
+    + #{&} {
+      margin-top: 4.2rem;
+    }
+  }
+  /**
+   * Override accordion within page
+   */
+  .accordion {
+    &__trigger {
+      padding-bottom: 1.8rem;
+      padding-left: 0;
+      padding-top: 2rem;
+      &:after {
+        right: 23px;
+      }
+    }
+    &__content {
+      padding: 0 0 2rem 2rem;
+    }
+  }
+}

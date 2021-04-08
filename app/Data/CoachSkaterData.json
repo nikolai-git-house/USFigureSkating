@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "first_name": "Ella",
+    "last_name": "Kumela",
+    "federation_letter_status": false,
+    "events": [
+      {
+        "name": "Junior Men",
+        "coaching_role": "First Coach",
+        "music_complete": false,
+        "music_required": true,
+        "ppc_complete": true,
+        "ppc_required": true
+      },
+      {
+        "name": "Intermediate Ladies Singles",
+        "coaching_role": "Third Coach",
+        "music_complete": true,
+        "music_required": true,
+        "ppc_complete": false,
+        "ppc_required": true
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "first_name": "Brian",
+    "last_name": "Salazara",
+    "federation_letter_status": "Approved",
+    "events": [
+      {
+        "name": "Senior Mens",
+        "coaching_role": "Third Coach",
+        "music_complete": false,
+        "music_required": true,
+        "ppc_complete": false,
+        "ppc_required": true
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "first_name": "Alden",
+    "last_name": "Salazar",
+    "federation_letter_status": "Approved",
+    "events": [
+      {
+        "name": "Senior Mens",
+        "coaching_role": "Third Coach",
+        "music_complete": false,
+        "music_required": true,
+        "ppc_complete": false,
+        "ppc_required": true
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "first_name": "Blake",
+    "last_name": "Eisenach",
+    "federation_letter_status": "N/A",
+    "events": [
+      {
+        "name": "Junior Men",
+        "coaching_role": "First Coach",
+        "music_complete": true,
+        "music_required": true,
+        "ppc_complete": true,
+        "ppc_required": true
+      },
+      {
+        "name": "Intermediate Ladies Singles",
+        "coaching_role": "Third Coach",
+        "music_complete": true,
+        "music_required": true,
+        "ppc_complete": false,
+        "ppc_required": true
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "first_name": "Alexandra",
+    "last_name": "Rogers",
+    "federation_letter_status": "Pending",
+    "events": [
+      {
+        "name": "Senior Ladies",
+        "coaching_role": "First Coach",
+        "music_complete": true,
+        "music_required": true,
+        "ppc_complete": true,
+        "ppc_required": true
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "first_name": "Anastasia",
+    "last_name": "Stefanovich",
+    "federation_letter_status": false,
+    "events": [
+      {
+        "name": "Senior Ladies",
+        "coaching_role": "First Coach",
+        "music_complete": false,
+        "music_required": false,
+        "ppc_complete": false,
+        "ppc_required": false
+      }
+    ]
+  }
+]

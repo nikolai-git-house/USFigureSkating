@@ -1,0 +1,45 @@
+.team-registration-roster-card {
+  background-color: white;
+  padding: 1.1rem 0.7rem 0.7rem 1.8rem;
+
+  &__text {
+    margin: 0;
+
+    &__primary {
+      line-height: $line-height-standard;
+    }
+
+    &--secondary {
+      color: $light-gray-text;
+      font-size: 1.2rem;
+      line-height: (19/12);
+      margin-left: 1.5rem;
+      margin-top: -3px;
+    }
+  }
+
+  &__content {
+    align-items: center;
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-between;
+    min-height: 53px;
+
+    &__error {
+      flex-basis: 75px;
+      flex-grow: 0;
+      flex-shrink: 0;
+      margin-left: 1rem;
+      text-align: center;
+      width: 75px;
+    }
+  }
+
+  .member-result-notice {
+    padding: 0;
+
+    &__text {
+      display: block;
+    }
+  }
+}

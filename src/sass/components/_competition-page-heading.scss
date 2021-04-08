@@ -1,0 +1,62 @@
+.competition-page-heading {
+  background: $gray-light;
+  padding: 2.5rem 0 1rem;
+  position: relative;
+  /**
+   * Primary content
+   */
+  &__primary {
+    align-items: center;
+    display: flex;
+    padding-bottom: 0.5rem;
+    &__icon {
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding-right: 27px;
+      width: 80px + 27px;
+      > img {
+        display: block;
+        width: 100%;
+      }
+    }
+    &__details {
+      flex-basis: auto;
+    }
+  }
+  /**
+   * Secondary content
+   */
+  &__secondary {
+    border-top: solid 1px $divider-color;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+  /**
+   * Link set
+   */
+  &__links {
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: space-between;
+  }
+  /**
+   * Competition name block
+   */
+  &__competition-name {
+    color: $text-color;
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: percentage(18/16);
+    margin: 0;
+  }
+  /**
+   * Block containing competition info
+   */
+  &__competition-info {
+    color: $text-color;
+    font-size: 1.2rem;
+    font-weight: normal;
+    line-height: (14/12);
+    margin: 1rem 0 0;
+  }
+}

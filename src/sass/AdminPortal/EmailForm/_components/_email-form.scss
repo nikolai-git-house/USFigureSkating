@@ -1,0 +1,17 @@
+.email-form {
+  &__page-title {
+    background-color: white;
+    padding-bottom: 3rem;
+    padding-top: 4rem;
+    text-align: center;
+    &__text {
+      @extend .admin-portal-primary-heading;
+      margin: 0;
+    }
+    &__lead {
+      @extend .admin-portal-lead;
+      margin: 1rem auto 0;
+      max-width: 230px;
+    }
+  }
+}

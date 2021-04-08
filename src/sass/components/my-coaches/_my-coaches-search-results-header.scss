@@ -1,0 +1,51 @@
+$my-coaches-search-results-header-floatpoint: 300px;
+
+.my-coaches-search-results-header,
+.member-search-results-header,
+.search-results-header {
+  position: relative;
+  padding: 1.5rem 0;
+  &__per-page {
+    margin-top: 1.5rem;
+    select.form-field {
+      padding: 0 2.5rem;
+      border-color: $gray-med;
+    }
+    .appearance & select.form-field {
+      background-position: calc(100% - 12px) center;
+    }
+  }
+  &__result-description {
+    margin: 0;
+    line-height: 1;
+  }
+  &__edit-link {
+    margin-top: 17px;
+    display: inline-block;
+  }
+  &__result-span, &__result-count {
+    color: $USFSA-blue;
+  }
+
+  @media screen and (min-width: $my-coaches-search-results-header-floatpoint) {
+    @include grid-row(0);
+    &__summary {
+      @include grid-column(72%, 0);
+    }
+    &__per-page {
+      margin-top: 0;
+      @include grid-column(28%, 0);
+    }
+    @include flex-compatible {
+      &__summary {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: $input-height;
+      }
+      &__edit-link {
+        margin-top: 0;
+      }
+    }
+  }
+}

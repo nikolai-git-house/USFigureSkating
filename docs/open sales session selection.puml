@@ -1,0 +1,95 @@
+@startuml
+
+title Open Sales Session Selection\n
+start
+:Check State of Session;
+
+if(Session Is In Cart?) then (yes)
+	:Remove Session From Cart;
+	#RED:2. Session Removed From Cart|
+	stop
+elseif (Session Is In Schedule?) then (yes)
+	:Get Skater Selectable Types from Competition Configuration;
+	if(Is Session Skater Selectable?) then (yes)
+		#RED:4. Confirm Remove from Schedule|
+		if(Confirmed?) then (yes)
+			: Remove Session From Schedule.  Refund 1 Session Type Credit;
+			#ORANGE:X. Session Removed from Schedule|
+			stop
+		else (no)
+			end
+		endif
+	else (no)
+		#RED:5. This Can Only be Removed by Admin|
+		end
+	endif
+else (no)
+	:Session is Neither Scheduled nor In Cart}
+	:Get User-Registered Events and Events Tied to Session;
+	if(Do User and Session Share Events?) then (yes)
+		if(Do they share more than 1?) then (no)
+			:Use 1 Shared Event;
+			#EFEFEF:__Shared Event__ ]
+		else (yes)
+			#RED:8. Add to Which Event?|
+			#EFEFEF:__Selected Event__ ]
+		endif
+		:Event Established}
+		:Get Session's Types and Competition's Skater Selectable Types;
+		if(Is There Any Overlap?) then (no)
+			#RED:3. Can't Schedule Type: Purchase <Session Credit Type>|
+			end
+		else (yes)
+			if(Session has Single Type)
+				:Use Session's Type;
+				#EFEFEF:__Session Type__ ]
+			elseif(Single Point of Overlap?) then (yes)
+				#RED:10. Confirm <Session Type> or Close|
+					if(Confirmed?) then (yes)
+						#EFEFEF:__Confirmed Session Type__ ]
+					else (no)
+						end
+					endif
+			else (no)
+				#RED:9. Choose Session Type|
+				#EFEFEF:__Selected Session Type__ ]
+
+			endif
+			:Session Type Established}
+			:Get Event Limits for Selected Type;
+			note right
+				There is potential to flatten this logic and move this into session type determination
+				Move this section up after determining that session is skater selectable, and use in determination of overlap length.
+			end note
+			if(Limit Exceeded?) then (no)
+
+			else (yes)
+				#RED:7.You Have reached max <Session Type>|
+				end
+			endif
+			:Session Event, Type, and Skater Ability to Add Established}
+		endif
+	else (no)
+		#Red:6. Not Eligible|
+		end;
+	endif
+endif
+:Get Skater's Available Credits for the Event;
+if(Skater has Credit of Type for Event?) then (yes)
+	:Add Session to Schedule;
+	#GREEN:1.Added to Schedule|
+	stop
+else (no)
+	:Add Session to Cart;
+	#GREEN:X.1 Added to Cart |
+	stop
+endif
+
+
+
+
+
+
+
+
+@enduml

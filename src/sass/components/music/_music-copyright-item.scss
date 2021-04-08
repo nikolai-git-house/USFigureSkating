@@ -1,0 +1,63 @@
+.music-copyright {
+  //Element Style
+  padding: 2.5rem 0 2.2rem;
+  position: relative;
+  &__content {
+    @include grid-row($music-item-gutter-width, true);
+    @include flex-compatible {
+      align-items: center;
+    }
+  }
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: $element-overlay-background;
+    z-index: 1;
+    padding: $music-item-padding-v $music-item-padding-h-r $music-item-padding-v 0;
+    @include flex-compatible {
+      padding: 0 $music-item-padding-h-r 0 0;
+    }
+  }
+  //Layout
+
+  &__data {
+    position: relative;
+    @include grid-column(calc(100% - #{$music-item-actions-width}), $music-item-gutter-width, true);
+    &--editor-active {
+      align-self: flex-start;
+    }
+  }
+  &__actions {
+    @include grid-column($music-item-actions-width, $music-item-gutter-width, true);
+    z-index: 2;
+    align-self: flex-start;
+    .icon-button {
+      position: relative;
+      top: #{-1 * $icon-button-padding / 2};
+      right: -1.5rem;
+    }
+  }
+  &__list-item {
+    &--incomplete {
+      color: $alert-red;
+    }
+  }
+  .action-overlay {
+    height: 100%;
+    padding-top: 0.5rem;
+  }
+}
+
+.music-copyright-list {
+  .music-copyright {
+    &:first-child {
+      padding-top: 0;
+    }
+    + .music-copyright {
+      border-top: solid 1px $divider-color;
+    }
+  }
+}

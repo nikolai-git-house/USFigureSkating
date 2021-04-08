@@ -1,0 +1,104 @@
+{
+  "shift_selection": {
+    "actions": {
+      "request": {
+        "visible": false,
+        "enabled": false
+      },
+      "select_shifts": {
+        "visible": true,
+        "enabled": true,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "phase_message": {
+      "text": "Your request has been approved, now select shifts",
+      "type": "success"
+    }
+  },
+  "default": {
+    "actions": {
+      "request": {
+        "visible": true,
+        "enabled": true
+      },
+      "select_shifts": {
+        "visible": false,
+        "enabled": false,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "phase_message": {
+      "text": "Tap request to select volunteer opportunities",
+      "type": "default"
+    }
+  },
+  "coming_soon": {
+    "actions": {
+      "request": {
+        "visible": true,
+        "enabled": false
+      },
+      "select_shifts": {
+        "visible": false,
+        "enabled": false,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "phase_message": {
+      "text": "Volunteer opportunities coming soon",
+      "type": "default"
+    }
+  },
+  "pending_approval": {
+    "actions": {
+      "request": {
+        "visible": false,
+        "enabled": false
+      },
+      "select_shifts": {
+        "visible": false,
+        "enabled": false,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "status_message": {
+      "text": "Volunteer Shift pending approval",
+      "type_key": "warning"
+    }
+  },
+  "request_pending_approval": {
+    "actions": {
+      "request": {
+        "visible": false,
+        "enabled": false
+      },
+      "select_shifts": {
+        "visible": true,
+        "enabled": false,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "phase_message": {
+      "text": "Volunteer request pending approval",
+      "type_key": "default"
+    }
+  },
+  "denied": {
+    "actions": {
+      "request": {
+        "visible": false,
+        "enabled": false
+      },
+      "select_shifts": {
+        "visible": false,
+        "enabled": false,
+        "url": "https://placehold.it/500x500&text=Shift+Selection"
+      }
+    },
+    "status_message": {
+      "text": "Volunteer request not approved",
+      "type_key": "alert"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.cart-summary {
+  &__footer {
+    padding: 2rem 2rem;
+    font-size: 1.8rem;
+    &__item {
+      @include clearfix;
+      &--small {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin: 0.5rem 0;
+      }
+      &:not(&--small) {
+        margin: 1.7rem 0;
+      }
+    }
+    &__label {
+      display: block;
+      float: left;
+      text-transform: uppercase;
+    }
+    &__value {
+      display: block;
+      float: right;
+    }
+  }
+  &__total-cost {
+    color: $USFSA-blue;
+  }
+  .cart-item + .cart-item {
+    margin-top: 1.5rem;
+  }
+  &--list {
+    .cart-item {
+      &__info {
+        padding: 1.2rem 0;
+      }
+      &--fee {
+        .cart-item__info {
+          padding: 2rem 0;
+        }
+      }
+    }
+    .cart-summary__footer {
+      padding-left: 0;
+      padding-right: 0;
+      border-top: solid 1px $divider-color;
+    }
+    .cart-item {
+      + .cart-item {
+        margin-top: 0;
+        border-top: solid 1px $divider-color;
+        //padding-top: 0.5rem;
+
+      }
+    }
+  }
+}
+
+.cart-overview {
+  text-align: center;
+  margin: $content-pad-standard 0;
+  &__total-cost {
+    color: $USFSA-blue;
+  }
+}

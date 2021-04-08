@@ -1,0 +1,19 @@
+.sales-window {
+  margin-top: 1.5rem;
+  dd {
+    margin: 0 0 0.5rem;
+    color: $light-gray-text;
+  }
+  &--open {
+    &, dd {
+      color: $USFSA-blue;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+  + .sales-window {
+    margin-top: 3rem;
+  }
+}

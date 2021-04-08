@@ -1,0 +1,153 @@
+//
+// Element Styles
+//
+.ppc-element-summary {
+  line-height: $ppc-element-summary-height;
+  border-bottom: solid 1px $gray-light;
+  &__number {
+    text-align: center;
+    .ppc-element-summary__value {
+      font-size: 2.2rem;
+      color: $USFSA-blue;
+    }
+  }
+  &__code {
+    border-left: solid 1px $gray-light;
+    .ppc-element-summary__value {
+      padding: $ppc-element-code-padding-v $ppc-element-code-padding-h;
+    }
+  }
+  /**
+   * 2020-07-13
+   */
+  &__transition-summary {
+    align-items: center;
+    display: flex;
+    margin-left: -0.2rem; // design comp alignment
+
+    @media screen and (min-width:$ppc-element-floatpoint){
+      margin-right: -1.8rem; // offset padding for specific element
+    }
+
+    &__summary {
+      line-height: (15/14);
+      margin: -0.5rem 0 -0.5rem 1.8rem; // reduce v padding and add left offset
+      word-break: break-word; // where absolutely necessary, force wrapping
+    }
+  }
+
+  &__value {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: $line-height-base;
+  }
+  &__actions {
+    border-top: solid 1px $gray-light;
+    text-align: center;
+    line-height: 1;
+    @media screen and (min-width: $ppc-element-floatpoint) {
+      border-top: none;
+      line-height: $ppc-element-summary-height;
+      text-align: right;
+    }
+    button {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  &__reorder {
+    &-item {
+      border-left: solid 1px #ecedee;
+      text-align: center;
+      height: 100%;
+      .icon-button {
+        background-size: 13px 8px;
+      }
+    }
+  }
+}
+
+//
+// Foundation Layout
+//
+.ppc-element-summary {
+  @include grid-row(0, true);
+  @include flex-compatible {
+    @include remove-clearfix;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__number {
+    @include grid-column($ppc-element-number-column-width, 0, true);
+    @include flex-compatible {
+      flex-shrink: 0;
+    }
+  }
+  &__code {
+    @include grid-column(calc(100% - #{$ppc-element-number-column-width}), 0, true);
+  }
+  &__actions {
+    clear: both;
+    @include flex-compatible {
+      flex-grow: 1;
+    }
+    .ppc-element--reorder & {
+      @include flex-compatible {
+        align-self: stretch;
+      }
+    }
+  }
+  &__reorder {
+    @include grid-row(0, true);
+    &-item {
+      @include grid-column(50%, 0, true);
+    }
+    @include flex-compatible {
+      height: 100%;
+      &-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// Floating Layout
+@media screen and (min-width: $ppc-element-floatpoint) {
+  .ppc-element-summary {
+    @include flex-compatible {
+      flex-wrap: nowrap;
+    }
+    &__code {
+      @include grid-column(calc(100% - #{$ppc-element-number-column-width} - #{$ppc-element-action-column-width}), 0, true);
+    }
+    &__actions {
+      clear: none;
+      @include grid-column($ppc-element-action-column-width, 0, true);
+      @include flex-compatible {
+        flex-grow: 0;
+        flex-shrink: 0;
+      }
+    }
+    &__standard-actions {
+      &:not(&--read-only) {
+        @include flex-compatible {
+          display: flex;
+          align-items: center;
+        }
+      }
+      &--read-only {
+        padding-right: 1rem;
+      }
+    }
+    .ppc-element--reorder & {
+      &__code {
+        @include grid-column(calc(100% - #{$ppc-element-number-column-width} - #{$ppc-element-action-column-width--reorder}), 0, true);
+      }
+      &__actions {
+        @include grid-column($ppc-element-action-column-width--reorder, 0, true);
+      }
+    }
+  }
+}

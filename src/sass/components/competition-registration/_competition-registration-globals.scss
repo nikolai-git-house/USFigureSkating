@@ -1,0 +1,83 @@
+/**
+ * General Layout Elements
+ */
+.competition-registration {
+  &__progress-bar {
+    padding: 2.4rem 5rem 0 4.4rem;
+  }
+  &__screen-content {
+    padding-top: 2rem;
+    &--waivers {
+      padding: 1rem 0 0;
+      min-height: 285px;
+      .competition-registration-actions {
+        padding-top: 0;
+      }
+    }
+  }
+  &__screen-intro {
+    margin: 0;
+    line-height: 1.75;
+  }
+  &__help-intro {
+    display: flex;
+    justify-content: space-between;
+    &__help {
+      text-align: right;
+      .icon-button {
+        padding: 5px;
+        margin-right: 5px;
+      }
+    }
+    .competition-registration__screen-intro {
+      width: calc(100% - 70px);
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    .info-link {
+      text-decoration: none;
+      display: block;
+    }
+  }
+}
+
+/**
+ * Block with terms, a checkbox and an associated description
+ */
+.competition-registration-terms {
+  margin-top: 2.5rem;
+  .page-competition-registration-coaches & {
+    margin-top: 1.5rem;
+  }
+  &__description {
+    margin: 0;
+    line-height: 24px;
+  }
+  &__confirm {
+    margin-top: 2.5rem;
+    .page-competition-registration-coaches & {
+      margin-top: 0;
+    }
+  }
+  &__interrupt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+/**
+ * Actions block (continue/cancel)
+ */
+.competition-registration-actions {
+  padding-top: 1.4rem;
+  .button--info:not(:hover):not(:focus):not(.focus) {
+    background-color: transparent;
+  }
+  .notice {
+    color: $light-gray-text;
+  }
+}

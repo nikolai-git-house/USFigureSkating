@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Singles",
+    "cost": 30,
+    "description_lines": [
+      "Senior Ladies Combined",
+      "NQ-SERIES APPLICATION FEE"
+    ],
+    "cart_item_type_key": "series_registration_fee",
+    "id": 1
+  },
+  {
+    "name": "Dance",
+    "cost": 35,
+    "description_lines": [
+      "Juvenile Combined Dance",
+      "NQ-SERIES APPLICATION FEE"
+    ],
+    "cart_item_type_key": "series_registration_fee",
+    "id": 2
+  }
+]

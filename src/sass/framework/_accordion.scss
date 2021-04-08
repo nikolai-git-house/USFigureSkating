@@ -1,0 +1,54 @@
+$accordion-content-border-color: #ccc !default;
+$accordion-default-margin-v: 0 !default;
+$accordion-content-pad-v: 1.5rem !default;
+$accordion-content-pad-h: 0 !default;
+$accordion-padding-v: .5rem !default;
+$accordion-content-pad-top: $accordion-padding-v !default;
+$accordion-content-pad-bottom: $accordion-padding-v !default;
+$accordion-trigger-padding-v: 2rem !default;
+$accordion-trigger-padding-h: .5rem !default;
+$accordion-trigger-icon-width: .8rem !default;
+$accordion-trigger-text-color: #333 !default;
+$accordion-trigger-icon-height: 1.2rem !default;
+$accordion-trigger-font-size: 2rem !default;
+.accordion {
+  margin: $accordion-default-margin-v 0 0;
+  &__trigger {
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: $accordion-trigger-text-color;
+    @include clearfix;
+    position: relative;
+    touch-action: manipulation;
+    &, &[type="button"] {
+      border-top: solid 1px $accordion-content-border-color;
+      border-bottom: solid 1px $accordion-content-border-color;
+      font-size: $accordion-trigger-font-size;
+      display: block;
+      width: 100%;
+      text-align: left;
+      cursor: pointer;
+      padding: $accordion-trigger-padding-v #{$accordion-trigger-padding-h + $accordion-trigger-icon-width} $accordion-trigger-padding-v $accordion-trigger-padding-h;
+    }
+    &:after {
+      @include pseudo;
+      width: $accordion-trigger-icon-width;
+      height: $accordion-trigger-icon-height;
+      @extend .icon-accordion-open;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      transform-style: preserve-3d;
+      .expanded & {
+        @extend .icon-accordion-close;
+      }
+    }
+  }
+  &__content {
+    padding: $accordion-content-pad-top $accordion-content-pad-h $accordion-content-pad-bottom;
+    .expanded & {
+      border-bottom: solid 1px $accordion-content-border-color;
+    }
+  }
+}

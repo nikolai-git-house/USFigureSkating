@@ -1,0 +1,37 @@
+.user-profile-display {
+  background: white;
+  padding: 0 2.6rem 0 1.6rem;
+  &__section {
+    padding: 3rem 0 2em;
+    + #{&} {
+      border-top: solid 1px $divider-color;
+    }
+  }
+  &__section-heading {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &__text {
+      font-size: 1.6rem;
+      line-height: (18/16);
+      color: $text-color;
+      margin: 0;
+      &--primary {
+        color: $USFSA-blue;
+        font-size: 1.8rem;
+        line-height: (21/18);
+      }
+    }
+    &__edit {
+      line-height: (18/16);
+      margin-left: 1.3rem;
+      .icon-button {
+        display: block;
+      }
+    }
+  }
+  &__data {
+    padding-top: 1rem;
+    line-height: (25/14);
+  }
+}

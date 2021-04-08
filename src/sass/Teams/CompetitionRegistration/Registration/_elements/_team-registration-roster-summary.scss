@@ -1,0 +1,63 @@
+.team-registration-roster-summary {
+  &__row {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &__label {
+    font-size: 1.6rem;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  &__count {
+    display: block;
+    margin: 0 0.3rem;
+
+    .count-badge {
+      border: solid 1px $blue-light-alt2;
+      display: block;
+      height: 21px;
+      width: 21px;
+
+      &--invalid {
+        background-color: $alert-red;
+        border-color: $alert-red;
+      }
+
+      &--incomplete {
+        background-color: transparent;
+        border: solid 1px;
+        border-color: $alert-red;
+        color: $alert-red;
+      }
+
+      &__content {
+        line-height: 21px;
+        position: relative;
+        top: -1px;
+        @include not-ms {
+          top: 0;
+        }
+      }
+    }
+  }
+
+  &__message {
+    line-height: $line-height-standard;
+    margin: 0;
+  }
+
+  &__secondary {
+    color: $USFSA-blue;
+    font-size: 1.4rem;
+    line-height: $line-height-standard;
+    margin: 0.8rem 0 0;
+  }
+
+  &__fee {
+    color: $USFSA-blue;
+  }
+}

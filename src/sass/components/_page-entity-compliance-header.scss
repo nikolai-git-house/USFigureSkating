@@ -1,0 +1,55 @@
+.page-entity-compliance-header {
+  $c: &;
+
+  &__summary {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__status {
+    color: $medium-gray-text;
+    font-size: 1.2rem;
+    margin: 0;
+
+    > a {
+      text-decoration: underline;
+    }
+  }
+
+  &__expand-content {
+    padding: 1.3rem 0 0;
+
+    .status-summary {
+      &__heading {
+        color: $medium-gray-text;
+      }
+
+      &__item {
+        &__name {
+          color: $medium-gray-text;
+        }
+      }
+
+      &__list {
+        &__item {
+          padding-bottom: 0.6rem;
+          padding-top: 0.5rem;
+        }
+      }
+
+      + .status-summary {
+        margin-top: 1.5rem;
+      }
+
+    }
+  }
+
+  &--multirole {
+    #{$c} {
+      &__expand-content {
+        padding: 2rem 0 0.2rem 0.3rem;
+      }
+    }
+  }
+}

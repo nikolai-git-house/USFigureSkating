@@ -1,0 +1,38 @@
+[
+  {
+    "config": {
+      "title": "Nonqualifying",
+      "column_names": [
+        "Category",
+        "Price"
+      ],
+      "null_row_message": "Not offered at this competition"
+    },
+    "rows": [
+      {
+        "label": "Synchro",
+        "values": [
+          300
+        ]
+      }
+    ]
+  },
+  {
+    "config": {
+      "title": "Qualifying",
+      "column_names": [
+        "Category",
+        "Price"
+      ],
+      "null_row_message": "Not offered at this competition"
+    },
+    "rows": [
+      {
+        "label": "Synchro",
+        "values": [
+          300
+        ]
+      }
+    ]
+  }
+]

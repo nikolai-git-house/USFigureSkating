@@ -1,0 +1,44 @@
+[
+  {
+    "label": "Registration",
+    "subtypes": []
+  },
+  {
+    "label": "Skater Portal",
+    "subtypes": [
+      "Music Upload",
+      "PPC Submission",
+      "My Coaches",
+      "Practice Ice",
+      "Other"
+    ]
+  },
+  {
+    "label": "Coach Portal",
+    "subtypes": [
+      "My Skaters",
+      "Personal Schedule",
+      "Other"
+    ]
+  },
+  {
+    "label": "Competition Admin Portal",
+    "subtypes": [
+      "Coaches (List & Compliance)",
+      "Competition Setup",
+      "Emails",
+      "Financial Budget & Reports",
+      "Music Download",
+      "Officials Management",
+      "Practice Ice",
+      "Practice Ice Configuration",
+      "Reports",
+      "Volunteer Management",
+      "Volunteer Management Configuration"
+    ]
+  },
+  {
+    "label": "Other",
+    "subtypes": []
+  }
+]

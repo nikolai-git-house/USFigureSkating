@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 25 27" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons/Messages/No-messages" transform="translate(0 -8)">
+            <g id="Group-2" transform="translate(0 8)">
+                <path d="M24.5 19.8637363v6.9832571C24.5 26.9314966 24.4314966 27 24.3469934 27c-.0990471 0-.1951462-.0337029-.2724968-.0955674l-7.5528226-6.0406963H1c-.55228475 0-1-.4477152-1-1V1.16666667c0-.55228475.44771525-1 1-1h22.5c.5522847 0 1 .44771525 1 1V19.8637363z" id="Combined-Shape" fill="#2599F2"/>
+                <path d="M5.25 6.58333333h14.4168712" id="Line-2" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5.25 11.25h14.4168712" id="Line-2-Copy" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M5.25 15.9166667h14.4168712" id="Line-2-Copy-2" stroke="#FFF" stroke-width="2" stroke-linecap="round"/>
+            </g>
+        </g>
+    </g>
+</svg>

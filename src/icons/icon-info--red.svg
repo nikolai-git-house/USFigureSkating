@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <title>icon-info</title>
+    <rect x="9" y="5" width="2" height="2" style="fill:#E31F2E"/>
+    <rect x="9" y="9" width="2" height="6" style="fill:#E31F2E"/>
+    <path d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,10,18Z" style="fill:#E31F2E"/>
+</svg>

@@ -1,0 +1,1 @@
+<my-teams-page></my-teams-page>

@@ -1,0 +1,44 @@
+{
+  "1": {
+    "name": "<CurrentYear> Test Competition",
+    "icon": "/images/2018-MW-Adult.png",
+    "location": {
+      "city": "New York",
+      "state": "NY"
+    },
+    "directions": [
+      {
+        "location_name": "Great Park Ice",
+        "link": "https://www.google.com/maps/dir//maps+Great+Park+Ice/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80dcc3626e80b181:0x13ed30cbfcdd99c3?sa=X&ved=2ahUKEwj55PrA7d_kAhVRop4KHcQ7DzgQ9RcwFHoECA8QEA"
+      }
+    ]
+  },
+  "2": {
+    "name": "<CurrentYear> U.S. Adult Figure Skating Championship",
+    "icon": "/images/competition-icon2.png",
+    "location": {
+      "city": "Hartfield",
+      "state": "CT"
+    }
+  },
+  "3": {
+    "name": "Madison Open",
+    "icon": "/images/competition-icon.png"
+  },
+  "4": {
+    "name": "<CurrentYear> U.S. Synchronized Skating Championships",
+    "icon": "/images/competition-icon2.png"
+  },
+  "5": {
+    "name": "Skate the Lake",
+    "icon": "/images/competition-icon3.png"
+  },
+  "6": {
+    "name": "<CurrentYear> Northwest Regional Championships",
+    "icon": "/images/competition-icon4.png"
+  },
+  "7": {
+    "name": "<CurrentYear> Southwest Open",
+    "icon": "/images/competition-icon.png"
+  }
+}

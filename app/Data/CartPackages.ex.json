@@ -1,0 +1,15 @@
+[
+  {
+    "cost": 10,
+    "id": 41,
+    "credits": {
+      "wu": 1,
+      "upi": 2
+    },
+    "competition_name": "2018 Midwestern Adult Sectional Figure Skating Championship (All Selectable)",
+    "event_name": "Intermediate Ladies",
+    "competition_id": 2,
+    "event_id": 4,
+    "name":"UPI:2/WU:1"
+  }
+]

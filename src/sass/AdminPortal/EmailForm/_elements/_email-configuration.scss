@@ -1,0 +1,40 @@
+.email-configuration {
+  padding: 1.2rem 0 0.8rem;
+  &.has-error {
+    color: $alert-red;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: nowrap;
+    line-height: (19/14);
+  }
+  &__label,
+  &__value {
+    margin: 0;
+    display: block;
+  }
+  &__label {
+    flex-grow: 0;
+  }
+  &__value {
+    color: $light-gray-text;
+    flex-grow: 1;
+    padding-bottom: 5px;
+    padding-left: 10px;
+  }
+  &__control {
+    flex-grow: 0;
+    margin-left: 1rem;
+    margin-top: -1px;
+    .inline-edit-button {
+      background-position: calc(100% - 4px) 2px;
+    }
+  }
+  + #{&} {
+    border-top: solid 1px $divider-color;
+  }
+  .input-error {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+}

@@ -1,0 +1,38 @@
+.saved-addresses {
+  padding-bottom: 0.8rem;
+  &__heading {
+    color: $text-color;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 1.5rem 0 2rem;
+  }
+  &__add {
+    max-width: $checkout-element-max-width;
+    a.standard-link {
+      margin-left: $checkout-input-column-width;
+      &, &:visited {
+        color: $USFSA-blue-light;
+      }
+    }
+  }
+  &__address-block {
+    padding-bottom: 4rem;
+    + .saved-addresses__address-block {
+      padding-top: 3.3rem;
+      border-top: solid 1px $divider-color;
+    }
+    &:last-child {
+      padding-bottom: 3rem;
+    }
+  }
+  &__actions {
+    padding-top: 2.5rem;
+    padding-left: $checkout-input-column-width;
+    &__use {
+      @include grid-column(72%, 15px);
+    }
+    &__edit {
+      @include grid-column(28%, 15px);
+    }
+  }
+}

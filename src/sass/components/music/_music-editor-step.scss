@@ -1,0 +1,69 @@
+$music-step-content-padding-top: 1.5rem;
+$music-step-content-padding-bot: 2.5rem;
+$music-step-content-padding-h: 2rem;
+.music-editor-step {
+  background: white;
+  &--disabled {
+    opacity: .45;
+  }
+  &__content {
+    padding: $music-step-content-padding-top $music-step-content-padding-h $music-step-content-padding-bot;
+    position: relative;
+  }
+  &__overlay {
+    background-color: $element-overlay-background;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    padding-right: 2rem;
+    .action-overlay {
+      height: 100%;
+    }
+  }
+  &__error {
+    text-align: right;
+  }
+  &__additional-info {
+    p {
+      line-height: percentage(24/14);
+      margin-top: 2.5rem;
+      margin-bottom: 0.5rem;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+  + .music-editor-step {
+    margin-top: 2rem;
+  }
+  &--music {
+    .music-item {
+      margin: 0 -1rem;
+    }
+    .music-item-list {
+      padding: 0;
+    }
+    .music-editor-step-cta {
+      margin-top: 2rem;
+    }
+  }
+  &--copyright {
+    .music-editor-step-cta {
+      margin-top: 1rem;
+    }
+  }
+}
+
+.music-editor-step-cta {
+  padding-top: 2rem;
+  @include grid-row(10px);
+  &__item {
+    @include grid-column(50%, 10px);
+    &--full {
+      @include grid-column(100%, 10px);
+    }
+  }
+}

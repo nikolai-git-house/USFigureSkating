@@ -1,0 +1,27 @@
+.standings-table {
+  $padding-h: 1rem;
+
+  &__header {
+    padding: 1.5rem $padding-h;
+    text-align: right;
+  }
+
+  &__list {
+    @include list-reset;
+
+    &__item {
+      border-top: solid 1px $divider-color;
+      padding: 0 $padding-h;
+    }
+  }
+
+  &__notice {
+    border-top: solid 1px $divider-color;
+    padding: 1.5rem $padding-h;
+
+    > p {
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+}

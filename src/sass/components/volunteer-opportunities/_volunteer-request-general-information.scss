@@ -1,0 +1,54 @@
+/**
+ * General Information (view/edit profile info) component
+ */
+.volunteer-request-general-information {
+  /**
+   * Section within a submodule of the component
+   */
+  &__section {
+    + #{&} {
+      padding-top: 3.5rem;
+    }
+  }
+  /**
+   * Heading for a section
+   */
+  &__section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 1rem;
+    /**
+     * Heading text
+     */
+    &__text {
+      font-size: 1.6rem;
+      line-height: (18/16);
+      color: $text-color;
+      margin: 0;
+    }
+    /**
+     * Block containing edit control
+     */
+    &__edit {
+      line-height: (18/16);
+      margin-left: 1.3rem;
+      .icon-button {
+        display: block;
+      }
+    }
+  }
+  /**
+   * Data block
+   */
+  &__data {
+    padding: 1.5rem 0.5rem 0;
+    line-height: (25/14);
+  }
+  /**
+   * Block containing continue/cancel controls
+   */
+  &__continue {
+    padding: 1.5rem 1rem;
+  }
+}

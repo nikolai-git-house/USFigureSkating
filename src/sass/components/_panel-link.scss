@@ -1,0 +1,121 @@
+$panel-link-border-color: red !default;
+$panel-link-pad-v: 1.5rem;
+$panel-link-pad-h: 1.5rem;
+$panel-link-pad-h-sm: 2rem;
+$panel-link-icon-width: 8px;
+$panel-link-simple-pad-v: 2rem;
+
+.panel-link {
+  border-bottom: solid 1px $panel-link-border-color;
+  padding: $panel-link-pad-v 10px $panel-link-pad-v 0;
+  position: relative;
+  display: block;
+  &__content {
+    @include clearfix;
+    @extend .icon-panel-link;
+    background-size: $panel-link-icon-width 13px;
+    background-position: right center;
+    padding-right: $panel-link-pad-h
+  }
+  &__icon, &__text {
+    float: left;
+  }
+  &__icon {
+    margin-right: 1.5rem;
+    img {
+      display: block;
+      max-width: 100%;
+    }
+  }
+  &__error {
+    line-height: 1;
+    color: $state-red;
+    font-size: 1.2rem;
+    margin: 0 0 -1.2rem;
+
+    &--sm {
+      font-size: 1rem;
+      margin: 0 0 -1rem;
+    }
+  }
+  &--simple {
+    padding: $panel-link-simple-pad-v ($panel-link-pad-h-sm/2) $panel-link-simple-pad-v 0;
+    .panel-link__content {
+      padding-left: $panel-link-pad-h-sm;
+    }
+    .panel-link__error {
+      left: $panel-link-pad-h-sm;
+    }
+    &:after {
+      right: $panel-link-pad-h;
+    }
+    &__icon, &__text {
+      float: none;
+      position: static;
+    }
+  }
+  &--external {
+    .panel-link__content {
+      @extend .icon-external;
+      background-size: 11px 11px;
+    }
+  }
+  &--status {
+    padding: 1.4rem 2.1rem 1.4rem 0;
+    .panel-link__status {
+      box-sizing: content-box;
+      padding-right: 6px;
+      width: 24px;
+    }
+    .count-badge {
+      height: 24px;
+      width: 24px;
+      &__content{
+        line-height: 25px;
+      }
+    }
+    .inline-icon {
+      background-size: contain;
+      display: block;
+      height: 24px;
+      position: relative;
+      width: 24px;
+    }
+  }
+}
+
+.panel-link:not(.panel-link--simple) {
+  @include flex-compatible {
+    .panel-link__content {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+    }
+    .panel-link__icon {
+      flex-basis: auto;
+      width: auto;
+      float: none;
+    }
+    .panel-link__text {
+      flex-basis: auto;
+      width: auto;
+      float: none;
+      position: static;
+    }
+  }
+}
+
+.panel-link-group {
+  &--no-first-pad{
+    > .panel-link:first-child{
+      padding-top: 0;
+    }
+  }
+  &--no-bottom {
+
+    .panel-link:last-child {
+      border-bottom: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+$icon-dimension: $carousel-navigation-icon-dimension;
+$icon-edge-offset: $carousel-navigation-icon-edge-offset;
+$icon-text-offset: 10px;
+.rink-name-carousel,
+.practice-ice-rink-name-carousel {
+  user-select: none;
+  &__navigation {
+    @include carousel-navigation();
+  }
+  &__control {
+    @include carousel-navigation-control();
+  }
+  &__slide {
+    z-index: 2; //make non active slides above active slide to allow name clicking.
+    &.swiper-slide-active {
+      z-index: 1;
+    }
+    .rink-name {
+      max-width: calc(100% - #{($icon-dimension + $icon-edge-offset) * 2} - #{$icon-text-offset * 2});
+      margin: 0 auto;
+      color: $light-gray-text;
+      .single-rink & {
+        &__text {
+          border-bottom-color: $USFSA-blue;
+          color: $text-color;
+        }
+      }
+    }
+    .multiple-rinks & {
+      &.swiper-slide-active .rink-name {
+        color: $text-color;
+        &__text {
+          border-bottom-color: $USFSA-blue;
+        }
+      }
+    }
+  }
+}
+

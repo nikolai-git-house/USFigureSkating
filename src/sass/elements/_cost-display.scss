@@ -1,0 +1,13 @@
+.cost-display {
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+
+  &__label {
+    text-transform: uppercase;
+  }
+
+  &__value {
+    color: $USFSA-blue;
+  }
+}

@@ -1,0 +1,48 @@
+$nav-tabs-float-breakpoint: 330px;
+.site-menu {
+  @extend .grid-container;
+  &__footer {
+    margin-top: 5rem;
+  }
+  height: 80%;
+  height: calc(100% - #{$rendered-nav-height});
+  @include flex-compatible {
+    position: relative;
+    &__content {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  &__links {
+    padding-top: 4rem;
+  }
+  &__competitions {
+    padding-top: 2rem;
+    .accordion__trigger, .accordion__trigger[type="button"] {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+  }
+  &__tabs .tabs__tab-body {
+    padding-top: 0;
+  }
+
+  /* OVERRIDE TABS FOR SITE MENU */
+  .tabs__trigger {
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+  }
+  .tabs__item {
+    float: none;
+    @media screen and (min-width: $nav-tabs-float-breakpoint) {
+      float: left;
+      width: 50%;
+    }
+  }
+  .nav-list--small {
+    padding-left: 1.5rem;
+  }
+}
+

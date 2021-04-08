@@ -1,0 +1,351 @@
+/* ===========================================================================================================
+*                                              APP ACCORDION
+* ===========================================================================================================*/
+$accordion-select-icon-width: 13px;
+/* ===========================================================================================================
+*                                              CORE OVERRIDES
+* ===========================================================================================================*/
+.accordion {
+  $c: #{&};
+  &__trigger {
+    line-height: percentage(18/14);
+    > span {
+      &:not([class^="accordion-data-trigger"]):not([class*="accordion-trigger-raw"]) {
+        max-width: 75%;
+        display: block;
+      }
+    }
+    &, &[type="button"] {
+      border-top: none;
+      padding-left: 1rem;
+    }
+    &:after {
+      right: 1rem;
+      .expanded & {
+        // icon rotates 90 degrees
+        width: $accordion-trigger-icon-height;
+        height: $accordion-trigger-icon-width;
+      }
+    }
+    .expanded & {
+      border-bottom: none;
+    }
+  }
+}
+
+/* ===========================================================================================================
+*                                              VARIANTS
+* ===========================================================================================================*/
+.accordion {
+  $c: #{&};
+  /**
+   * Version with up/down chevrons
+   */
+  &--up-down {
+    #{$c} {
+      &__trigger {
+        &:after {
+          @extend .icon-chevron-down;
+          width: $accordion-trigger-icon-height;
+          height: $accordion-trigger-icon-width;
+        }
+      }
+    }
+  }
+  /**
+   * Version containing data within the trigger and adjusted content spacing
+   */
+  &--data {
+    #{$c} {
+      &__content {
+        padding: 0 0 2.5rem 1.5rem;
+      }
+      &__trigger {
+        &, &[type="button"] {
+          padding: 1.5rem 4.5rem 1.5rem 1.5rem;
+        }
+        &:after {
+          right: 2rem;
+        }
+      }
+    }
+  }
+  /**
+   * Version with larger trigger text
+   */
+  &--larger-trigger {
+    #{$c} {
+      &__trigger {
+        font-size: 1.6rem;
+      }
+    }
+  }
+  /**
+   * Version with no content or trigger borders, and no content padding
+   */
+  &--blank {
+    #{$c} {
+      &__content {
+        padding: 0;
+        border: none;
+      }
+      &__trigger {
+        &, &[type="button"] {
+          border: none;
+        }
+      }
+    }
+  }
+  /**
+   * Version with no content or trigger padding
+   */
+  &--unpadded {
+    #{$c} {
+      &__content {
+        padding: 0;
+      }
+      &__trigger {
+        &, &[type="button"] {
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  /**
+   * Version with white background content
+   */
+  &--white-bg-content {
+    #{$c} {
+      &__content {
+        background-color: white;
+      }
+    }
+  }
+
+  /**
+   * Version with white background content
+   */
+  &--unpadded-content-h {
+    #{$c} {
+      &__content {
+        padding-left: 0;
+        padding-right: 0;
+      }
+    }
+  }
+
+  /**
+   * Version that mimics presentation of select input
+   */
+  &--select {
+    position: relative;
+    #{$c} {
+      &__trigger {
+        background-color: white;
+        border: solid 1px $input-border-color;
+        line-height: $input-height;
+        padding: 0 $input-pad-h;
+        @extend .icon-chevron-down;
+        background-size: $accordion-select-icon-width 8px;
+        background-position: calc(100% - 25px) center;
+        @at-root.expanded#{&} {
+          @extend .icon-chevron-up;
+        }
+        &:after {
+          display: none;
+        }
+      }
+      &__content {
+        background-color: white;
+        border: solid 1px $input-border-color;
+        border-top: none;
+        padding: 1rem 2.5rem 1.5rem 2.5rem;
+        position: absolute;
+        width: 100%;
+        @include z-index('accordion-select-content')
+      }
+    }
+  }
+
+  &--info {
+    #{$c} {
+      &__trigger {
+        background-color: $USFSA-blue;
+        color: white;
+        border: none;
+
+        &:after {
+          @extend .icon-chevron-down-white;
+          width: $accordion-trigger-icon-height;
+          height: $accordion-trigger-icon-width;
+          @at-root #{selector-replace(&, '.accordion--info', '.accordion--info.expanded')} {
+            @extend .icon-chevron-up-white;
+          }
+        }
+      }
+      &__content {
+        border: none;
+      }
+    }
+
+
+    &--large {
+      #{$c} {
+        &__trigger {
+          font-size: 1.6rem;
+          padding-top: 1.9rem;
+          padding-bottom: 1.9rem;
+
+          &:after {
+            width: 25px;
+            height: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  &--large {
+    #{$c} {
+      &__trigger {
+        background-color: white;
+        border: none;
+        font-size: 1.6rem;
+        padding-bottom: 1.8rem;
+        padding-top: 1.8rem;
+
+        &:after {
+          @extend .icon-chevron-blue-large-down;
+          height: 14px;
+          right: 1.5rem;
+          width: 25px;
+          @at-root #{selector-replace(&, '.accordion--large', '.accordion--large.expanded')} {
+            @extend .icon-chevron-blue-large-up;
+          }
+        }
+      }
+
+      &__content {
+        border: none;
+      }
+    }
+  }
+}
+
+/* ===========================================================================================================
+*                                              GROUP
+* ===========================================================================================================*/
+/**
+ * Accordion Group
+ */
+.accordion-group {
+  &--no-bottom {
+    .accordion:last-child {
+      &, .accordion__trigger {
+        border-bottom: none;
+      }
+      &.expanded .accordion__content {
+        border-bottom: none;
+      }
+    }
+  }
+  &--up-down {
+    .accordion:not(.expanded) {
+      .accordion__trigger {
+        // rotate icon 90 deg from standard
+        &:after {
+          @extend .icon-chevron-down;
+          width: $accordion-trigger-icon-height;
+          height: $accordion-trigger-icon-width;
+        }
+      }
+    }
+  }
+}
+
+/* ===========================================================================================================
+*                                              STATUS TRIGGER
+* ===========================================================================================================*/
+.accordion-status-trigger {
+  position: relative;
+  padding-left: 2.5rem;
+  &:before {
+    @include pseudo;
+    height: 14px;
+    width: 14px;
+    background-size: contain;
+    top: 0;
+    left: 0;
+  }
+  &--yes {
+    &:before {
+      height: 13px;
+      width: 16px;
+      @extend .icon-status-check;
+    }
+  }
+  &--no {
+    &:before {
+      @extend .icon-status-x;
+    }
+  }
+  .accordion--larger-trigger & {
+    padding-left: 3rem;
+    &:before {
+      top: 3px;
+    }
+  }
+}
+
+/* ===========================================================================================================
+*                                              DATA TRIGGER
+* ===========================================================================================================*/
+.accordion-data-trigger {
+  display: block;
+  &__name {
+    color: $text-color;
+    display: block;
+    font-size: 1.8rem;
+    line-height: (25/18);
+  }
+  &__data {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    line-height: 17px;
+    margin-top: 0.6rem;
+    flex-wrap: wrap;
+    &--small {
+      font-size: 1.2rem;
+    }
+  }
+  &__datum {
+    display: block;
+    white-space: nowrap;
+    &__content {
+      align-items: flex-start;
+      display: flex;
+    }
+    &__divider {
+      color: $divider-color;
+      font-size: 0.75em;
+      margin: 0 1.1rem;
+      @at-root .accordion-data-trigger__data--small & {
+        margin: 0 0.6rem;
+      }
+    }
+    &__value {
+      color: $blue-light-alt2;
+      &--success {
+        color: $state-green;
+      }
+      &--error {
+        color: $alert-red;
+      }
+      &--warning {
+        color: $warning-text;
+      }
+    }
+  }
+}

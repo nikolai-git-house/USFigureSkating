@@ -1,0 +1,36 @@
+$coach-search-form-gutter: 15px;
+.my-coaches-search,
+.member-search {
+  &__heading {
+    margin-top: 0;
+    text-align: center;
+  }
+  .form-group--state .form-field {
+    width: calc(50% - #{$coach-search-form-gutter/2});
+
+  }
+  .form-group + .form-group {
+    margin-top: 1.4rem;
+  }
+}
+
+.my-coaches-search,
+.member-search {
+  .appearance & select.form-field {
+    background-position: calc(100% - 18px) center;
+  }
+}
+
+.my-coaches-search-form,
+.member-search-form {
+  padding-top: 3rem;
+  margin-bottom: 6rem;
+  max-width: 296px + $gutter;
+  &__cta {
+    @include grid-row($coach-search-form-gutter);
+    margin-top: 4rem;
+  }
+  &__cta-element {
+    @include grid-column(50%, $coach-search-form-gutter);
+  }
+}

@@ -1,0 +1,42 @@
+.competition-registration-profile {
+  .page__content {
+    padding-top: 2rem;
+  }
+  .page__lead {
+    margin-top: 2.7rem;
+  }
+  &__profile-display {
+    margin-top: floor($gutter/2);
+  }
+  &__summary {
+    padding: 0.5rem 0 1.6rem;
+    &__header {
+      margin: 0 0 1rem;
+    }
+    &__data {
+      line-height: (25/14);
+    }
+  }
+}
+
+.select-representation {
+  &__lead {
+    margin: 0;
+    font-size: 1.6rem;
+    line-height: (25/16);
+  }
+  &__content {
+    padding-top: 3.3rem;
+  }
+  &__form {
+    padding-top: 2.3rem;
+  }
+  &__other-select {
+    margin-top: 2.5rem;
+    border: solid 1px $gray-light;
+    border-radius: 2px;
+    padding: 9px 22px 10px 12px;
+    margin-left: 3.4rem;
+    display: inline-block;
+  }
+}

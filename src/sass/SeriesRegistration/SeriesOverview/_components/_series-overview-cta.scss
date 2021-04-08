@@ -1,0 +1,19 @@
+.series-overview-cta {
+  &__deadline {
+    font-size: 1.2rem;
+    margin: 0 0 0.4rem;
+    text-align: center;
+  }
+
+  .button:first-child {
+    margin-top: 1rem;
+  }
+
+  &__cost {
+    text-align: right;
+
+    .button + & {
+      margin-top: 1.3rem;
+    }
+  }
+}

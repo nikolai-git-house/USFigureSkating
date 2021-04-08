@@ -1,0 +1,57 @@
+/**
+ * 2019-12-13
+ *
+ * New page heading element for consistency with new pages
+ */
+$page-heading-pad-bottom: 3.5rem;
+$page-heading-title-top-offset: 4.3rem;
+.page-heading {
+  $c: #{&};
+  background-color: white;
+  padding: 0 0 $page-heading-pad-bottom;
+  text-align: center;
+  &__container {
+    @extend .grid-container;
+  }
+  &__title {
+    font-size: $font-size-page-title;
+    margin: $page-heading-title-top-offset 0 0;
+    #{$c}__back-link + & {
+      margin-top: 3.3rem;
+    }
+  }
+  &__subtitle {
+    color: $text-color;
+    display: block;
+    font-size: 1.4rem;
+  }
+  &__lead {
+    margin: 0;
+    line-height: (20/14);
+    #{$c}__title + & {
+      margin-top: 1rem;
+    }
+  }
+
+  &__intro {
+    line-height: $line-height-copy-block;
+    margin: 2rem 0 0;
+    text-align: left;
+
+    > p {
+      margin: 0;
+    }
+  }
+
+  &__back-link {
+    @include clearfix;
+    padding-top: $back-page-heading-pad-top;
+    text-align: left;
+    a[disabled] {
+      opacity: $disabled-opacity;
+    }
+    a + a {
+      float: right;
+    }
+  }
+}

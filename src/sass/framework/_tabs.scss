@@ -1,0 +1,74 @@
+$tab-trigger-font-size: 2rem !default;
+$active-tab-trigger-border-color: #ccc !default;
+$tabs-border-bottom-color: #444 !default;
+$active-tab-trigger-border-width: 3px !default;
+$tab-trigger-color: #333 !default;
+$tab-triggers-border-width: 1px !default;
+$tab-trigger-padding-v: 1.5rem !default;
+$tab-trigger-padding-h: 1.5rem !default;
+$tab-body-padding-top: 0 !default;
+.tabs {
+  &__triggers {
+    border-bottom: solid $tab-triggers-border-width $tabs-border-bottom-color;
+    &--opaque {
+      background-color: white;
+    }
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include clearfix;
+    position: relative;
+    top: 1px;
+  }
+  &__item {
+    float: left;
+    text-align: center;
+  }
+  &__trigger {
+    touch-action: manipulation;
+    border-bottom: solid $active-tab-trigger-border-width transparent;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: $tab-trigger-font-size;
+    padding: $tab-trigger-padding-v $tab-trigger-padding-h;
+    &, &:active, &:hover, &:focus {
+      color: $tab-trigger-color;
+    }
+    &.active {
+      border-bottom-color: $active-tab-trigger-border-color;
+    }
+  }
+  &__tab-body {
+    padding-top: $tab-body-padding-top;
+    &--no-pad {
+      padding: 0;
+    }
+  }
+
+}
+
+.tabs--justified {
+  @include flex-compatible {
+    .tabs__list {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: center;
+    }
+    .tabs__item {
+      float: none;
+      flex-grow: 1;
+    }
+  }
+}
+
+.tabs--justified.tabs--equal {
+  @include flex-compatible {
+    .tabs__item {
+      flex-basis: 100%;
+    }
+  }
+}

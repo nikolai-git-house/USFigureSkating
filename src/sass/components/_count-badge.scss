@@ -1,0 +1,35 @@
+.count-badge {
+  background-color: $blue-light-alt2;
+  border-radius: 50%;
+  color: white;
+  display: inline-block;
+  font-size: 1.2rem;
+  height: 20px;
+  line-height: 22px;
+  position: relative;
+  text-align: center;
+  vertical-align: middle;
+  width: 20px;
+
+  &--red {
+    background-color: $alert-red;
+  }
+
+  &__content {
+    display: inline;
+    vertical-align: top;
+    line-height: 22px;
+  }
+
+  &--large {
+    font-size: 1.6rem;
+    height: 28px;
+    width: 28px;
+
+    .count-badge {
+      &__content {
+        line-height: 31px;
+      }
+    }
+  }
+}

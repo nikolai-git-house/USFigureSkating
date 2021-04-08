@@ -1,0 +1,307 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "name": "Championship Masters Junior-Senior Ladies",
+      "is_registered_for": true,
+      "is_selected": false,
+      "judging_system": "IJS",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 2,
+      "name": "Adult Silver Duets Pattern Dance",
+      "is_registered_for": false,
+      "is_selected": true,
+      "judging_system": "6.0",
+      "category": "Duets",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 3,
+      "name": "Masters Junior-Senior Ladies II",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "IJS",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 4,
+      "name": "Error Trigger Event",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "IJS",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 5,
+      "name": "Masters Dramatic Entertainment II",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 6,
+      "name": "Masters Light Entertainment II",
+      "is_registered_for": false,
+      "judging_system": "6.0",
+      "is_selected": false,
+      "category": "Pairs",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Silver Pair",
+          "Adult Gold Pair"
+        ],
+        "minimum_age": null,
+        "maximum_age": 12
+      }
+    },
+    {
+      "id": 7,
+      "name": "Error When Removed With Other Selections",
+      "is_registered_for": false,
+      "judging_system": "6.0",
+      "is_selected": true,
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 51,
+      "name": "Singles Event 51",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 52,
+      "name": "Singles Event 52",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 53,
+      "name": "Singles Event 53",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 54,
+      "name": "Singles Event 54",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 55,
+      "name": "Singles Event 55",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 56,
+      "name": "Singles Event 56",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    },
+    {
+      "id": 57,
+      "name": "Singles Event 57",
+      "is_registered_for": false,
+      "is_selected": false,
+      "judging_system": "6.0",
+      "category": "Singles",
+      "requirements": {
+        "minimum_skate_tests": [
+          "Intermediate Pair",
+          "Junior Pair",
+          "Adult Bronze Pair"
+        ],
+        "maximum_skate_tests": [
+          "Adult Silver Pair"
+        ],
+        "minimum_age": 16,
+        "maximum_age": 20
+      }
+    }
+  ],
+  "partner_skate_tests": [
+    {
+      "event": {
+        "name": "Adult Silver Duets Pattern Dance",
+        "id": 2,
+        "requirements": {
+          "minimum_skate_tests": [
+            "Intermediate Pair",
+            "Junior Pair",
+            "Adult Bronze Pair"
+          ],
+          "maximum_skate_tests": [
+            "Adult Silver Pair"
+          ],
+          "minimum_age": 16,
+          "maximum_age": 20
+        }
+      },
+      "partner": {
+        "name": "Peter Eurich",
+        "id": 20,
+        "meets_requirements": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+.team-registration {
+  &__progress-bar {
+    padding: 2.5rem 5rem 0 4.5rem;
+  }
+
+  &__page-lead {
+    line-height: $line-height-copy-block;
+    margin: 2.5rem 0 0;
+  }
+
+  &__page-information {
+    margin-top: 1.5rem;
+  }
+
+  &__roster-list{
+    @include list-reset;
+    &__item {
+      margin: 2rem 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__terms {
+    margin: 3.5rem 0;
+
+    &__lead {
+      line-height: $line-height-copy-block;
+      margin: 0;
+    }
+
+    &__lead + &__confirm {
+      margin-top: 2.5rem;
+    }
+
+    &__confirm {
+      .usfsa-checkbox {
+        padding-left: 2.6rem;
+      }
+    }
+  }
+
+  &__navigation {
+    $navigation-gutter: 15px;
+
+    margin-bottom: 6rem;
+    margin-top: 2.5rem;
+    @media screen and (min-width: $screen-tablet) {
+      margin-bottom: 2rem;
+    }
+
+    &__pre {
+      margin-bottom: 0.8rem;
+      text-align: right;
+    }
+
+    &__buttons {
+      @include grid-row($navigation-gutter, true);
+    }
+
+    &__button {
+      @include grid-column(50%, $navigation-gutter, true);
+      flex-grow: 1;
+
+      .button--info {
+        background-color: transparent;
+      }
+    }
+  }
+
+  /**
+   * Page overrides within team registration
+   */
+  .page {
+    min-height: 0;
+    padding-bottom: 0;
+
+    &__accent-content {
+      padding: 2.7rem 0 0;
+    }
+  }
+
+  /**
+   * Page heading overrides within team registration
+   */
+  $page-heading-selector: '.page-heading';
+
+  #{$page-heading-selector} {
+    padding-bottom: 3rem;
+    text-align: left;
+
+    &__title {
+      text-align: center;
+    }
+
+    #{$page-heading-selector}__back-link + #{$page-heading-selector}__title {
+      margin-top: 4rem;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.check-in-index {
+  /**
+   * Header block containing checkin report and email participants links
+   */
+  &__header {
+    @extend .page--accent__standard-content;
+    &__links {
+      @include link-header;
+    }
+  }
+  /**
+   * Block containing loading notice/error
+   */
+  &__notice {
+    @extend .grid-container;
+  }
+  /**
+   * Block containing content after header
+   */
+  &__content {
+    @extend .grid-container;
+    padding-top: 3rem;
+  }
+  /**
+   * Block containing search
+   */
+  &__search {
+    margin-bottom: 3rem;
+  }
+}

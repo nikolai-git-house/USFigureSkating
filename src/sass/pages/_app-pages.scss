@@ -1,0 +1,130 @@
+.page-welcome {
+  &__cta {
+    margin-bottom: 4rem;
+  }
+  &__subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+.page-my-competitions {
+  .panel-link {
+    padding-top: 2.5rem;
+    &:first-child {
+      padding-top: 0;
+    }
+  }
+}
+
+/**
+ * @deprecated 2020-01-22
+ * Competition Detail replaced with "View Competition" page
+ */
+.page-competition-detail {
+  .page__content {
+    padding-top: 0;
+  }
+  .panel-link--simple .panel-link__content {
+    padding-left: 1rem;
+  }
+}
+
+//@refactor: make this abstract and share across competition info, my skaters and comp contacts
+.page-my-skaters {
+  .page__content {
+    padding-top: 0;
+  }
+  .page__subtitle {
+    margin: 2.5rem 0 1.5rem;
+  }
+}
+
+.page-competition-contacts {
+
+  .panel-list__item:first-child {
+    padding-top: 0;
+  }
+
+}
+
+.page-my-schedule {
+  &__download {
+    text-align: center;
+    margin: $content-pad-standard 0;
+  }
+}
+
+.page-cart {
+  &__cta {
+    padding-top: 0.5rem;
+    text-align: center;
+    .standard-link {
+      margin: $content-pad-standard 0;
+      display: inline-block;
+    }
+  }
+}
+
+.page-checkout {
+  &__order-summary {
+    padding-top: 2rem;
+    .cart-summary__footer {
+      padding: 3rem 0 1.3rem;
+    }
+    &__heading {
+      margin: 2rem 0;
+    }
+    &__list {
+      background: white;
+      padding: 0 2rem;
+      margin-bottom: 4rem;
+      border-radius: $border-radius-base;
+    }
+  }
+}
+
+.page-my-skaters,
+.page-competition-information {
+  .accordion:not(.expanded) {
+    .accordion__trigger {
+      // rotate icon 90 deg from standard
+      &:after {
+        @extend .icon-chevron-down;
+        width: $accordion-trigger-icon-height;
+        height: $accordion-trigger-icon-width;
+      }
+    }
+  }
+}
+
+.page-competition-information {
+  .accordion {
+    &__trigger {
+      padding-left: 0;
+    }
+    &__content {
+      padding-bottom: 2.8rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+  .practice-ice-information {
+    padding-bottom: 0;
+    &__pricing {
+      border-bottom: none;
+      padding-bottom: 0;
+      padding-left: 0;
+      padding-top: 0;
+    }
+    &--text {
+      padding-left: 0;
+    }
+  }
+}
+
+.page-competition-registration-index {
+  .page__content {
+    padding-top: 0;
+  }
+}
+

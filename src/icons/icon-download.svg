@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 21 19" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-UI/Icons/Hamburguer_Menu/Dowload_Icon">
+            <g id="Group" transform="translate(1 1)">
+                <path id="Fill-1" fill="#2599F2" transform="rotate(90 9.5 11)" d="M7.32450331 5L6 6.399l4.3509934 4.6L6 15.599 7.32450331 17 13 10.999z"/>
+                <path d="M9.5 12.5V.30018142" id="Line" stroke="#2599F2" stroke-width="2" stroke-linecap="square"/>
+                <path d="M.5 15.5V9.51573888" id="Line-2" stroke="#2599F2" stroke-width="2" stroke-linecap="round"/>
+                <path d="M18.5 15.5V9.51573888" id="Line-2-Copy" stroke="#2599F2" stroke-width="2" stroke-linecap="round"/>
+                <path d="M.5 16.5h18" id="Line-3" stroke="#2599F2" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
+            </g>
+        </g>
+    </g>
+</svg>

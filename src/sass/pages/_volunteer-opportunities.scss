@@ -1,0 +1,53 @@
+.volunteer-opportunities {
+  /**
+   * Block containing search link
+   */
+  &__search-link {
+    text-align: center;
+    margin: 2.5rem 0 2rem;
+  }
+  /**
+   * Block containing a category of events
+   */
+  &__event-category {
+    &--requested {
+      margin-top: 2.7rem;
+    }
+    + #{&} {
+      margin-top: 3rem;
+    }
+  }
+  /**
+   * Heading within an event category
+   */
+  &__category-heading {
+    font-size: 1.6rem;
+    margin: 0;
+    color: $text-color;
+  }
+  /**
+   * List of events within a category
+   */
+  &__event-list {
+    margin-top: 1.5rem;
+  }
+  /**
+   * Notice that displays when no opportunities are available within a category
+   */
+  &__no-events-notice {
+    margin-top: 1.5rem;
+    background: white;
+    padding: 1.8rem 1rem 2rem;
+    line-height: (18/14);
+  }
+  /**
+   * Override page heading to add bottom padding
+   */
+  .page__heading {
+    padding-bottom: 2rem;
+  }
+}
+
+@import "../components/volunteer-opportunities/volunteer-event-tile";
+@import "../components/volunteer-opportunities/volunteer-opportunities-request";
+@import "../components/volunteer-opportunities/volunteer-opportunities-search";

@@ -1,0 +1,53 @@
+.competition-date {
+  line-height: (20/14);
+  position: relative;
+  &__name {
+    margin: 0;
+  }
+  &__value {
+    margin: 0;
+    color: $light-gray-text;
+  }
+  &__fee {
+    margin: 0;
+    &__value {
+      color: $light-gray-text;
+    }
+  }
+  &--status {
+    $c: &;
+    padding-left: 1.5rem;
+    &:before {
+      @include pseudo;
+      height: 8px;
+      width: 8px;
+      border-radius: 8px;
+      background-color: $blue-light-alt2;
+      position: absolute;
+      left: 4px;
+      top: 25px;
+      @at-root #{$c}--success#{&} {
+        background-color: $state-green;
+      }
+      @at-root #{$c}--error#{&} {
+        background-color: $alert-red;
+      }
+      @at-root #{$c}--warning#{&} {
+        background-color: $warning-text;
+      }
+    }
+  }
+  + #{&} {
+    margin-top: 1.3rem;
+  }
+}
+
+.competition-date-window {
+  &:not(:last-child) {
+    padding-bottom: 1.5rem;
+  }
+  + #{&} {
+    padding-top: 1.5rem;
+    border-top: solid 1px $divider-color;
+  }
+}

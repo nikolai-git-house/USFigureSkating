@@ -1,0 +1,1 @@
+<my-competitions-teams-page></my-competitions-teams-page>

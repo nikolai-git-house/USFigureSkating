@@ -1,0 +1,109 @@
+.event-selection {
+  padding-top: 2rem;
+  &__filters {
+    padding: 0 4px 0 6px;
+    display: flex;
+    align-items: center;
+    &__label {
+      color: $USFSA-blue;
+      font-size: 1.6rem;
+      padding-right: 10px;
+      flex-grow: 0;
+      line-height: $input-height;
+      margin: 0;
+    }
+    &__control {
+      flex-grow: 1;
+    }
+  }
+  &__selected {
+    $c: &;
+    position: relative;
+    .event-selection__event-list {
+      margin-left: -5px;
+      margin-right: -5px;
+      .event-card {
+        background-color: transparent;
+      }
+    }
+  }
+  &__my-events-status {
+    border: solid 1px $success-color-alt;
+    background-color: lighten($success-color-alt, 20%);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 51px;
+    &.recent--out {
+      border-color: $alert-red;
+      background-color: lighten($alert-red, 40%);
+    }
+  }
+  &__available {
+    background-color: $gray-light;
+    padding: 2.8rem 0 2rem;
+    &__heading {
+      color: $USFSA-blue;
+      font-size: 1.6rem;
+      margin: 0
+    }
+    .grid-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    .event-card + .event-card {
+      margin-top: 1.9rem;
+    }
+    .event-selection__event-list {
+      padding-top: 2.5rem;
+    }
+  }
+  &__event-list {
+    box-sizing: content-box;
+    .event-selection__available & {
+      min-height: 400px;
+      padding-bottom: 2rem;
+    }
+  }
+  &__pagination {
+    min-height: 24px;
+    box-sizing: content-box;
+  }
+  &__partner-tests {
+    padding-top: 4.2rem;
+    &__heading {
+      margin: 0 0 3rem;
+      font-size: 1.6rem;
+      line-height: (18/16);
+      color: $text-color;
+    }
+    .skate-test-summary + .skate-test-summary {
+      margin-top: 2rem;
+    }
+  }
+  .event-card {
+    position: relative;
+    z-index: 1;
+    .session-feedback {
+      background: white;
+      position: absolute;
+      left: 2rem;
+      z-index: 1;
+      @include vertical-center;
+      width: calc(100% - 40px);
+      max-width: 350px;
+    }
+  }
+  .accordion {
+    &__trigger {
+      color: $USFSA-blue;
+      font-size: 1.8rem;
+      line-height: (21/18);
+      padding: 1.5rem 0;
+      &:after {
+        right: 1.5rem;
+      }
+    }
+  }
+}

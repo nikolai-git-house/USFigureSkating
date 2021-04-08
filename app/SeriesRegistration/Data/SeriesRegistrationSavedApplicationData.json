@@ -1,0 +1,148 @@
+{
+  "disciplines": [
+    {
+      "discipline_id": 1,
+      "coaches": [
+        {
+          "id": 1,
+          "first_name": "Jennifer",
+          "last_name": "Bralick",
+          "ineligible": false
+        },
+        {
+          "id": 3,
+          "first_name": "Jennifer",
+          "last_name": "Guest",
+          "ineligible": false
+        }
+      ],
+      "levels": [
+        {
+          "name": "Singles Level 2",
+          "level_id": 2,
+          "id": 2,
+          "price": 31,
+          "is_paid": false
+        },
+        {
+          "name": "Singles Level 4",
+          "level_id": 4,
+          "id": 4,
+          "price": 33,
+          "is_paid": true
+        }
+      ],
+      "partner": null
+    },
+    {
+      "discipline_id": 2,
+      "coach_limit": 3,
+      "coaches": [
+        {
+          "id": 4,
+          "first_name": "Jennifer",
+          "last_name": "Heavner",
+          "ineligible": false
+        },
+        {
+          "id": 9,
+          "first_name": "Hester",
+          "last_name": "Crona",
+          "ineligible": false
+        }
+      ],
+      "levels": [
+        {
+          "name": "Dance Level 1",
+          "level_id": 1,
+          "id": 1,
+          "price": 30,
+          "is_paid": false
+        },
+        {
+          "name": "Dance Level 3",
+          "level_id": 3,
+          "id": 3,
+          "price": 32,
+          "is_paid": false
+        }
+      ],
+      "partner": {
+        "id": 8,
+        "first_name": "Marlon",
+        "last_name": "Roob",
+        "ineligible": false,
+        "gender": "male",
+        "eligible_levels": [
+          {
+            "name": "Partner Compatible Level 1",
+            "level_id": 1,
+            "id": 1,
+            "price": 30
+          },
+          {
+            "name": "Partner Compatible Level 3",
+            "level_id": 3,
+            "id": 3,
+            "price": 32
+          },
+          {
+            "name": "Partner Compatible Level 5",
+            "level_id": 5,
+            "id": 5,
+            "price": 34
+          }
+        ]
+      }
+    },
+    {
+      "discipline_id": 3,
+      "coach_limit": 3,
+      "coaches": [
+        {
+          "id": 121,
+          "first_name": "Isabelle",
+          "last_name": "Sauer",
+          "ineligible": false
+        }
+      ],
+      "levels": [
+        {
+          "name": "Pairs Level 2",
+          "level_id": 2,
+          "id": 2,
+          "price": 31,
+          "is_paid": true
+        },
+        {
+          "name": "Pairs Level 4",
+          "level_id": 4,
+          "id": 4,
+          "price": 33,
+          "is_paid": false
+        }
+      ],
+      "partner": {
+        "id": 97,
+        "first_name": "Matteo",
+        "last_name": "Rogahn",
+        "gender": "male",
+        "ineligible": false,
+        "eligible_levels": [
+          {
+            "name": "Partner Compatible Level 2",
+            "level_id": 2,
+            "id": 2,
+            "price": 31
+          },
+          {
+            "name": "Partner Compatible Level 4",
+            "level_id": 4,
+            "id": 4,
+            "price": 33
+          }
+        ]
+      }
+    }
+  ]
+}

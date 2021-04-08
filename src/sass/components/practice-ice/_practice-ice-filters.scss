@@ -1,0 +1,63 @@
+/* Adjust Form Controls specifically for Practice Ice */
+.competition-schedule-filters,
+.practice-ice-filters {
+  .accordion--select .accordion__trigger, .appearance & .form-group select {
+    padding: 0 3.5rem 0 1.5rem;
+    background-position: calc(100% - 15px) center;
+  }
+  .accordion--select .accordion__trigger, .accordion--select .accordion__content, .form-field {
+    border-color: $gray-med;
+  }
+  .form-group select {
+    @include placeholder($light-gray-text);
+    color: $light-gray-text;
+  }
+  .accordion__trigger span {
+    max-width: calc(100% - #{$accordion-select-icon-width});
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    color: $light-gray-text;
+  }
+  .input-error {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.practice-ice-filters {
+  &__view-list {
+    padding: 0 0 1rem .7rem;
+    list-style: none;
+    .field-label {
+      margin-bottom: 0;
+    }
+    &__item {
+      padding: .5rem 0;
+    }
+    &__input {
+      margin-right: 1.5rem;
+    }
+  }
+}
+.competition-schedule-filter,
+.practice-ice-filter {
+  @include grid-row(15px);
+  &__label {
+    @include grid-column(50px, 15px);
+    line-height: $input-height;
+    color: $USFSA-blue;
+    margin-bottom: 0;
+  }
+  &__control {
+    @include grid-column(calc(100% - 50px), 15px);
+  }
+  &__span {
+    @include grid-column(100%, 15px);
+  }
+}
+
+.competition-schedule-filter + .competition-schedule-filter,
+.practice-ice-filter + .practice-ice-filter{
+  margin-top: 2rem;
+}

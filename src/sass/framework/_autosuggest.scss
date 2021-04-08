@@ -1,0 +1,34 @@
+$autosuggest-border-color: #969696 !default;
+$autosuggest-hover-background-color: #F3F3F3 !default;
+$autosuggest-active-background-color: #DADADA !default;
+.autosuggest {
+  position: relative;
+  z-index: 1;
+  &__suggestions {
+    position: relative;
+    &__content {
+      position: absolute;
+      max-height: 200px;
+      border: solid 1px $autosuggest-border-color;
+      top: -1px;
+      background-color: white;
+      width: 100%;
+      left: 0;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+  }
+  &__list {
+    @include list-reset;
+    &__item {
+      padding: 0.5rem 1.7rem;
+      cursor: pointer;
+      &:hover {
+        background-color: $gray-light;
+      }
+      &.active {
+        background-color: $gray-dark;
+      }
+    }
+  }
+}

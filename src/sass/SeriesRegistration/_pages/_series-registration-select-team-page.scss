@@ -1,0 +1,60 @@
+.series-registration-select-team-page {
+  &__notice {
+    margin: 0;
+  }
+
+  .select-team-card {
+    $card-floatpoint: 320px;
+    $card-flexpoint: 450px;
+    $cta-width: 110px;
+
+    &__content {
+      display: block;
+      position: relative;
+    }
+
+    &__cta {
+      margin-top: 2rem;
+      position: static;
+      width: 100%;
+
+      > .button {
+        margin-top: 0;
+      }
+
+      .member-result-notice {
+        position: static;
+      }
+    }
+
+    @media screen and (min-width: $card-floatpoint) and(max-width: $card-flexpoint - 1) {
+      &__cta {
+        margin-top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: $cta-width;
+
+        > .button {
+          margin-top: 3.5rem;
+        }
+
+        .member-result-notice {
+          left: 1.2rem;
+          position: relative;
+        }
+      }
+    }
+    @media screen and (min-width: $card-flexpoint) {
+      &__content {
+        display: flex;
+      }
+
+      &__cta {
+        flex-basis: $cta-width;
+        margin: 0;
+        width: $cta-width;
+      }
+    }
+  }
+}

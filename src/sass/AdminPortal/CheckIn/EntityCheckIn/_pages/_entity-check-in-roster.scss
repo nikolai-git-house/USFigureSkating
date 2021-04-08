@@ -1,0 +1,9 @@
+.entity-check-in-roster {
+  .entity-check-in-subpage__lead {
+    margin: 0 auto;
+    max-width: 220px;
+    @media screen and (min-width: 600px) {
+      max-width: none;
+    }
+  }
+}

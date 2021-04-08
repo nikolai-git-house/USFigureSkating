@@ -1,0 +1,50 @@
+.series-registration-eligibility-confirmation {
+  &__title {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+    margin-top: 3.2rem;
+    text-align: center;
+  }
+
+  &__document-list {
+    @include list-reset;
+    font-size: 1.2rem;
+    padding-left: 2.9rem;
+    padding-top: 0.3rem;
+
+    > li {
+      line-height: (14/12);
+      padding: 0.3rem 0;
+    }
+  }
+
+  &__cta {
+    margin: 2.5rem 2.5rem 0;
+  }
+
+  .usfsa-checkbox__text {
+    line-height: (16/14);
+  }
+
+  .confirmation-overlay {
+    &__dialog {
+      max-width: 300px;
+      padding: 3rem 2.5rem;
+      text-align: left;
+
+      .button {
+        margin: 0;
+      }
+    }
+  }
+
+  @include ie-only {
+    input[type=checkbox] {
+      vertical-align: top;
+      margin-right:5px;
+    }
+    .usfsa-checkbox__text {
+      width: calc(100% - 25px)
+    }
+  }
+}

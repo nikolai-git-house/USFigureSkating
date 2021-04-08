@@ -1,0 +1,41 @@
+.music-copyright-form {
+  .form-field {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  &__duration {
+    margin-top: 1rem;
+    @include grid-row(10px);
+    .form-group {
+      margin: 0;
+      @include grid-column(50%, 10px);
+      .form-label {
+        width: 62px;
+        float: left;
+        line-height: $input-height;
+        text-align: right;
+        padding-right: 10px;
+        font-size: 1.4rem;
+        color: $light-gray-text;
+      }
+      .form-field {
+        width: calc(100% - 62px);
+        float: left;
+      }
+    }
+  }
+  &__tip {
+    padding: 0.5rem;
+    p {
+      margin: 0 0 1rem;
+    }
+    .tray-close {
+      padding: 1.5rem 0;
+    }
+  }
+  label .icon-button {
+    padding: 0;
+    margin-left: 0.5rem;
+    line-height: $font-size-base;
+  }
+}

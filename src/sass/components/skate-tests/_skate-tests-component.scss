@@ -1,0 +1,30 @@
+.skate-tests {
+  .skate-test-history {
+    &__section {
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+  }
+
+  &--sm {
+    .skate-test-history {
+      &__section:not(:first-child) {
+        padding-top: 3rem;
+      }
+
+      &__section-header__actions__help-text {
+        margin-right: 1rem;
+      }
+
+      &__existing-test {
+        padding-left: 1.5rem;
+
+        &__name {
+          font-size: 1.4rem;
+          margin-left: 0.7rem;
+        }
+      }
+    }
+  }
+}

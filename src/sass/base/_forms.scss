@@ -1,0 +1,434 @@
+$increment-input-small-height: 30px;
+$credit-card-type-pad: 5px;
+$credit-card-type-offset: 12px;
+$form-field-disabled-bg: $gray-light;
+.form-group + .form-group,
+.form-group + .form-row,
+.form-row + .form-group,
+.form-group + .form-fieldset,
+.form-fieldset + .form-group {
+  margin-top: 1.75rem;
+}
+
+/**
+ * Checkbox options on a form group (often below and input)
+ */
+.form-group-options {
+  $fg-options-gutter: 42px;
+  margin-top: 1.2rem;
+  margin-left: floor(-1 * $fg-options-gutter/2);
+  margin-right: ceil(-1 * $fg-options-gutter/2);
+  @include clearfix;
+  &__option {
+    float: left;
+    padding: 0 floor($fg-options-gutter/2) 0 ceil($fg-options-gutter/2);
+  }
+}
+
+.form-field {
+  @extend .transition-form-field-state;
+  &[disabled] {
+    background-color: $form-field-disabled-bg;
+    color: $text-color;
+    -webkit-text-fill-color: $text-color;
+    opacity: 1;
+  }
+}
+
+.form-row {
+  $form-row-floatpoint: 375px;
+  @media screen and (min-width: $form-row-floatpoint) {
+    @include grid-row;
+    .form-column {
+      @include grid-column(50%);
+    }
+  }
+  &--range {
+    position: relative;
+
+    &--pre-labeled {
+      margin: 0 2rem;
+    }
+
+    &__separator {
+      color: $light-gray-text;
+      display: block;
+      margin: 5px 0;
+      pointer-events: none;
+      text-align: center;
+      user-select: none;
+      @media screen and (min-width: $form-row-floatpoint) {
+        left: 0;
+        line-height: $input-height;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+      }
+    }
+
+    &__pre-label {
+      color: $light-gray-text;
+      display: block;
+      margin: 0;
+      pointer-events: none;
+      text-align: center;
+      user-select: none;
+      @media screen and (min-width: $form-row-floatpoint) {
+        left: 0;
+        line-height: $input-height;
+        margin: 0;
+        position: absolute;
+        top: 0;
+        transform: translateX(calc(-100% + 10px));
+        width: auto;
+      }
+    }
+  }
+  &:not(.form-row--range) {
+    .form-column {
+      + .form-column {
+        margin-top: 1.75rem;
+        @media screen and (min-width: $form-row-floatpoint) {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+  &__help {
+    @include grid-column(100%);
+  }
+}
+
+.form-field.card-input {
+  background-repeat: no-repeat;
+  background-position: calc(100% - #{$credit-card-type-offset}) center;
+  background-size: 44px 30px;
+  padding-right: 44px + $credit-card-type-offset + $credit-card-type-pad;
+
+  &--visa {
+    @extend .icon-card-visa;
+  }
+  &--mastercard {
+    @extend .icon-card-mastercard;
+  }
+  &--american-express {
+    @extend .icon-card-amex;
+  }
+  &--discover {
+    @extend .icon-card-discover;
+  }
+}
+
+.form-field.form-field--search {
+  @extend .icon-search--blue;
+  background-size: 18px 18px;
+  background-position: calc(100% - 2.2rem) center;
+  &.form-field--reduced-right {
+    background-position: calc(100% - 1.2rem) center;
+  }
+}
+
+select.form-field {
+  font-size: 1.4rem;
+  //prevent iphone zoom
+  &:active {
+    font-size: 1.6rem;
+  }
+}
+
+/*
+ * Modernizr adds "appearance" to root element when it's supported
+ * In this case, make the inputs more fancy
+*/
+.appearance .form-group {
+  .form-field {
+    appearance: none;
+  }
+  select {
+    appearance: none;
+    @extend .icon-chevron-down;
+    background-size: 13px 8px;
+    background-position: calc(100% - 25px) center;
+    padding: 0 $input-pad-h;
+    background-color: $input-bg-color;
+    &::-ms-expand {
+      display: none;
+    }
+    &[disabled] {
+      @extend .icon-chevron-down--gray;
+    }
+    &.form-field--reduced-right {
+      padding: 0 3.5rem 0 1.5rem;
+      background-position: calc(100% - 15px) center;
+    }
+  }
+}
+
+.increment-input--small {
+  button {
+    height: $increment-input-small-height;
+    line-height: $increment-input-small-height;
+  }
+  input {
+    height: $increment-input-small-height;
+    padding: 3px 0 0;
+    line-height: $increment-input-small-height;
+  }
+  .increment-input__value {
+    line-height: $increment-input-small-height;
+  }
+}
+
+.increment-input {
+  &__remove {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  &__add {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.form-actions {
+  @include grid-row(25px);
+  margin-top: 3rem;
+  &__column {
+    @include grid-column(50%, 25px);
+
+    &--sm {
+      width: 39.5%;
+    }
+    &--lg {
+      width: 60.5%;
+    }
+    &--full {
+      width: 100%;
+      &:not(.form-actions__column--notice) + #{&} {
+        margin-top: 1.5rem;
+      }
+    }
+    &--notice {
+      color: $light-gray-text;
+      padding-bottom: 0.7rem;
+      > p {
+        margin: 0;
+        text-align: center;
+      }
+    }
+  }
+  .button {
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.radio-list,
+.check-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  > li + li {
+    margin-top: 1.8rem;
+  }
+  &--small {
+    > li + li {
+      margin-top: 1.1rem;
+    }
+  }
+  &--extended {
+    > li + li {
+      margin-top: 2.8rem;
+    }
+  }
+}
+
+.usfsa-checkbox {
+  $checkbox-top-offset: 2px;
+  $checkbox-dimension: 20px;
+  $checkbox-label-offset: 9px;
+  $checkmark-width: 15px;
+  $checkmark-height: 11px;
+  display: inline-block;
+  position: relative;
+  @extend .icon-checkbox;
+  @at-root .usfsa-checkbox--invalid#{&} {
+    @extend .icon-checkbox-red;
+  }
+  @include ie-only {
+    background: none;
+  }
+  &[disabled] {
+    opacity: .45;
+  }
+  @include not-ie {
+    background-position: 0 $checkbox-top-offset;
+    background-size: $checkbox-dimension $checkbox-dimension;
+    min-height: $checkbox-dimension +  $checkbox-top-offset;
+    min-width: $checkbox-dimension;
+    padding-left: $checkbox-dimension + $checkbox-label-offset;
+  }
+  &--unlabeled {
+    padding-left: 0;
+  }
+  input[type="checkbox"] {
+    @include not-ie {
+      @include hide-in-place;
+    }
+  }
+  &__text {
+    display: inline-block;
+    input[type="checkbox"]:checked + &:before {
+      @extend .icon-checkmark-checkbox;
+      @at-root .usfsa-checkbox--invalid & {
+        @extend .icon-checkmark-checkbox-red;
+      }
+      @include pseudo;
+      background-size: $checkmark-width $checkmark-height;
+      height: $checkmark-height;
+      width: $checkmark-width;
+      left: 3px;
+      top: 7px;
+      @include ie-only {
+        display: none;
+      }
+    }
+    .usfsa-checkbox--unlabeled & {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &--required {
+    @include not-ie {
+      padding-left: $checkbox-dimension + 20px;
+    }
+    &:after {
+      @include pseudo;
+      top: 0;
+      left: $checkbox-dimension + 3px;
+      content: "*";
+      color: $alert-red;
+      line-height: 1;
+    }
+  }
+}
+
+.usfsa-radio {
+  $c: &;
+  $radio-top-offset: 1px;
+  $radio-dimension: 20px;
+  $radio-label-offset: 9px;
+  display: inline-block;
+  @include not-ie {
+    min-height: $radio-dimension +  $radio-top-offset;
+    min-width: $radio-dimension;
+    padding-left: $radio-dimension + $radio-label-offset;
+  }
+  position: relative;
+  &[disabled] {
+    opacity: .45;
+  }
+  input[type="radio"] {
+    @include not-ie {
+      @include hide-in-place;
+    }
+  }
+  &__text {
+    display: inline-block;
+    &:before {
+      @extend .icon-radio;
+      @include pseudo;
+      background-size: $radio-dimension $radio-dimension;
+      height: $radio-dimension;
+      width: $radio-dimension;
+      top: $radio-top-offset;
+      left: 0;
+      @include ie-only {
+        display: none;
+      }
+    }
+    input[type="radio"]:checked + &:before {
+      @extend .icon-radio--checked;
+    }
+  }
+  &--small {
+    $radio-dimension-sm: 15px;
+    $radio-top-offset-sm: 5px;
+    $radio-label-offset-sm: 14px;
+    min-height: $radio-dimension-sm +  $radio-top-offset-sm;
+    min-width: $radio-dimension-sm;
+    padding-left: $radio-dimension-sm + $radio-label-offset-sm;
+    #{$c}__text {
+      font-size: 1.2rem;
+      &:before {
+        background-size: $radio-dimension-sm $radio-dimension-sm;
+        height: $radio-dimension-sm;
+        width: $radio-dimension-sm;
+        top: $radio-top-offset-sm;
+        left: 0;
+        @include ie-only {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+.usfsa-status-checkbox {
+  $checkbox-dimension: 25px;
+  display: inline-block;
+  position: relative;
+  @extend .icon-status-checkbox-unchecked;
+  @include ie-only {
+    background: none;
+  }
+  &[disabled] {
+    opacity: .45;
+  }
+  @include not-ie {
+    background-size: $checkbox-dimension $checkbox-dimension;
+    background-position: 0 0;
+    min-height: $checkbox-dimension;
+    min-width: $checkbox-dimension;
+  }
+  input[type="checkbox"] {
+    @include not-ie {
+      @include hide-in-place;
+    }
+  }
+  &__check {
+    display: inline-block;
+    @include not-ie {
+      height: $checkbox-dimension;
+      width: $checkbox-dimension;
+    }
+    input[type="checkbox"]:checked + &:before {
+      @extend .icon-status-checkbox-checked;
+      @include pseudo;
+      background-position: 0 0;
+      background-size: $checkbox-dimension $checkbox-dimension;
+      height: $checkbox-dimension;
+      left: 0;
+      top: 0;
+      width: $checkbox-dimension;
+      @include ie-only {
+        display: none;
+      }
+    }
+  }
+}
+
+.form-group, .form-row__help {
+  .help-text {
+    margin: 0.7rem 0 0;
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: (14/12);
+  }
+}

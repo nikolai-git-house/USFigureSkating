@@ -1,0 +1,50 @@
+/*
+* Hide Vue elements until app is loaded.
+*
+* Vue removes v-cloak attributes at load time.
+*/
+[v-cloak] {
+  display: none;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px; //to allow easier calculation of rem units
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+// Ensure relevant elements inherit proper font family
+input,
+button,
+select,
+textarea {
+  font-family: inherit;
+}
+
+ul, p, ol {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ijs-fix {
+  letter-spacing: 0.15em !important;
+}

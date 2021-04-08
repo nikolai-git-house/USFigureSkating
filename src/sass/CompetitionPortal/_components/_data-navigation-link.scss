@@ -1,0 +1,157 @@
+.data-navigation-link {
+  $c: &;
+  border-bottom: solid 1px $panel-link-border-color;
+  display: block;
+  padding: 1.5rem 0 1.7rem;
+
+  /**
+   * Increase padding when no supporting data is present
+   */
+  &--no-data {
+    padding: 2.5rem 0 2rem;
+  }
+
+  /**
+   * Disabled state of overall element
+   */
+  &[disabled],
+  &--disabled {
+    cursor: default;
+    pointer-events: none;
+  }
+
+  /**
+   * Content area of item
+   */
+  &__content {
+    @extend .icon-panel-link;
+    background-position: right center;
+    background-size: $panel-link-icon-width 13px;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
+    position: relative;
+    /**
+     * Complete/Incomplete icon
+     */
+    &:before {
+      background-size: contain;
+      height: 1.3rem;
+      left: 0;
+      @include pseudo;
+      top: 0.5rem;
+      width: 1.3rem;
+
+      #{$c}--complete & {
+        @extend .icon-status-primary-success;
+      }
+
+      #{$c}--incomplete & {
+        @extend .icon-status-primary-error;
+      }
+    }
+
+    /**
+     * For disabled versions, change the primary icon to grey
+     */
+    #{$c}[disabled] &,
+    #{$c}--disabled & {
+      @extend .icon-chevron-right-gray;
+    }
+  }
+
+  /**
+   * Primary text label on the link
+   */
+  &__label {
+    font-size: 1.6rem;
+    line-height: (25/16);
+
+    #{$c}[disabled] &,
+    #{$c}--disabled & {
+      color: $light-gray-text;
+    }
+  }
+
+  /**
+   * Supporting information block for the item
+   */
+  &__information {
+    font-size: 1.2rem;
+    line-height: (14/12);
+    /**
+     * An individual supporting information item block
+     */
+    &__item {
+      + #{&} {
+        margin-top: 0.3rem;
+      }
+
+      /**
+       * An item with an icon
+       * Adjust margin
+       */
+      &--icon {
+        + #{&} {
+          margin-top: 0.5rem;
+        }
+      }
+    }
+
+    /**
+     * A piped list of information
+     */
+    &__list {
+      @include list-reset;
+
+      &__item {
+        display: inline
+      }
+
+      &__pipe {
+        color: $light-gray-text;
+        display: inline;
+      }
+    }
+
+    /**
+     * A non-list item
+     */
+    &__message {
+      color: $light-gray-text;
+    }
+
+    /**
+     * Override icon stylings within context
+     */
+    .inline-icon {
+      vertical-align: top;
+
+      &.icon-status-x {
+        background-size: 0.9em 0.9em;
+        left: -1px;
+        position: relative;
+      }
+
+      &.icon-status-check {
+        background-size: 1.2rem 1.2rem;
+        left: -1px;
+        position: relative;
+      }
+
+      &.icon-warning-alt {
+        background-size: 1.1rem 1.1rem;
+        height: 1.2rem;
+        width: 1.2rem;
+      }
+    }
+
+    .icon-new-badge {
+      margin-right: 0.2rem;
+
+      + span {
+        position: relative;
+        top: 1px;
+      }
+    }
+  }
+}

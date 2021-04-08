@@ -1,0 +1,87 @@
+$steps-indicator-active-color: $USFSA-blue-light;
+$steps-indicator-complete-color: $gray-76;
+$steps-indicator-incomplete-color: $gray-dark;
+$steps-indicator-icon-size: 22px;
+$steps-indicator-border-width: 2px;
+$steps-indicator-progress-height: 1px;
+.steps-indicator {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  &__step {
+    display: block;
+    height: $steps-indicator-icon-size;
+    width: $steps-indicator-icon-size;
+    border: solid $steps-indicator-border-width $steps-indicator-incomplete-color;
+    text-align: center;
+    background-color: white;
+    line-height: $steps-indicator-icon-size - ($steps-indicator-border-width);
+    border-radius: 50%;
+    color: $steps-indicator-incomplete-color;
+  }
+  &__item {
+    display: block;
+    border: solid 1px transparent;
+    padding: 2px;
+    border-radius: 50%;
+    &.active {
+      border-color: $steps-indicator-active-color;
+      background-color: white;
+      .steps-indicator__step {
+        border-color: $steps-indicator-active-color;
+        background-color: $steps-indicator-active-color;
+        color: white;
+      }
+    }
+    &.complete {
+      .steps-indicator__step {
+        color: white;
+        border-color: $steps-indicator-complete-color;
+        background-color: $steps-indicator-complete-color;
+      }
+    }
+  }
+  &__progress {
+    position: absolute;
+    overflow: hidden;
+    z-index: -3;
+    top: 0;
+    left: 4px;
+    right: 4px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__bar {
+      position: relative;
+      height: $steps-indicator-progress-height;
+      background-color: $steps-indicator-incomplete-color;
+      &__indicator {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        &--complete {
+          z-index: 1;
+          width: percentage(1/3);
+          background-color: $steps-indicator-complete-color;
+        }
+        &--next {
+          z-index: 0;
+          width: percentage(2/3);
+          background-color: $steps-indicator-active-color;
+        }
+      }
+    }
+  }
+}

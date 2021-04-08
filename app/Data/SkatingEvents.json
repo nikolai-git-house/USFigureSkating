@@ -1,0 +1,104 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Intermediate Ladies",
+    "credit_config": [
+      {
+        "key": "opi",
+        "cost": 35,
+        "limit": 5
+      },
+      {
+        "key": "upi",
+        "cost": 30,
+        "limit": 4
+      },
+      {
+        "key": "wu",
+        "cost": 25,
+        "limit": 0
+      }
+    ],
+    "credit_packages":[
+      {
+        "cost":10,
+        "id":1,
+        "credits":{
+          "opi":1,
+          "upi":2
+        }
+      },
+      {
+        "cost":20,
+        "id":2,
+        "credits":{
+          "wu":1,
+          "upi":2
+        }
+      }
+    ]
+  },
+  "2": {
+    "id": 2,
+    "name": "Intermediate Pairs",
+    "credit_config": [
+      {
+        "key": "opi",
+        "cost": 32,
+        "limit": 4
+      },
+      {
+        "key": "upi",
+        "cost": 31,
+        "limit": 3
+      },
+      {
+        "key": "wu",
+        "cost": 15,
+        "limit": 2
+      }
+    ],
+    "credit_packages":[
+      {
+        "cost":10,
+        "id":3,
+        "event_id":2,
+        "credits":{
+          "wu":1,
+          "upi":2
+        }
+      },
+      {
+        "cost":20,
+        "id":4,
+        "event_id":2,
+        "credits":{
+          "opi":1,
+          "upi":2
+        }
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Advanced Pairs",
+    "credit_config": [
+      {
+        "key": "opi",
+        "cost": 32,
+        "limit": 3
+      },
+      {
+        "key": "upi",
+        "cost": 31,
+        "limit": 2
+      },
+      {
+        "key": "wu",
+        "cost": 15,
+        "limit": 1
+      }
+    ],
+    "credit_packages":[]
+  }
+}

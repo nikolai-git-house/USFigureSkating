@@ -1,0 +1,1 @@
+export {CompetitionPortalTeamPerson} from './CompetitionPortalTeamPerson';

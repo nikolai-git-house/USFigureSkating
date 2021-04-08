@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>UI/Check-Boxes/Box-Check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="UI/Check-Boxes/Box-Check" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="#0055A5" x="0.5" y="0.5" width="19" height="19" rx="2"></rect>
+        <polygon id="Fill-1" fill="#0055A5" points="7.77272727 12.8992537 4.19318182 9.37313433 3 10.5485075 7.77272727 15.25 18 5.17537313 16.8068182 4"></polygon>
+    </g>
+</svg>

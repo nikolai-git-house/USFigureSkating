@@ -1,0 +1,99 @@
+.shift-card {
+  $column-gutter: 7px;
+
+  background-color: white;
+  line-height: 1.9rem;
+
+  &__row {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -#{$column-gutter};
+
+    &--align-end {
+      align-items: flex-end;
+    }
+  }
+
+  &__column {
+    box-sizing: content-box;
+    flex-grow: 0;
+    padding: 0 $column-gutter;
+
+    &--fill {
+      flex-grow: 1;
+    }
+
+    &--top {
+      align-self: flex-start;
+    }
+  }
+
+
+  &__datum {
+    margin: 0;
+
+    &--secondary {
+      color: $light-gray-text;
+    }
+
+    &--tertiary {
+      color: $light-gray-text;
+      font-size: 1.2rem;
+    }
+
+    &--description {
+      line-height: (21/12);
+
+      &--small {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
+  &__remove,
+  &__toggle {
+    display: block;
+    margin-right: 0.2rem;
+  }
+
+  &__compliance-flag {
+    background-color: transparent;
+    background-position: left center;
+    @include button-reset;
+    background-size: 11px 11px;
+    font-size: 1.2rem;
+    line-height: 1;
+    padding: 0.2rem;
+    padding-left: 1.4rem;
+    text-decoration: underline;
+    white-space: nowrap;
+
+    &--compliant {
+      @extend .icon-status-primary-success-ada;
+      color: $ada-green-bg;
+
+      &:hover, &:active {
+        color: darken($ada-green-bg, 10%);
+      }
+    }
+
+    &--not-compliant {
+      @extend .icon-status-primary-error-ada;
+      color: $ada-red-text;
+
+      &:hover, &:active {
+        color: darken($ada-red-text, 10%);
+      }
+    }
+
+    &--compliance-required {
+      color: $USFSA-blue-light;
+      padding-left: 0;
+
+      &:hover, &:active {
+        color: darken($USFSA-blue-light, 10%);
+      }
+    }
+  }
+}

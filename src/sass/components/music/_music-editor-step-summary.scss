@@ -1,0 +1,68 @@
+$music-step-summary-height: 50px;
+$music-element-action-column-width: 41px;
+$music-element-number-column-width: 36px;
+$music-element-name-padding-l: 2rem;
+$music-element-name-padding-r: 0.5rem;
+//Styles
+.music-editor-step-summary {
+  line-height: $music-step-summary-height;
+  border-bottom: solid 1px $gray-light;
+  &__number {
+    text-align: center;
+    .music-editor-step-summary__value {
+      font-size: 2.2rem;
+      color: $USFSA-blue;
+    }
+  }
+  &__name {
+    border-left: solid 1px $gray-light;
+    white-space: nowrap;
+    .music-editor-step-summary__value {
+      padding-left: $music-element-name-padding-l;
+      padding-right: $music-element-name-padding-r;
+    }
+  }
+  &__actions {
+    line-height: $music-step-summary-height;
+    text-align: right;
+  }
+  &__info {
+    padding: 0;
+    line-height: $font-size-base;
+    margin-left: 2px;
+  }
+}
+
+//Layout
+.music-editor-step-summary {
+  @include grid-row(0, true);
+  @include flex-compatible {
+    @include remove-clearfix;
+    align-items: center;
+    flex-wrap: wrap;
+    @media screen and (min-width: 215px) {
+      flex-wrap: nowrap;
+    }
+  }
+  &__number {
+    @include grid-column($music-element-number-column-width, 0, true);
+  }
+  &__name {
+    @include grid-column(calc(100% - #{$music-element-number-column-width} - #{$music-element-action-column-width}), 0, true);
+  }
+  &__actions {
+    @include grid-column($music-element-action-column-width, 0, true);
+    @include flex-compatible {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-grow: 1;
+      flex-shrink: 0;
+    }
+  }
+  &--no-actions {
+    .music-editor-step-summary__name {
+      @include grid-column(calc(100% - #{$music-element-number-column-width}), 0, true);
+    }
+  }
+}

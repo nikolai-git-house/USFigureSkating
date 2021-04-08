@@ -1,0 +1,16 @@
+[
+  {
+    "cost":10,
+    "id":131,
+    "credits":{
+      "opi":1,
+      "upi":2,
+      "wu":0
+    },
+    "competition_name":"Prepurchase Sales",
+    "event_name":"Intermediate Ladies",
+    "competition_id":5,
+    "event_id":13,
+    "name":"OPI:1/UPI:2"
+  }
+]

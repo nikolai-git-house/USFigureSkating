@@ -1,0 +1,179 @@
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin remove-clearfix() {
+  &:before,
+  &:after {
+    content: none;
+    display: none;
+  }
+  &:after {
+    clear: none;
+  }
+}
+
+$z-index: () !default;
+@mixin z-index($name) {
+  z-index: map-get($z-index, $name);
+}
+
+@mixin screen-mobile-only {
+  @media screen and (max-width: #{$screen-tablet} - 1px) {
+    @content;
+  }
+}
+
+@mixin screen-tablet {
+  @media screen and (min-width: $screen-tablet) {
+    @content;
+  }
+}
+
+@mixin screen-sm-desktop {
+  @media screen and (min-width: $screen-sm-desktop) {
+    @content;
+  }
+}
+
+@mixin screen-desktop {
+  @media screen and (min-width: $screen-desktop) {
+    @content;
+  }
+}
+
+@mixin pseudo($position:absolute) {
+  content: "";
+  display: block;
+  position: $position;
+}
+
+@mixin tab-focus($outline_style:5px auto -webkit-focus-ring-color) {
+  outline: $outline_style;
+  outline-offset: -2px;
+}
+
+// Placeholder text
+@mixin placeholder($color: $input-color-placeholder) {
+  // Firefox
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  // Internet Explorer 10+
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  // Safari and Chrome
+}
+
+@mixin vertical-center {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-style: preserve-3d;
+}
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  // IE8 filter
+  $opacity-ie: ($opacity * 100);
+  filter: alpha(opacity=$opacity-ie);
+}
+
+@mixin lock-body {
+  &, body {
+    overflow: hidden;
+    height: 100%;
+  }
+}
+
+@mixin hide-text {
+  &, &:hover, &:active, &:focus {
+    color: transparent;
+  }
+  text-indent: 1000%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/**
+ * Mixin to extend an element's touch target through pseudo elements
+ * Useful when an element is too small for ideal touch targets
+ */
+@mixin pseudo-touch {
+  position: relative;
+  overflow: visible;
+  &:after {
+    @include pseudo();
+    height: 44px;
+    width: 44px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //border: dotted 1px #efefef;
+  }
+}
+
+@mixin hide-in-place {
+  border: 0;
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  position: absolute;
+  clip: rect(0 0 0 0);
+}
+
+
+@mixin list-reset {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin ie-only {
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}
+
+@mixin not-ie {
+  @supports not (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+@mixin not-edge {
+  @supports not (-ms-ime-align:auto) {
+    @content;
+  }
+}
+
+@mixin not-ms {
+  @include not-ie{
+    @include not-edge{
+      @content;
+    }
+  }
+}
+
+@mixin all-states {
+  &,
+  &:active,
+  &:hover,
+  &:focus,
+  &.focus {
+    @content;
+  }
+}

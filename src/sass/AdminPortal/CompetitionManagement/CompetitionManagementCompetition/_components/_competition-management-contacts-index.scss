@@ -1,0 +1,78 @@
+.competition-management-contacts-index {
+  &__tabs {
+    padding-top: 1rem;
+  }
+  &__body {
+    @extend .grid-container;
+    padding-top: 3rem;
+  }
+  &__controls {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.7rem;
+    padding-top: 2.5rem;
+  }
+  &__search {
+    padding-top: 3rem;
+  }
+  &__footer {
+    @extend .pagination-footer;
+  }
+  .status-entity-card {
+    overflow: hidden;
+  }
+  &__entity-card-actions {
+    white-space: nowrap;
+    .icon-button + .icon-button {
+      margin-left: 0.8rem;
+    }
+    .icon-button--pseudo:not(.icon-button--labeled):not(.icon-button--labeled-inline):after {
+      width: 25px;
+    }
+  }
+  &__entity-display-edit {
+    margin-top: -1rem;
+    &__description {
+      color: $light-gray-text;
+      font-size: 1.2rem;
+      line-height: (16/12);
+      margin: 0 0 0.3rem;
+    }
+    &__controls {
+      align-items: center;
+      display: flex;
+      margin-left: -3px;
+      .usfsa-radio {
+        display: block;
+        padding-left: 2rem;
+        &:not(:first-child) {
+          margin-left: 1rem;
+        }
+      }
+    }
+    &__message {
+      font-size: 1.2rem;
+      line-height: 1;
+      margin: 0 0 0 3rem;
+      text-transform: uppercase;
+    }
+    &__error {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+  .page-alert__content-container {
+    p + p {
+      margin-top: 2.7rem;
+    }
+  }
+  .status-entity-card__column--actions {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+  .card-overlay {
+    &__controls {
+      margin-top: 2.2rem;
+    }
+  }
+}

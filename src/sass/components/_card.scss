@@ -1,0 +1,69 @@
+.card {
+  @include has-competition-banners;
+
+  background: white;
+  /**
+   * Pad content consistently from edges of card
+   */
+  &__content {
+    padding: 3.5rem 1.8rem 3rem 1.7rem;
+    &--equal {
+      padding: 2rem;
+    }
+  }
+  &__title {
+    color: $USFSA-blue;
+    font-size: 1.6rem;
+    line-height: (18/16);
+    margin: 0 0 1.5rem;
+    text-align: center;
+  }
+  /**
+   * Heading for a card
+   */
+  &__heading {
+    font-size: 1.6rem;
+    line-height: (18/16);
+    color: $text-color;
+    margin: 0 0 1.5rem;
+  }
+  /**
+   * Plain text content for cards.
+   */
+  &__text {
+    margin: 0;
+    line-height: (20/14);
+    + #{&} {
+      margin-top: 1.2rem;
+    }
+  }
+  /**
+   * List within card.
+   * Align to card content, and space out list items
+   */
+  &__list {
+    margin: 0.5rem 0 0;
+    padding: 0 0 0 1.6rem;
+    line-height: (20/14);
+    > li {
+      padding: 0.3rem 0 0.4rem;
+    }
+  }
+  /**
+   * Card section.
+   * Create borders between sections in a series, and space them properly
+   */
+  &__section {
+    &:not(:first-of-type) {
+      border-top: solid 1px $divider-color;
+      margin-top: 1.6rem;
+      padding-top: 2rem;
+    }
+  }
+  /**
+   * Add vertical space between cards in a series
+   */
+  + #{&} {
+    margin-top: 3rem;
+  }
+}

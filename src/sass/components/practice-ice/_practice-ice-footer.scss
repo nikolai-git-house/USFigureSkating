@@ -1,0 +1,71 @@
+.practice-ice-footer {
+  padding: 1.3rem 2rem;
+  &__content {
+    @include grid-container;
+  }
+  &__row {
+    @include grid-row(35px, true);
+    @include flex-compatible {
+      align-items: center;
+    }
+    &:last-child {
+      margin-top: 1rem;
+    }
+  }
+  &__column {
+    @include grid-column(50%, 35px, true);
+    &--cart-total {
+      @include clearfix;
+      font-size: 1.8rem;
+      line-height: percentage(24/18);
+    }
+  }
+  &__cart-total {
+    &__label {
+      display: block;
+      float: left;
+    }
+    &__amount {
+      display: block;
+      float: right;
+      color: $USFSA-blue;
+    }
+  }
+  &__credits-list {
+    line-height: 1.25;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1.2rem;
+    color: $light-gray-text;
+    li {
+      display: inline-block;
+    }
+  }
+
+  &--total-only {
+    .practice-ice-footer__column--credits {
+      display: none;
+    }
+    .practice-ice-footer__column--checkout {
+      width: 100%;
+      @include flex-compatible {
+        flex-basis: 100%;
+      }
+    }
+  }
+  &--credits-only {
+    .practice-ice-footer__column--credits {
+      width: 100%;
+      @include flex-compatible {
+        flex-basis: 100%;
+      }
+    }
+    .practice-ice-footer__column--checkout {
+      display: none;
+    }
+    .practice-ice-footer__credits-notice {
+      text-align: center;
+    }
+  }
+}

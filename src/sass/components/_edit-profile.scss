@@ -1,0 +1,32 @@
+/**
+ * Component containing forms and sections for editing a user profile
+ */
+.edit-profile {
+  $c: &;
+  &__member-heading {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 0;
+  }
+  &__section {
+    padding: 0.8rem 0 3.1rem 0;
+  }
+  &__form {
+    + #{$c}__display-data {
+      margin-top: 3.5rem;
+    }
+  }
+  &__display-data {
+    .label-list + .label-list {
+      margin-top: 1.7rem;
+    }
+  }
+  &__display-notice {
+    font-size: 12px;
+  }
+  .accordion {
+    &__content {
+      padding: 0;
+    }
+  }
+}

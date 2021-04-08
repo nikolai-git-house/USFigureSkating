@@ -1,0 +1,62 @@
+$practice-ice-filters-pad-h: $gutter;
+.page-practice-ice {
+  padding-bottom: 12rem;
+
+  .page-heading {
+    padding-bottom: 1.5rem;
+  }
+  .page__lead {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1.4;
+  }
+  &__rink-name-carousel {
+    background: white;
+  }
+  &__filters {
+    @extend .grid-container;
+    padding: $content-pad-standard $practice-ice-filters-pad-h 0;
+    position: relative;
+  }
+  &__footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.2);
+    @include z-index('practice-ice-footer');
+  }
+
+  &__sessions {
+    @extend .grid-container;
+    .session {
+      cursor: pointer;
+    }
+  }
+  &__no-sessions {
+    padding: 0 $practice-ice-filters-pad-h/2;
+  }
+  &--competition-schedule {
+    .page-practice-ice__sessions .session {
+      cursor: default;
+    }
+  }
+  &--team{
+    .page-practice-ice__sessions .session {
+      cursor: default;
+    }
+  }
+}
+
+.practice-ice-rink-session-carousel {
+  .swiper-wrapper {
+    z-index: auto;
+  }
+  .swiper-slide {
+    min-height: 50vh;
+  }
+}

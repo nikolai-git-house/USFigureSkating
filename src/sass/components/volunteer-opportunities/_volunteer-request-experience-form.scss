@@ -1,0 +1,87 @@
+/**
+ * The form for specifying experience information during the request process
+ */
+.volunteer-request-experience-form {
+
+  &__lead {
+    margin-top: 0;
+  }
+
+  /**
+   * Major sub-content block within component
+   */
+  &__section {
+    + #{&} {
+      padding-top: 4rem;
+    }
+    .form-group + .form-group {
+      margin-top: 2.5rem;
+    }
+
+    &--waivers + &--terms {
+      padding-top: 5rem;
+    }
+
+    &--lead + &--waivers {
+      padding-top: 2rem;
+    }
+
+    &--lead {
+      > p {
+        margin: 0;
+      }
+    }
+
+    /**
+     * The terms agreement section
+     */
+    &--terms {
+      .check-list {
+        @media screen and (max-width: 474px) {
+          max-width: 250px;
+        }
+      }
+    }
+  }
+  /**
+   * The heading text element for a section
+   */
+  &__section-heading {
+    margin: 0 0 2.7rem;
+    color: $text-color;
+    font-size: 1.6rem;
+    line-height: (20/16);
+  }
+  /**
+   * The content block of a section
+   */
+  &__section-content {
+    padding: 0 1rem;
+
+    .form-actions {
+      margin-top: 0;
+    }
+  }
+
+  /**
+   * The block containing the additional input when a checkbox is ticked
+   */
+  &__extended-info {
+    padding: 1.6rem 0 0.8rem;
+  }
+
+  &__waivers-error {
+    margin-top: 2rem;
+  }
+
+  /**
+   * Enforce height on textarea in form
+   */
+  textarea.form-field {
+    min-height: 9.5rem;
+  }
+
+  .waiver-accordion-content {
+    padding-top: 0.5rem;
+  }
+}

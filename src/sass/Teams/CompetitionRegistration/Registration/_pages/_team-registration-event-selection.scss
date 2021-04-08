@@ -1,0 +1,84 @@
+.team-registration-event-selection {
+  .accordion {
+    &__trigger {
+      color: $USFSA-blue;
+      font-size: 1.8rem;
+      padding: 1.5rem 0;
+
+      &:after {
+        right: 1.5rem;
+      }
+    }
+  }
+
+  .page-heading {
+    @at-root .team-registration & {
+      padding-bottom: 1.8rem;
+    }
+  }
+
+  .event-selection-component {
+    .event-card {
+      padding-right: 20px;
+      position: relative;
+      z-index: 1;
+
+      .session-feedback {
+        background: white;
+        left: 2rem;
+        max-width: 350px;
+        position: absolute;
+        @include vertical-center;
+        width: calc(100% - 40px);
+        z-index: 1;
+      }
+    }
+
+    .event-selection {
+      &__event-list {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      &__selected {
+        @extend .page--accent__standard-content;
+
+        .event-selection__event-list {
+          margin-top: -1rem;
+
+          .event-card {
+            &:not(:first-child) {
+              margin-top: -1rem;
+            }
+          }
+        }
+      }
+
+      &__available {
+        padding-bottom: 0;
+        padding-top: 0;
+
+        &__heading {
+          line-height: 1;
+          margin: 2rem 0 2rem 0.5rem;
+        }
+
+        .event-selection__event-list {
+          padding: 0 0.5rem;
+        }
+      }
+
+      &__pagination {
+        margin: 2.5rem 0 0;
+      }
+    }
+
+    &--no-pagination {
+      .event-selection__available {
+        .event-selection__event-list {
+          min-height: 0;
+        }
+      }
+    }
+  }
+}

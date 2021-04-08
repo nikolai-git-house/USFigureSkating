@@ -1,0 +1,66 @@
+<svg viewBox="0 0 80 79" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        #animated-check__mask {
+        stroke-dasharray: 52;
+        stroke-dashoffset: 52;
+        animation: a-animated-check-check 5s ease-in-out;
+        <!--animation-direction: reverse;-->
+        animation-delay: .8s;
+        animation-fill-mode: forward;
+        }
+
+        @keyframes a-animated-check-check {
+        to {
+        stroke-dashoffset: 0;
+        }
+        }
+
+        @keyframes a-animated-check-circle {
+        to {
+        stroke-dashoffset: 245;
+        }
+        }
+
+        #animated-check__circle {
+        stroke-dasharray: 245;
+        stroke-dashoffset: 490;
+        animation: a-animated-check-circle .75s ease-in-out;
+        animation-direction: reverse;
+        animation-fill-mode: backwards;
+        }
+    </style>
+    <defs>
+
+    </defs>
+    <!--<g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">-->
+    <!--<circle id="animated-check__circle" r="38.685" transform="rotate(-90 40 39.5) translate(40 39.5)" stroke="#3AB44A"-->
+    <!--stroke-width="1.7792" stroke-linecap="round" stroke-linejoin="round"/>-->
+    <!--<g id="Group-11" transform="translate(1 1)">-->
+    <!--<mask id="mask">-->
+    <!--<path id="animated-check__mask" stroke="#FFF" stroke-width="8" stroke-linecap="square" d="M20.5270973 38.1141019l10.6342635 10.7544504 25.839558-26.2210975"/>-->
+    <!--</mask>-->
+    <!--<path  id="Check-Fill" fill="#3AB44A"-->
+    <!--d="M31.1111488 52.8259588L18.5946724 40.2071647l4.8864705-4.8467823 7.6300059 7.6926352 22.9797177-23.1680647 4.8864706 4.8467824z"/>-->
+    <!--&lt;!&ndash;<path id="animated-check__mask" stroke-linecap="square" transform="translate(0 .5)" stroke-opacity=".7" stroke="#eec" stroke-width="7.5" d="M20.1452964 37.0165823l10.9710504 10.8143935 25.8888457-26.1546122"/>&ndash;&gt;-->
+    <!--<path id="animated-check__mask" stroke="#FFF" stroke-width="8"  d="M20.5270973 38.0141019l10.6342635 10.7544504 25.839558-26.2210975"/>-->
+    <!--</g>-->
+    <!--</g>-->
+
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="animated-check__circle" r="38.685" transform="rotate(-90 40 39.5) translate(40 39.5)"
+                stroke="#3AB44A"
+                stroke-width="1.7792" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="Group-11" transform="translate(1 1)">
+            <g id="Group-6">
+                <!--<path id="Check-Fill" fill="#3AB44A" d="M31.1111488 52.8259588L18.5946724 40.2071647l4.8864705-4.8467823 7.6300059 7.6926352 22.9797177-23.1680647 4.8864706 4.8467824z"/>-->
+                <path stroke-linecap="square" id="animated-check__mask"  stroke="#3AB44A" stroke-width="7"
+                      d="M20.9573089 37.7969636l10.108832 10.129143 25.495225-25.58921"/>
+
+
+
+
+            </g>
+        </g>
+    </g>
+</svg>
+

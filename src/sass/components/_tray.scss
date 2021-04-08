@@ -1,0 +1,14 @@
+.tray-close {
+  @include button-reset;
+  border: none;
+  box-sizing: content-box;
+  display: block;
+  width: 100%;
+  background-color: transparent;
+  height: 8px;
+  padding: 2rem 0;
+  @extend .icon-chevron-up;
+  background-size: 13px 8px;
+  background-position: center center;
+  @include hide-text;
+}

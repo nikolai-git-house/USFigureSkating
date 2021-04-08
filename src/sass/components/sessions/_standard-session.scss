@@ -1,0 +1,79 @@
+.session {
+  padding: 1.7rem 1rem 1.7rem 2rem;
+  position: relative;
+  &__header {
+    @include clearfix;
+  }
+  &__time {
+    float: left;
+    margin: 0;
+  }
+  &__code {
+    float: right;
+    text-align: right;
+    color: $light-gray-text;
+  }
+  &__content {
+    line-height: 125%;
+  }
+  &__name {
+    margin: .8rem 0 0;
+  }
+  &__subtext {
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: 1.33;
+    margin: .4rem 0 0;
+  }
+  &__time__meridian {
+    font-size: 1.1rem;
+  }
+  &__icon {
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    display: inline-block;
+    &--resurface {
+      background: #8b8b8b;
+    }
+    &--mens {
+      background: blue;
+    }
+    &--ladies {
+      background: #ff8ff3;
+    }
+  }
+  &__toggle-row {
+    @include clearfix;
+    position: relative;
+    margin-top: .4rem;
+    &__item {
+      float: left;
+      height: 100%;
+      margin: 0;
+    }
+  }
+  &__toggle {
+    appearance: none;
+    float: right;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    display: block;
+    cursor: pointer;
+    @extend .icon-chevron-down;
+    width: 1.2rem;
+    background-size: 1.2rem .8rem;
+    background-position: center center;
+    &--expanded {
+      @extend .icon-chevron-up;
+    }
+  }
+  .session-skater-list {
+    padding-top: 0.5rem;
+    .session-skater-list__label {
+      margin: 0.5rem 0 0.3rem;
+    }
+  }
+
+}

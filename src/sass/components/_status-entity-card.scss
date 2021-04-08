@@ -1,0 +1,80 @@
+.status-entity-card {
+  background-color: white;
+  margin: 2rem 0;
+  &--with-overlay {
+    position: relative;
+    min-height: 175px;
+  }
+  &__row {
+    display: flex;
+    padding: 1.9rem 1rem 1.8rem 2rem;
+  }
+  &__column {
+    &--status {
+      flex-basis: 28px;
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+    &--description {
+      flex-basis: auto;
+      flex-grow: 1;
+      flex-shrink: 1;
+      padding: 0 8px;
+    }
+    &--actions {
+      flex-basis: auto;
+      flex-grow: 0;
+      flex-shrink: 0;
+      padding: 0 1.7rem 0;
+      @at-root .status-entity-card--centered-actions & {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+  &__status-icon {
+    height: 28px;
+    width: 28px;
+  }
+  &__secondary {
+    @extend .text--muted;
+    margin: 2px 0 1px;
+    &--highlight {
+      color: $USFSA-blue;
+    }
+  }
+  &__secondary-content {
+    font-size: 1.2rem;
+    line-height: (17/12);
+    margin-top: -3px;
+  }
+  &__secondary-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__expand-content {
+    margin-top: -6px;
+    padding: 0 0 1.6rem 5.5rem;
+  }
+
+  &--centered {
+    .status-entity-card {
+      &__row {
+        align-items: center;
+      }
+
+      &__column {
+        &--actions {
+          > .icon-button {
+            display: block;
+          }
+        }
+      }
+
+      &__status-icon {
+        display: block;
+      }
+    }
+  }
+}

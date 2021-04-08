@@ -1,0 +1,100 @@
+.team-registration-roster-edit {
+  /**
+   * Page header block
+   */
+  &__header {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+
+    &__title {
+      @extend .admin-portal-primary-heading;
+      margin: 0;
+      text-align: center;
+    }
+
+    &__subtitle {
+      @extend .admin-portal-subheading;
+      margin: 0.5rem 0 0;
+      text-align: center;
+    }
+  }
+
+  /**
+   * Content area
+   */
+  &__content {
+    @extend .grid-container;
+  }
+
+  /**
+   * Footers
+   */
+  &__footer {
+    @extend .pagination-footer;
+
+    &__content {
+      @extend .grid-container;
+    }
+
+    &__member-cost {
+      margin: -0.5rem 0 0.5rem;
+      text-align: right;
+
+
+    }
+  }
+
+  /**
+   * Information tray block
+   */
+  &__information {
+    margin-top: 2.5rem;
+
+    > p {
+      line-height: $line-height-copy-block;
+      margin: 0;
+    }
+
+    .page-alert {
+      &__content-container {
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
+
+  /**
+   * Roster rules list
+   */
+  &__rules-list {
+    line-height: (18/14);
+    margin: 2.5rem 0 0;
+    padding-left: 1.5rem;
+
+    > li {
+      padding: 2px 0;
+    }
+  }
+
+  /**
+   * Roster size display
+   */
+  &__roster-size {
+    margin: 3rem 0 1.5rem;
+  }
+
+  /**
+   * Roster list section
+   */
+  &__roster {
+    margin-top: 1.5rem;
+  }
+
+  /**
+   * Submission error in footer
+   */
+  &__error {
+    color: $error-message-text-color;
+    line-height: (18/14);
+    margin: 0.3rem 0 1.4rem;
+  }
+}

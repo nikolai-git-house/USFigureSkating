@@ -1,0 +1,11 @@
+.competition-management-competition-index {
+  padding-bottom: 6rem;
+  &__content {
+    padding-top: 0.5rem;
+    @extend .grid-container;
+  }
+  .panel-link--simple {
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+  }
+}

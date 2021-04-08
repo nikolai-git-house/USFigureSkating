@@ -1,0 +1,22 @@
+.site-footer {
+  font-size: 1.2rem;
+  //letter-spacing: 0;
+  &__content {
+    text-align: center;
+    border-top: solid 1px hsl(0, 0, 80);
+    padding: 1rem 0;
+  }
+  &__nav, &__text, &__legal {
+    padding: 0;
+    margin: 0;
+  }
+  &__nav, &__legal {
+    margin-top: 1rem;
+  }
+  &__nav {
+    list-style: none;
+    > li {
+      display: inline-block;
+    }
+  }
+}

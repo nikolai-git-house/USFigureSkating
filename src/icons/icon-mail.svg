@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg viewBox="0 0 23 16" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g id="Admin-Portal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Check-In_Page" transform="translate(-215 -336)" stroke="#2599F2">
+            <g id="Email" transform="translate(215 336)">
+                <g id="-Icons/Mail">
+                    <rect id="Rectangle-Copy-4" x="0.5" y="0.5" width="22" height="15" rx="1"/>
+                    <path d="M1.00929782 1.01679144l8.97911773 8.75246477h0c.76608295.74674529 1.98415925.75839859 2.76438885.0264467l9.3579461-8.77891147" id="Path-2"/>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

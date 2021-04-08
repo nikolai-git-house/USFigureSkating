@@ -1,0 +1,55 @@
+//border-color: $gray-med; for inputs in SS filters
+.accordion-multiselect {
+  &__section {
+    + #{&} {
+      border-top: solid 1px $divider-color;
+      margin-top: 2rem;
+      padding-top: 2rem;
+    }
+  }
+
+  &__content {
+    padding-top: 1rem;
+  }
+
+  &__display_value {
+    color: $light-gray-text;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &__apply {
+    margin-top: 2rem;
+
+    .input-error {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &__item {
+      &:not(:first-child) {
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  &.accordion--select .accordion__trigger {
+    background-position: calc(100% - 15px) center;
+    padding: 0 3.5rem 0 1.5rem;
+
+    > span:not([class^=accordion-data-trigger]):not([class*=accordion-trigger-raw]) {
+      max-width: 97%;
+    }
+  }
+
+  .usfsa-checkbox__text {
+    padding-top: 0.2rem;
+  }
+}

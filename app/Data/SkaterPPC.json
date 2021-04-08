@@ -1,0 +1,473 @@
+{
+  "1": {
+    "1": {
+      "1": {
+        "elements": [
+          {
+            "moves": [
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 5,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Lutz",
+                "code": "1Lz",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              }
+            ],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 25,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "2-Jump Combination",
+              "code": null,
+              "is_combo": true,
+              "is_transition": false,
+              "number_of_combos": 2,
+              "exclude_from_combos": true
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 1,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "Single-Toeloop",
+              "code": "1T",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 27,
+              "description": "Twizzles"
+            },
+            "element": {
+              "id": 148,
+              "category_id": 1,
+              "type_id": 27,
+              "description": "Synchronized Twizzles ",
+              "code": "STw",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 27,
+              "description": "Twizzles"
+            },
+            "element": {
+              "id": 147,
+              "category_id": 1,
+              "type_id": 27,
+              "description": "Sequential Twizzles",
+              "code": "STw",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 2,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Salchow",
+                "code": "1S",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              }
+            ],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 26,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "3-Jump Combination",
+              "code": null,
+              "is_combo": true,
+              "is_transition": false,
+              "number_of_combos": 3,
+              "exclude_from_combos": true
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "elements": []
+      }
+    }
+  },
+  "2": {
+    "elements": [
+      {
+        "moves": [
+          {
+            "id": 1,
+            "category_id": 2,
+            "type_id": 5,
+            "description": "Single-Toeloop",
+            "code": "1T",
+            "is_combo": false,
+            "is_transition": false,
+            "number_of_combos": 0,
+            "exclude_from_combos": false
+          },
+          {
+            "id": 5,
+            "category_id": 2,
+            "type_id": 5,
+            "description": "Single-Lutz",
+            "code": "1Lz",
+            "is_combo": false,
+            "is_transition": false,
+            "number_of_combos": 0,
+            "exclude_from_combos": false
+          }
+        ],
+        "type": {
+          "id": 5,
+          "description": "Jumps"
+        },
+        "element": {
+          "id": 25,
+          "category_id": 2,
+          "type_id": 5,
+          "description": "2-Jump Combination",
+          "code": null,
+          "is_combo": true,
+          "is_transition": false,
+          "number_of_combos": 2,
+          "exclude_from_combos": true
+        }
+      },
+      {
+        "moves": [],
+        "type": {
+          "id": 5,
+          "description": "Jumps"
+        },
+        "element": {
+          "id": 1,
+          "category_id": 2,
+          "type_id": 5,
+          "description": "Single-Toeloop",
+          "code": "1T",
+          "is_combo": false,
+          "is_transition": false,
+          "number_of_combos": 0,
+          "exclude_from_combos": false
+        }
+      },
+      {
+        "moves": [],
+        "type": {
+          "id": 27,
+          "description": "Twizzles"
+        },
+        "element": {
+          "id": 148,
+          "category_id": 1,
+          "type_id": 27,
+          "description": "Synchronized Twizzles ",
+          "code": "STw",
+          "is_combo": false,
+          "is_transition": false,
+          "number_of_combos": 0,
+          "exclude_from_combos": false
+        }
+      },
+      {
+        "moves": [],
+        "type": {
+          "id": 27,
+          "description": "Twizzles"
+        },
+        "element": {
+          "id": 147,
+          "category_id": 1,
+          "type_id": 27,
+          "description": "Sequential Twizzles",
+          "code": "STw",
+          "is_combo": false,
+          "is_transition": false,
+          "number_of_combos": 0,
+          "exclude_from_combos": false
+        }
+      },
+      {
+        "moves": [
+          {
+            "id": 1,
+            "category_id": 2,
+            "type_id": 5,
+            "description": "Single-Toeloop",
+            "code": "1T",
+            "is_combo": false,
+            "is_transition": false,
+            "number_of_combos": 0,
+            "exclude_from_combos": false
+          },
+          {
+            "id": 1,
+            "category_id": 2,
+            "type_id": 5,
+            "description": "Single-Toeloop",
+            "code": "1T",
+            "is_combo": false,
+            "is_transition": false,
+            "number_of_combos": 0,
+            "exclude_from_combos": false
+          },
+          {
+            "id": 2,
+            "category_id": 2,
+            "type_id": 5,
+            "description": "Single-Salchow",
+            "code": "1S",
+            "is_combo": false,
+            "is_transition": false,
+            "number_of_combos": 0,
+            "exclude_from_combos": false
+          }
+        ],
+        "type": {
+          "id": 5,
+          "description": "Jumps"
+        },
+        "element": {
+          "id": 26,
+          "category_id": 2,
+          "type_id": 5,
+          "description": "3-Jump Combination",
+          "code": null,
+          "is_combo": true,
+          "is_transition": false,
+          "number_of_combos": 3,
+          "exclude_from_combos": true
+        }
+      }
+    ]
+  },
+  "7": {
+    "1": {
+      "1": {
+        "elements": [
+          {
+            "moves": [
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 5,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Lutz",
+                "code": "1Lz",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              }
+            ],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 25,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "2-Jump Combination",
+              "code": null,
+              "is_combo": true,
+              "is_transition": false,
+              "number_of_combos": 2,
+              "exclude_from_combos": true
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 1,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "Single-Toeloop",
+              "code": "1T",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 27,
+              "description": "Twizzles"
+            },
+            "element": {
+              "id": 148,
+              "category_id": 1,
+              "type_id": 27,
+              "description": "Synchronized Twizzles ",
+              "code": "STw",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [],
+            "type": {
+              "id": 27,
+              "description": "Twizzles"
+            },
+            "element": {
+              "id": 147,
+              "category_id": 1,
+              "type_id": 27,
+              "description": "Sequential Twizzles",
+              "code": "STw",
+              "is_combo": false,
+              "is_transition": false,
+              "number_of_combos": 0,
+              "exclude_from_combos": false
+            }
+          },
+          {
+            "moves": [
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 1,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Toeloop",
+                "code": "1T",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              },
+              {
+                "id": 2,
+                "category_id": 2,
+                "type_id": 5,
+                "description": "Single-Salchow",
+                "code": "1S",
+                "is_combo": false,
+                "is_transition": false,
+                "number_of_combos": 0,
+                "exclude_from_combos": false
+              }
+            ],
+            "type": {
+              "id": 5,
+              "description": "Jumps"
+            },
+            "element": {
+              "id": 26,
+              "category_id": 2,
+              "type_id": 5,
+              "description": "3-Jump Combination",
+              "code": null,
+              "is_combo": true,
+              "is_transition": false,
+              "number_of_combos": 3,
+              "exclude_from_combos": true
+            }
+          }
+        ]
+      }
+    },
+    "2": {
+      "1": {
+        "elements": []
+      }
+    }
+  }
+}

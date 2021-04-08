@@ -1,0 +1,8 @@
+.label-list{
+  padding:0;
+  list-style: none;
+  color: $light-gray-text;
+  &__label {
+    color: $text-color;
+  }
+}

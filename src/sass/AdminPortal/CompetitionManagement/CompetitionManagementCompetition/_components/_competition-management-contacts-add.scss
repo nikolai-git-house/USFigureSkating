@@ -1,0 +1,21 @@
+.competition-management-contacts-add {
+  &__message {
+    line-height: (18/14);
+    margin: 3.5rem 0 0;
+  }
+  &__position {
+    margin-bottom: 2.5rem;
+  }
+  .member-search-form {
+    max-width: none;
+    @include screen-tablet {
+      max-width: $container-tablet;
+    }
+    @include screen-sm-desktop {
+      max-width: $container-sm-desktop;
+    }
+    @include screen-desktop {
+      max-width: $container-desktop;
+    }
+  }
+}

@@ -1,0 +1,111 @@
+$gutter: 30px !default;
+$screen-tablet: 768px !default;
+$screen-sm-desktop: 992px !default;
+$screen-desktop: 1200px !default;
+$container-tablet: 750px !default;
+$container-sm-desktop: 970px !default;
+$container-desktop: 1170px !default;
+$always_flex: false !default;
+
+.grid-container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: floor(($gutter / 2));
+  padding-right: ceil(($gutter / 2));
+  @include clearfix;
+}
+
+.grid-container {
+  @extend .grid-container-fluid;
+  @include screen-tablet {
+    max-width: $container-tablet;
+  }
+  @include screen-sm-desktop {
+    max-width: $container-sm-desktop;
+  }
+  @include screen-desktop {
+    max-width: $container-desktop;
+  }
+}
+
+@mixin grid-container {
+  @extend .grid-container;
+}
+
+@mixin grid-container-fluid {
+  @extend .grid-container-fluid;
+}
+
+@mixin flex-compatible {
+  @if ($always_flex==true) {
+    @content;
+  } @else {
+    html.flexbox &,
+    html.flexboxtweener & {
+      @content;
+    }
+  }
+}
+
+.grid-row-raw {
+  margin-left: ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+}
+
+@mixin grid-row($gutter_width:$gutter,$flex:false) {
+  margin-left: ceil(($gutter / -2));
+  margin-right: floor(($gutter / -2));
+  @include clearfix;
+  @if ($gutter_width!=$gutter) {
+    margin-left: ceil(($gutter_width / -2));
+    margin-right: floor(($gutter_width / -2));
+  }
+  @if ($flex) {
+    @include flex-compatible {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      align-items: stretch;
+    }
+  }
+}
+
+/*
+* Usage:  @include grid-column(percentage(<column_span>/<columns_total>))
+* EX: @include grid-column(percentage(2/12);
+*/
+.grid-column-raw {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: ($gutter / 2);
+  padding-right: ($gutter / 2);
+  width: 100%;
+}
+
+@mixin grid-column($percentage,$gutter_width:$gutter,$flex:false,$flex-fixed-width:false) {
+  position: relative;
+  float: left;
+  min-height: 1px;
+  padding-left: ($gutter / 2);
+  padding-right: ($gutter / 2);
+  @if ($gutter_width!=$gutter) {
+    padding-left: ($gutter_width / 2);
+    padding-right: ($gutter_width / 2);
+  }
+  width: $percentage;
+  @if ($flex) {
+    @include flex-compatible {
+      @if ($flex-fixed-width) {
+        width: $percentage;
+        flex-grow: 0;
+        flex-shrink: 0;
+      } @else {
+        flex-basis: $percentage;
+        width: auto;
+      }
+      float: none;
+    }
+  }
+}

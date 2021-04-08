@@ -1,0 +1,37 @@
+/**
+ * Overlay displaying event requirements during competition registration
+ */
+.event-requirements-overlay {
+  /**
+   * Header section of overlay, including partner name and event name
+   */
+  &__header {
+    padding-bottom: 2.2rem;
+    /**
+     * Partner name block within header
+     */
+    &__partner-name {
+      margin: 0;
+      font-size: 1.8rem;
+      line-height: (21/18);
+    }
+    /**
+     * Event name/details block within header
+     */
+    &__event-details {
+      margin-top: 0.3rem;
+    }
+  }
+  /**
+   * Content block within overlay
+   */
+  &__content {
+    padding-top: 3rem;
+  }
+  /**
+   * Close content block within overlay
+   */
+  &__close {
+    margin-top: 3rem;
+  }
+}

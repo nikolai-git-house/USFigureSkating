@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Applications Closed",
+    "is_team_series": true,
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": false
+  },
+  {
+    "name": "No Applications Standings Unavailable",
+    "is_team_series": true,
+    "_applications_open": false,
+    "_application_started": false,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Standings Unavailable",
+    "is_team_series": true,
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Standings Available",
+    "is_team_series": true,
+    "_applications_open": false,
+    "_application_started": true,
+    "_standings_available": true
+  },
+  {
+    "name": "No Applications Standings Available",
+    "is_team_series": true,
+    "_applications_open": false,
+    "_application_started": false,
+    "_standings_available": true
+  },
+  {
+    "name": "Applications Open - Applications",
+    "is_team_series": true,
+    "_applications_open": true,
+    "_application_started": true,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Open - No Applications",
+    "is_team_series": true,
+    "_applications_open": true,
+    "_application_started": false,
+    "_standings_available": false
+  },
+  {
+    "name": "Applications Open - No Teams",
+    "is_team_series": true,
+    "_applications_open": true,
+    "_application_started": false,
+    "_standings_available": false,
+    "_team_series_no_teams": true
+  }
+]

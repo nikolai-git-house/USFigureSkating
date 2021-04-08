@@ -1,0 +1,125 @@
+/**
+ * Tile featuring a volunteer event
+ */
+.volunteer-event-tile {
+  background: white;
+  position: relative;
+  /**
+   * Overlay block that flashes to indicate a status
+   */
+  &__status {
+    border: solid 1px transparent;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    &--success {
+      background-color: rgba($success-color-alt, .5);
+      border: solid 1px $success-color-alt;
+    }
+  }
+  /**
+   * Content of the tile block
+   */
+  &__content {
+    padding: 1rem 2rem;
+    position: relative;
+  }
+  /**
+   * Header section within the block
+   */
+  &__header {
+    @include clearfix;
+    $header-column-gutter: 10px;
+    margin: 0 #{-1 * $header-column-gutter};
+    padding-bottom: 1.5rem;
+    /**
+     * Column within header
+     */
+    &__column {
+      float: left;
+      padding: 0 $header-column-gutter;
+      /**
+       * Print link column
+       */
+      &--print {
+        float: right;
+        .download-link {
+          text-transform: uppercase;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+  /**
+   * Footer block within the tile
+   */
+  &__footer {
+    padding-bottom: 0.5rem;
+    padding-top: 1.2rem;
+  }
+  /**
+   * CTA block
+   */
+  &__cta {
+    padding-top: 0.8rem;
+    /**
+     * Adjust spacing of message when it follows CTA
+     */
+    + .volunteer-event-tile__message {
+      padding-top: 1rem;
+    }
+  }
+  /**
+   * Block showing dates for the event
+   */
+  &__dates {
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    margin: 0;
+  }
+  /**
+   * General data block within component with default text styling and alignment
+   */
+  &__data {
+    line-height: (18/14);
+    margin: 0;
+    + #{&} {
+      margin-top: 5px;
+    }
+  }
+  /**
+   * Block containing venue information
+   */
+  &__venue {
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0;
+    padding-top: 1rem;
+  }
+  /**
+   * Status message for the event
+   */
+  &__message {
+    color: $alert-red;
+    font-size: 1.2rem;
+    line-height: (18/14);
+    margin: 0;
+    text-align: center;
+    &--success {
+      color: $state-green;
+    }
+    &--warning {
+      color: $warning-text;
+    }
+  }
+  /**
+   * Space sequence of tiles
+   */
+  + #{&} {
+    margin-top: 1.5rem;
+  }
+}

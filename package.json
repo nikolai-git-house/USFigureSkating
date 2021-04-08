@@ -1,0 +1,54 @@
+{
+  "name": "usfsa-mobile-skating",
+  "version": "1.0.0",
+  "description": "This project includes redesigning the mobile experience for U.S. Figure Skating’s Event Management System (EMS).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://mattemrickph@bitbucket.org/publicishawkeye/usfsa-mobile-skating.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/publicishawkeye/usfsa-mobile-skating#readme",
+  "devDependencies": {
+    "@types/faker": "^4.1.5",
+    "@types/lodash": "^4.14.136",
+    "@typescript-eslint/eslint-plugin": "^1.13.0",
+    "@typescript-eslint/parser": "^1.13.0",
+    "axios": "^0.18.1",
+    "browser-sync": "^2.26.7",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "card-validator": "^5.1.0",
+    "cross-env": "^5.2.0",
+    "es6-promise": "^4.2.8",
+    "eslint": "^6.1.0",
+    "eslint-plugin-jsdoc": "15.7.1",
+    "eslint-plugin-vue": "^5.2.3",
+    "fork-ts-checker-notifier-webpack-plugin": "^1.0.2",
+    "fork-ts-checker-webpack-plugin": "^1.4.3",
+    "laravel-mix": "^4.0.14",
+    "lodash": "^4.17.14",
+    "resolve-url-loader": "^2.3.2",
+    "sass": "^1.22.6",
+    "sass-loader": "^7.1.0",
+    "swiper": "^4.2.2",
+    "ts-loader": "^6.0.4",
+    "typescript": "^2.9.2",
+    "vue": "2.5.16",
+    "vue-class-component": "^6.3.2",
+    "vue-property-decorator": "^6.1.0",
+    "vue-template-compiler": "2.5.16",
+    "vue-typed-mixins": "^0.1.0",
+    "vuex": "^3.1.1"
+  },
+  "engines": {
+    "node": ">=8.6"
+  }
+}

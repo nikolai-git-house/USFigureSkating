@@ -1,0 +1,1 @@
+<competition-documents-page></competition-documents-page>

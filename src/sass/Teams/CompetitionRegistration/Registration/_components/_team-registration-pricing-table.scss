@@ -1,0 +1,45 @@
+.team-registration-pricing-table {
+  margin: 2.5rem 0;
+
+  &__title {
+    font-size: 1.8rem;
+    margin: 0 0 0.6rem;
+    text-align: center;
+  }
+
+  /**
+   * Ensure tables always have a grey background on the last cell
+   */
+  &--odd-row-count {
+    .competition-prices-table {
+      &__row {
+        &:nth-child(odd) {
+          background-color: transparent;
+        }
+
+        &:nth-child(even) {
+          background-color: #F3F3F3;
+        }
+      }
+    }
+  }
+
+  .competition-prices-table {
+    @at-root .team-registration-pricing-table--odd-row-count#{&} {
+      &__row {
+        &:nth-child(odd) {
+          background-color: transparent;
+        }
+
+        &:nth-child(even) {
+          background-color: #F3F3F3;
+        }
+      }
+    }
+    .cell {
+      .label-value {
+        width: auto;
+      }
+    }
+  }
+}

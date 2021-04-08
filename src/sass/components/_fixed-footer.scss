@@ -1,0 +1,9 @@
+.fixed-footer {
+  @extend .pagination-footer;
+  &__content {
+    @extend .grid-container;
+  }
+  &-offset {
+    margin-bottom: 7.8rem;
+  }
+}

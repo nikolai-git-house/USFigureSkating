@@ -1,0 +1,28 @@
+.competition-registration-waivers {
+  .accordion {
+    &__trigger {
+      padding-left: 0;
+    }
+  }
+}
+
+.waiver-accordion-content {
+  padding: 2rem 0 1.7rem;
+  .download-link {
+    font-size: 1.6rem;
+    padding-left: 3.3rem;
+  }
+  &__lead {
+    margin: 1.5rem 0 0;
+    line-height: (17/14);
+    padding-right: 45px;
+    br {
+      @media screen and (min-width: 515px) {
+        display: none;
+      }
+    }
+  }
+  &__form {
+    padding-top: 2rem;
+  }
+}

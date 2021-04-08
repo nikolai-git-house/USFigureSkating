@@ -1,0 +1,16 @@
+.page-entity-header {
+  background-color: $gray-light;
+  line-height: $line-height-standard;
+
+  &__content {
+    padding: 1.3rem 0 1.1rem;
+    > [class^=page-entity-header__] + [class^=page-entity-header__]{
+      margin-top: 0.7rem;
+    }
+  }
+
+  &__entity-name {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+}

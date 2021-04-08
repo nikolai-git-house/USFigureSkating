@@ -1,0 +1,74 @@
+.series-application-profile {
+  $r: &;
+
+  &__section-edit {
+    float: right;
+    position: relative;
+    top: 5px;
+  }
+
+  .label-list {
+    > li {
+      @include clearfix;
+    }
+  }
+
+  &__email-edit {
+    margin-top: 0.5rem;
+
+    .form-row {
+      $gutter: 3px;
+      margin-left: -$gutter;
+      margin-right: -$gutter;
+      margin-top: 0.8rem;
+
+      .form-column {
+        padding-left: $gutter;
+        padding-right: $gutter;
+      }
+    }
+  }
+
+  .user-profile-display {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+    padding-top: 1rem;
+
+    &__section {
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+      position: relative;
+
+      .popup {
+        max-width: 335px;
+      }
+
+      &--skate-tests {
+        .popup {
+          &__content {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            p + p {
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+
+    &__section-heading__text {
+      align-items: center;
+      display: flex;
+
+      #{$r}__info-button {
+        margin-left: 1rem;
+      }
+    }
+
+  }
+
+  .skate-tests {
+    margin-top: 2.5rem;
+  }
+}

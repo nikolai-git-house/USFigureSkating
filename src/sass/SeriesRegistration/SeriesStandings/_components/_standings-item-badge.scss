@@ -1,0 +1,83 @@
+.standings-item-badge {
+  $border-radius: 4px;
+  border: solid 1px transparent;
+  border-radius: $border-radius;
+  color: white;
+  line-height: 1;
+  text-align: center;
+
+  &__primary {
+    background-color: $USFSA-blue;
+    border-radius: $border-radius $border-radius 0 0;
+    display: block;
+    font-size: 1.8rem;
+    line-height: (21/18);
+    padding-top: 0.5rem;
+
+    &--reduced {
+      font-size: 1.4rem;
+      line-height: (17/14);
+      padding-bottom: 0.4rem;
+    }
+  }
+
+  &__secondary {
+    background-color: $ada-green-bg;
+    border-radius: 0 0 $border-radius $border-radius;
+    display: block;
+    font-size: 1.4rem;
+    line-height: (17/14);
+    padding: 0.2rem 0 0.1rem;
+
+    &--primary {
+      background-color: $ada-green-bg;
+    }
+
+    &--secondary {
+      background-color: $ada-orange-bg;
+    }
+
+    &--tertiary {
+      background-color: $ada-purple-bg;
+    }
+  }
+
+  &--inverted {
+    border-color: $divider-color;
+
+    .standings-item-badge {
+      &__primary {
+        background-color: transparent;
+        color: $light-gray-text;
+        position: relative;
+
+        &:after {
+          @include pseudo;
+          background-color: $divider-color;
+          bottom: 1px;
+          height: 1px;
+          left: 5px;
+          right: 5px;
+          width: auto;
+        }
+      }
+
+      &__secondary {
+        background-color: transparent;
+        position: relative;
+
+        &--primary {
+          color: $ada-green-text;
+        }
+
+        &--secondary {
+          color: $ada-orange-text;
+        }
+
+        &--tertiary {
+          color: $ada-purple-text;
+        }
+      }
+    }
+  }
+}

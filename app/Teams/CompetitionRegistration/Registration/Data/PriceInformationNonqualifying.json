@@ -1,0 +1,83 @@
+[
+  {
+    "config": {
+      "title": "IJS Prices",
+      "column_names": [
+        "Category",
+        "1st",
+        "2nd",
+        "3rd",
+        "Combined"
+      ],
+      "null_row_message": "IJS events are not offered at this competition"
+    },
+    "rows": [
+      {
+        "label": "Synchro",
+        "values": [
+          60,
+          40,
+          40,
+          100
+        ]
+      }
+    ]
+  },
+  {
+    "config": {
+      "title": "6.0 Prices",
+      "column_names": [
+        "Category",
+        "1st",
+        "2nd",
+        "3rd",
+        "Combined"
+      ],
+      "null_row_message": "6.0 events are not offered at this competition"
+    },
+    "rows": [
+      {
+        "label": "Synchro",
+        "values": [
+          60,
+          40,
+          40,
+          100
+        ]
+      },
+      {
+        "label": "Compete USA - Teams/Other",
+        "values": [
+          60,
+          40,
+          40,
+          100
+        ]
+      }
+    ]
+  },
+  {
+    "config": {
+      "title": "Per Skater Fees",
+      "column_names": [
+        "Discipline",
+        "Per Skater Fee"
+      ],
+      "null_row_message": "Not offered at this competition"
+    },
+    "rows": [
+      {
+        "label": "Singles",
+        "values": [
+          10
+        ]
+      },
+      {
+        "label": "Compete USA - Teams/Other",
+        "values": [
+          0.01
+        ]
+      }
+    ]
+  }
+]

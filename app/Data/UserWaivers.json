@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "name": "Waivers and Release",
+    "file_url": "#",
+    "status": {
+      "name": null,
+      "relationship": null
+    }
+  },
+  {
+    "id": 2,
+    "name": "Media Consent",
+    "file_url": "#",
+    "status": {
+      "name": null,
+      "relationship": null
+    }
+  },
+  {
+    "id": 3,
+    "name": "Media and Likeness Release",
+    "file_url": "#",
+    "status": {
+      "name": null,
+      "relationship": null
+    }
+  }
+]

@@ -1,0 +1,79 @@
+{
+  "first_name": "Cassy",
+  "middle_name": null,
+  "last_name": "Papajohn",
+  "full_name": "Cassy Papajohn",
+  "pronunciation_firstname": "Cass-sea",
+  "pronunciation_lastname": "Pa-pa-john",
+  "is_us_citizen": true,
+  "eligibility": {
+    "description": "Eligible Member",
+    "status_description": "Active"
+  },
+  "prefix": null,
+  "suffix": {
+    "label": "Jr.",
+    "value": 15
+  },
+  "member_number": "541374",
+  "home_club": {
+    "name": "Denver FSC",
+    "membership_validity_formatted": "6/30/2019"
+  },
+  "region_name": "Southwestern",
+  "section_name": "Midwestern",
+  "gender": "female",
+  "birth_date": {
+    "formatted": "6/28/1979"
+  },
+  "secondary_email": null,
+  "primary_email": {
+    "value": "2222222541374@simba.usfs",
+    "opt_out": true,
+    "publish": true
+  },
+  "primary_phone": {
+    "value": "555-555-5555",
+    "carrier": {
+      "value": 2,
+      "label": "AT&T"
+    }
+  },
+  "lts_programs": {
+    "summary": {
+      "description": "Multiple Programs Exist",
+      "validity_date_formatted": "6/30/2019"
+    },
+    "programs": [
+      {
+        "label": "Basic Skills Instructor Registration",
+        "value": 1
+      },
+      {
+        "label": "Colorado College Skating School",
+        "value": 2
+      },
+      {
+        "label": "Learn to Skate USA",
+        "value": 3
+      }
+    ]
+  },
+  "address": {
+    "street": "123 Main Ave",
+    "street_2": null,
+    "city": "Denver",
+    "state": {
+      "value": "CO",
+      "label": "CO"
+    },
+    "country": {
+      "value": "usa",
+      "label": "United States",
+      "is_usa": true,
+      "is_canada": false
+    },
+    "province": null,
+    "zip_code": 12345
+  }
+}

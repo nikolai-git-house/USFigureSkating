@@ -1,0 +1,58 @@
+@import "music/music-editor-step";
+@import "music/music-editor-step-summary";
+@import "music/music-item";
+@import "music/music-copyright-item";
+@import "music/music-player";
+@import "music/music-song-editor";
+@import "music/music-copyright-form";
+@import "music/music-library";
+@import "music/rhythm-editor";  // @downstream-sync 2020-07-02 - import rhythm/theme feature
+@import "music/theme-editor";  // @downstream-sync 2020-07-02 - import rhythm/theme feature
+
+.music {
+  &__editor {
+    padding-top: 4rem;
+  }
+  &__submit {
+    padding-top: 3rem;
+  }
+  &__path-selection {
+    background-color: white;
+    padding: 1.5rem 2rem 2rem;
+    margin-top: 2rem;
+  }
+  &__deadline-alert {
+    margin-bottom: 0;
+    @extend .text--alert;
+  }
+}
+
+.music-notice {
+  background-color: white;
+  &__content {
+    padding: 1rem 1rem 1.3rem 1rem;
+  }
+  .label-list {
+    margin-bottom: 1rem;
+  }
+  .page-alert {
+    &__trigger {
+      &, &[type=button] {
+        font-size: 1.2rem;
+        padding: 1.2rem 2.6rem 1rem 3.7rem;
+      }
+      &:before {
+        left: 1rem;
+      }
+      &:after {
+        right: 1rem;
+      }
+    }
+  }
+}
+
+.music-copyright-editor {
+  &__add {
+    padding-top: 1rem;
+  }
+}

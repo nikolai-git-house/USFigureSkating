@@ -1,0 +1,77 @@
+[
+  {
+    "role": "Coach",
+    "items": [
+      {
+        "name": "Membership",
+        "complete": true,
+        "is_membership": true,
+        "membership_expiration_date_formatted": "2/21/2020"
+      },
+      {
+        "name": "SafeSport Training",
+        "complete": true
+      },
+      {
+        "name": "Background Check",
+        "complete": true
+      },
+      {
+        "name": "Coach Code of Ethics",
+        "complete": true
+      },
+      {
+        "name": "Coach Education Requirements (CER)",
+        "complete": true
+      },
+      {
+        "name": "Liability Insurance",
+        "complete": true
+      },
+      {
+        "name": "Waivers and Release",
+        "complete": true
+      },
+      {
+        "name": "Medical Consent",
+        "complete": true
+      },
+      {
+        "name": "Name and Likeness Release",
+        "complete": true
+      },
+      {
+        "name": "PSA Membership",
+        "complete": true
+      }
+    ]
+  },
+  {
+    "role": "Mandatory Athlete (Skater)",
+    "items": [
+      {
+        "name": "Membership",
+        "complete": true,
+        "is_membership": true,
+        "membership_expiration_date_formatted": "2/21/2020"
+      },
+      {
+        "name": "SafeSport Training",
+        "complete": false
+      }
+    ]
+  },
+  {
+    "role": "Volunteer",
+    "items": [
+      {
+        "name": "SafeSport Training",
+        "complete": true
+      },
+      {
+        "name": "Background Check",
+        "complete": true
+      }
+    ]
+  }
+]

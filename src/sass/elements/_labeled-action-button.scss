@@ -1,0 +1,31 @@
+.labeled-action-button {
+  @include button-reset;
+  background-color: transparent;
+  background-position: left center;
+  color: $blue-light-alt2;
+  display: inline-block;
+  font-size: 1.6rem;
+  line-height: (18/16);
+  min-height: 20px;
+  padding: 0;
+  text-decoration: underline;
+
+  &--add {
+    @extend .icon-add;
+    background-size: contain;
+    padding-left: #{(30/16)}em;
+    @include ie-only {
+      background-size: 20px 20px;
+    }
+  }
+
+  &--edit {
+    @extend .icon-edit;
+    background-position-y: calc(50% - 1px);
+    background-size: #{(15/16)}em #{(15/16)}em;
+    padding-left: #{(22/16)}em;
+    @include ie-only {
+      background-size: 15px 15px;
+    }
+  }
+}

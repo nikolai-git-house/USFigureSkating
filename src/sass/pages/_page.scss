@@ -1,0 +1,113 @@
+
+.page {
+  min-height: calc(100vh - #{$rendered-nav-height});
+  padding-bottom: $page-padding-bottom;
+  &--accent {
+    background-color: $gray-light;
+    &__standard-content {
+      background-color: white;
+    }
+  }
+  &--preapp {
+    .page__heading {
+      padding-top: 2rem;
+    }
+    .page__content {
+      padding-top: 0;
+    }
+  }
+  &--content-height {
+    min-height: 0;
+  }
+  &--no-pad-bottom {
+    padding-bottom: 0;
+  }
+  &--with-pagination {
+    padding-bottom: $pagination-height;
+  }
+
+  /**
+   * @deprecated 2019-12-13
+   */
+  &__heading {
+    background: white;
+    padding: $page-heading-title-top-offset 0 2.8rem;
+    .page--accent & {
+      padding-bottom: 4rem;
+    }
+    &--no-pad-bottom {
+      &, .page--accent & {
+        padding-bottom: 0;
+      }
+    }
+  }
+  &__back-heading {
+    padding-top: $back-page-heading-pad-top;
+    &__back-link {
+      a[disabled] {
+        opacity: $disabled-opacity;
+      }
+    }
+    .page__title {
+      margin-bottom: 0.67em;
+      margin-top: $back-page-heading-title-margin-top;
+    }
+    .page__subtitle {
+      margin-bottom: 2.2rem;
+      margin-top: 2rem;
+    }
+  }
+  &__title {
+    font-size: $font-size-page-title;
+    text-align: center;
+    @include grid-container;
+    margin: 0 auto;
+    &__subtitle {
+      display: block;
+      font-size: 1.4rem;
+      color: $text-color;
+    }
+  }
+  &__subtitle {
+    text-align: center;
+  }
+  &__lead {
+    padding: 0 1rem;
+    line-height: 1.75;
+    margin: 3.3rem 0 1.5rem;
+    &--full {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  &__content {
+    &:not(&--no-top-pad) {
+      padding-top: $content-pad-standard;
+    }
+    &:not(&--bleed) {
+      @extend .grid-container;
+    }
+    .page--accent & {
+      padding-top: 0;
+    }
+  }
+  /**
+   * 2020-01-23 Accent page content with top padding offset
+   */
+  &__accent-content {
+    padding-top: 4rem;
+  }
+  &__section {
+    &--accent {
+      background-color: $gray-light;
+    }
+  }
+  &__divider {
+    margin: 2rem 0;
+    border-width: 0 0 1px 0;
+    border-color: $divider-color;
+  }
+  &__pagination-footer {
+    @extend .pagination-footer;
+  }
+}

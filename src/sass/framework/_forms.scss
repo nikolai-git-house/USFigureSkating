@@ -1,0 +1,97 @@
+$field-label-font-size: 1.4rem !default;
+$field-label-margin-bottom: .5rem !default;
+$field-label-font-weight: normal !default;
+$input-font-size: 1.6rem !default;
+$input-height: 4.5rem !default;
+$input-pad-v: 1rem !default;
+$input-pad-h: 2rem !default;
+$input-border-width: 1px !default;
+$input-border-color: #ccc !default;
+$input-border-radius: 0 !default;
+$input-focus-border-color: $input-border-color !default;
+$input-success-border-color: $input-border-color !default;
+$input-error-border-color: $input-border-color !default;
+$error-message-text-color: $input-error-border-color !default;
+$input-color-placeholder: #999 !default;
+$input-bg-color: white !default;
+$form-cursor-disabled: default !default;
+@if (global_variable_exists('cursor-disabled')) {
+  $form-cursor-disabled: $cursor-disabled;
+}
+
+.field-label {
+  display: inline-block;
+  max-width: 100%;
+  font-weight: $field-label-font-weight;
+  font-size: $field-label-font-size;
+  margin-bottom: $field-label-margin-bottom;
+}
+
+.form-field {
+  display: block;
+  width: 100%;
+  font-size: $input-font-size;
+  height: $input-height;
+  line-height: $line-height-base;
+  padding: $input-pad-v $input-pad-h;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  background-color: $input-bg-color;
+  background-image: none;
+  color: #333;
+  &:focus, &.has-focus {
+    border-color: $input-focus-border-color;
+  }
+  @include tab-focus(none);
+  @include placeholder;
+  // Unstyle the caret on `<select>`s in IE10+.
+  &::-ms-expand {
+    border: 0;
+    background-color: transparent;
+  }
+  &.has-success {
+    border-color: $input-success-border-color;
+  }
+  &.has-error {
+    border-color: $input-error-border-color;
+    color: $input-error-border-color;
+  }
+  &[disbled] {
+    cursor: $form-cursor-disabled;
+  }
+}
+// reset fieldset styles
+fieldset.form-fieldset{
+  border: 0;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.input-error {
+  color: $error-message-text-color;
+  font-size: 1.4rem;
+  margin: .5rem 0 0;
+}
+
+textarea.form-field {
+  height: auto;
+}
+
+.radio {
+  padding-top: 1.2rem;
+  input[type="radio"] {
+    margin-right: 1rem;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+  }
+}
+
+@mixin fieldset-reset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  min-width: 0;
+}

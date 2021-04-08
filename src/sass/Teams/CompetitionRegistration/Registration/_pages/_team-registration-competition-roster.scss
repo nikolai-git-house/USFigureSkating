@@ -1,0 +1,21 @@
+.team-registration-competition-roster {
+  .team-registration {
+    &__page-information {
+      .page-alert__content-container {
+        padding-left: 1rem;
+        padding-right: 1.5rem;
+      }
+    }
+
+    &__navigation {
+      .total-member-cost {
+        margin-right: 1rem;
+      }
+    }
+
+    &__terms {
+      margin-bottom: 2rem;
+      margin-top: 4.5rem;
+    }
+  }
+}

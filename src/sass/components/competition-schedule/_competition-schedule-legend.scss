@@ -1,0 +1,54 @@
+/**
+ * Legend that appears with acronym and color key definitions
+ */
+.competition-schedule-legend {
+  &__section {
+    padding: 2rem 0;
+    + #{&} {
+      border-top: solid 1px $divider-color;
+    }
+  }
+  &__list {
+    $list-selector: #{&};
+    list-style: none;
+    margin: -4px 0;
+    padding: 0;
+    &--sessions {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -7px;
+    }
+    &__item {
+      padding: 4px 0;
+      #{$list-selector}--sessions & {
+        flex-basis: 50%;
+        flex-grow: 0;
+        flex-shrink: 0;
+        padding: 7px;
+        max-width: 50%;
+      }
+    }
+  }
+  /**
+   * Item within color key legend
+   */
+  .color-key-item {
+    align-items: center;
+    display: flex;
+    &__icon {
+      background: #8b8b8b;
+    }
+    &__label {
+      margin-left: 8px;
+    }
+  }
+  /**
+   * Override page alert
+   */
+  .page-alert {
+    &__content-container {
+      background: white;
+      padding: 0 3rem;
+    }
+  }
+}

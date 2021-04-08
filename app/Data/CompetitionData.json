@@ -1,0 +1,90 @@
+{
+  "1": {
+    "id": 1,
+    "name": "2018 Test Competition",
+    "start_date": "7/21/2019",
+    "end_date": "9/22/2019",
+    "icon": "/images/2018-MW-Adult.png",
+    "schedule_available": true,
+    "practice_ice_available": true,
+    "active_sales_window": "open_sales",
+    "directions": [
+      {
+        "location_name": "Great Park Ice",
+        "link": "https://www.google.com/maps/dir//maps+Great+Park+Ice/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80dcc3626e80b181:0x13ed30cbfcdd99c3?sa=X&ved=2ahUKEwj55PrA7d_kAhVRop4KHcQ7DzgQ9RcwFHoECA8QEA"
+      }
+    ],
+    "announcement_url": "https://placehold.it/720x480&text=Announcement+PDF+Document",
+    "website_url": "https://placehold.it/720x480&text=Competition+Website"
+  },
+  "2": {
+    "id": 2,
+    "name": "2018 U.S. Adult Figure Skating Championship",
+    "start_date": "7/21/2019",
+    "end_date": "9/22/2019",
+    "icon": "/images/bg.png",
+    "schedule_available": true,
+    "practice_ice_available": true,
+    "active_sales_window":"open_sales",
+    "directions": [
+      {
+        "location_name": "Great Park Ice",
+        "link": "https://www.google.com/maps/dir//maps+Great+Park+Ice/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80dcc3626e80b181:0x13ed30cbfcdd99c3?sa=X&ved=2ahUKEwj55PrA7d_kAhVRop4KHcQ7DzgQ9RcwFHoECA8QEA"
+      },
+      {
+        "location_name": "Secondary Location",
+        "link": "https://www.google.com/maps/dir//maps+Great+Park+Ice/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x80dcc3626e80b181:0x13ed30cbfcdd99c3?sa=X&ved=2ahUKEwj55PrA7d_kAhVRop4KHcQ7DzgQ9RcwFHoECA8QEA"
+      }
+    ]
+  },
+  "3": {
+    "id": 3,
+    "name": "Madison Open",
+    "start_date": "7/21/2019",
+    "end_date": "9/22/2019",
+    "icon": "/images/madison-open-noyear.png",
+    "schedule_available": true,
+    "practice_ice_available": true,
+    "active_sales_window":"open_sales"
+  },
+  "4": {
+    "id": 4,
+    "name": "Future Competition",
+    "start_date": "7/21/2020",
+    "end_date": "9/22/2020",
+    "icon": "/images/madison-open-noyear.png",
+    "schedule_available": false,
+    "practice_ice_available": false,
+    "active_sales_window":"none"
+  },
+  "5": {
+    "id": 5,
+    "name": "Prepurchase Sales",
+    "start_date": "6/20/2019",
+    "end_date": "9/22/2019",
+    "icon": "/images/madison-open-noyear.png",
+    "schedule_available": false,
+    "practice_ice_available": true,
+    "active_sales_window":"pre_purchase"
+  },
+  "6": {
+    "id": 6,
+    "name": "Prepurchase Selection",
+    "start_date": "6/20/2019",
+    "end_date": "9/22/2019",
+    "icon": "/images/madison-open-noyear.png",
+    "schedule_available": true,
+    "practice_ice_available": true,
+    "active_sales_window":"selection"
+  },
+  "7": {
+    "id": 7,
+    "name": "Onsite Sales",
+    "start_date": "5/21/2018",
+    "end_date": "5/22/2019",
+    "icon": "/images/madison-open-noyear.png",
+    "schedule_available": true,
+    "practice_ice_available": true,
+    "active_sales_window":"on_site"
+  }
+}

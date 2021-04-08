@@ -1,0 +1,57 @@
+.site-takeover {
+  $c: #{&};
+  min-height: calc(100vh + 1px);
+  &__header {
+    background-color: white;
+    height: $rendered-nav-height;
+    left: 0;
+    padding-top: $nav-pad-top;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  &__close {
+    display: block;
+    float: right;
+    margin-right: 5px;
+    margin-top: $nav-toggle-top-offset;
+  }
+  &__close-button {
+    @extend .nav-toggle;
+  }
+  &__content {
+    margin-top: $rendered-nav-height;
+    padding-top: 2rem;
+
+    .site-takeover--accent & {
+      padding-top: 0;
+
+      &:first-child {
+        padding-top: 2rem;
+      }
+    }
+  }
+
+  &__title {
+    background-color: white;
+    font-size: 2.4rem;
+    line-height: (31/24);
+    margin: 0;
+    text-align: center;
+
+    &--large {
+      font-size: 2.6rem;
+      line-height: (34/26);
+    }
+  }
+
+  &--accent {
+    background-color: $gray-light;
+
+    &__standard-content {
+      background-color: white;
+    }
+  }
+}

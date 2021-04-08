@@ -1,0 +1,11 @@
+.filter-button {
+  @include button-reset;
+  background-color: transparent;
+  border: 1px solid $blue-light-alt2;
+  border-radius: 4px;
+  color: $USFSA-blue-light;
+  display: inline-block;
+  line-height: 1;
+  padding: 7px 5px 5px;
+  white-space: nowrap;
+}

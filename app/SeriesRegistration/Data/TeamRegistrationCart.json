@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Senior Team SP",
+    "cost": 300,
+    "description_lines": [
+      "Denver Synchronicity of Colorado",
+      "NQ-ENTRY SYSTEM FEE"
+    ],
+    "cart_item_type_key": "team_registration_fee",
+    "id": 1
+  },
+  {
+    "name": "Open Juvenile Teams",
+    "cost": 300,
+    "description_lines": [
+      "Denver Synchronicity of Colorado",
+      "NQ-ENTRY SYSTEM FEE"
+    ],
+    "cart_item_type_key": "team_registration_fee",
+    "id": 2
+  },
+  {
+    "name": "Roster Fee Per Skater",
+    "cost": 120,
+    "description_lines": [
+      "Denver Synchronicity of Colorado",
+      "NQ-ENTRY COM ROS",
+      "QTY: 12 PRICE: $10"
+    ],
+    "cart_item_type_key": "team_registration_fee",
+    "unremovable": true,
+    "id": 2
+  }
+]

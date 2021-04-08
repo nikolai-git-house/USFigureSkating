@@ -1,0 +1,17 @@
+{
+  "1": {
+    "id": 1,
+    "name": "Singles",
+    "coach_limit": 2
+  },
+  "2": {
+    "id": 2,
+    "name": "Dance",
+    "coach_limit": 3
+  },
+  "3": {
+    "id": 3,
+    "name": "Pairs",
+    "coach_limit": 3
+  }
+}

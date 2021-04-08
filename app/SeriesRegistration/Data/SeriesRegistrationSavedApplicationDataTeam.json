@@ -1,0 +1,16 @@
+{
+  "disciplines": [
+    {
+      "discipline_id": 1,
+      "levels": [
+        {
+          "name": "Synchro Level 1",
+          "level_id": 1,
+          "id": 1,
+          "price": 30,
+          "is_paid": false
+        }
+      ]
+    }
+  ]
+}

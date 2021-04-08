@@ -1,0 +1,32 @@
+.self-reported-test {
+  padding: 3rem 1.2rem 2rem 1.7rem;
+  + #{&} {
+    border-top: solid 1px $divider-color;
+  }
+  &__heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__name {
+      @include skate-test-discipline-name;
+    }
+  }
+  &__button {
+    @include pseudo-touch;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    &:after {
+      width: 100%;
+    }
+  }
+  &__test-name {
+    color: $light-gray-text;
+    font-size: 1.4rem;
+    margin: 0;
+    padding-left: 10px;
+  }
+  &__no-test-notice {
+    color: $light-gray-text;
+  }
+}

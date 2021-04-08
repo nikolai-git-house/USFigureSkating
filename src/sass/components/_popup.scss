@@ -1,0 +1,108 @@
+.popup {
+  &--notice {
+    border-color: $USFSA-blue;
+    .popup__header {
+      background-color: $USFSA-blue;
+    }
+  }
+  &--info {
+    border-color: $USFSA-blue;
+    .popup__header {
+      background-color: $USFSA-blue;
+    }
+    .popup__heading {
+      @extend .icon-info-white;
+      background-position: left center;
+      padding-left: 3.5rem;
+    }
+  }
+  &--active-edits {
+    width: 315px;
+    max-width: 100%;
+  }
+  &--music-library {
+    width: 345px;
+    max-width: 85%;
+    .popup__content {
+      padding: 1.5rem 1rem 2rem;
+      p {
+        padding: 0 0.5rem;
+      }
+    }
+    .popup__error {
+      height: auto;
+    }
+  }
+  &--music-remove {
+    width: 345px;
+    max-width: 85%;
+  }
+  &--competition-schedule-key {
+    width: 315px;
+    max-width: 85%;
+    @media (min-height: 585px) {
+      top: 235px !important;
+    }
+    .popup__content {
+      padding: 1.5rem 2rem 2rem;
+      .inline-icon {
+        margin-right: 5px;
+      }
+      .standard-link {
+        &, &:hover, &:active, &:focus, &:visited {
+          color: $USFSA-blue-light;
+        }
+      }
+    }
+  }
+  &--create-account-type {
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    &--volunteer {
+      bottom: 0;
+    }
+    &--foreign {
+      top: 0;
+    }
+  }
+  &--md {
+    .popup {
+      &__header {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 0.7rem 0 1.5rem;
+
+        .popup__heading {
+          flex-grow: 1;
+        }
+
+        > * {
+          display: block;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+      }
+
+      &__heading {
+        background-size: 16px 16px;
+        font-size: 1.4rem;
+        line-height: (16/14);
+        margin: 0;
+        padding-left: 2.5rem;
+        padding-top: 0;
+
+      }
+
+      &__close {
+        padding: 1.2rem 1.2rem 1.1rem;
+      }
+
+      &__content {
+        line-height: (24/14);
+        padding: 1.2rem 2rem 2rem;
+      }
+    }
+  }
+}

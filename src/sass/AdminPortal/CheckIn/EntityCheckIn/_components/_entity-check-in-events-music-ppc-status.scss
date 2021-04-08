@@ -1,0 +1,114 @@
+/**
+ * Component for displaying PPC/Music status and content during check-in
+ */
+.entity-check-in-events-music-ppc-status {
+  background-color: $gray-97;
+  padding: 0 2rem;
+  /**
+   * Individual item within component - either Music or PPC
+   */
+  &__item {
+    $c: &;
+    /**
+     * Label for item. Features status icon
+     */
+    &__label {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      line-height: (17/14);
+      padding: 1.8rem 0 1.7rem 2rem;
+      position: relative;
+      &:before {
+        @include pseudo;
+        background-size: contain;
+        background-position: center;
+        height: 100%;
+        left: 0;
+        top: 0;
+        width: 13px;
+      }
+      #{$c}--complete &:before {
+        @extend .icon-status-check;
+      }
+      #{$c}--incomplete &:before {
+        @extend .icon-status-x;
+        width: 12px
+      }
+      &__notice {
+        font-size: 1.2rem;
+        @extend .text--muted;
+      }
+    }
+    /**
+     * Trigger element for expandable type.  Includes expand/collapse icon
+     */
+    &__trigger {
+      @include button-reset();
+      background-color: transparent;
+      display: block;
+      padding: 0;
+      position: relative;
+      text-align: left;
+      width: 100%;
+      &:after {
+        @include pseudo;
+        background-position: center;
+        background-size: contain;
+        height: 100%;
+        right: 0;
+        top: 0;
+        width: 10px;
+      }
+      &--close:after {
+        @extend .icon-close-minus;
+      }
+      &--open:after {
+        @extend .icon-open-plus;
+      }
+    }
+    /**
+     * Override block for non-expandable version
+     */
+    &__override {
+      &__row {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    /**
+     * Expandable content block
+     */
+    &__content {
+      padding: 1rem 0 3rem;
+    }
+    /**
+    * List of PPC moves
+    */
+    &__ppc-list {
+      line-height: (26/14);
+      margin: 0;
+      padding: 0 0 0 3.7rem;
+    }
+    /**
+    * Add border between items
+    */
+    + #{&} {
+      border-top: solid 1px $gray-80;
+    }
+    .input-error {
+      font-size: 1.2rem;
+      margin: 0;
+      position: relative;
+      text-align: right;
+      top: -0.7rem;
+    }
+  }
+  /**
+   * Add border between items
+   */
+  + #{&} {
+    border-top: solid 1px $gray-80;
+  }
+}

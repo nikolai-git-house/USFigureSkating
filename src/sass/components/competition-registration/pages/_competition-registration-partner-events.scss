@@ -1,0 +1,19 @@
+.competition-registration-partner-events {
+  &__content {
+    padding-bottom: 8.4rem;
+    > p {
+      margin: 2rem 0;
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+    > .check-list {
+      margin-top: 2.2rem;
+    }
+  }
+}
+
+.partner-identification,
+.competition-registration-coaches {
+  padding-top: 3.1rem;
+}

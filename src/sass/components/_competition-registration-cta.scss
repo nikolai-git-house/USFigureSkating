@@ -1,0 +1,24 @@
+/**
+ * CTA Element that displays a competition registration button/link and deadline information/warning
+ */
+.competition-registration-cta {
+  &__cta {
+    margin-bottom: 1rem;
+  }
+
+  &__notice {
+    text-align: center;
+    line-height: $line-height-standard;
+  }
+
+  &__deadline {
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: 15px;
+    margin: 0;
+    text-align: center;
+    &--alert {
+      color: $alert-red;
+    }
+  }
+}

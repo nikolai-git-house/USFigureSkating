@@ -1,0 +1,22 @@
+{
+  "1": {
+    "id": 1,
+    "name": "OLY",
+    "facility_id": 1
+  },
+  "2": {
+    "id": 2,
+    "name": "NHL",
+    "facility_id": 1
+  },
+  "3": {
+    "id": 3,
+    "name": "Lorem Ipsum Dolor Sit Amet",
+    "facility_id": 2
+  },
+  "4": {
+    "id": 4,
+    "name": "AAA",
+    "facility_id": 3
+  }
+}

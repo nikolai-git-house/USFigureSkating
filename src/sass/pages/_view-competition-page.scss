@@ -1,0 +1,12 @@
+.view-competition-page {
+  &__non-ems-notice {
+    margin: 3.5rem 0 2rem;
+    line-height: 17px;
+  }
+  .page-heading {
+    padding-bottom: 1rem;
+  }
+  .card + .card {
+    margin-top: 4rem;
+  }
+}

@@ -1,0 +1,137 @@
+.entity-check-in-index {
+  /**
+   * Primary content wrapper
+   */
+  &__content {
+    padding-top: 10px;
+  }
+  /**
+   * Displays datapoints about entity
+   */
+  &__entity-summary {
+    &__name {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+    &__list {
+      margin-top: 0.5rem;
+    }
+  }
+  /**
+   * Download personal schedule link
+   */
+  &__download {
+    margin-top: 1rem;
+  }
+  /**
+   * Outstanding fees block
+   */
+  &__outstanding-fees {
+    padding-bottom: 1.5rem;
+    &--no-pad {
+      padding-bottom: 0;
+    }
+    &__heading {
+      display: block;
+      line-height: (19/14);
+      margin-bottom: 0.4rem;
+    }
+    &__list {
+      @extend .text--alert;
+      line-height: (19/14);
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    &__description {
+      font-size: 1.2rem;
+      line-height: (18/12);
+      margin-bottom: 0;
+      margin-top: 2.2rem;
+      padding-right: 1.3rem;
+    }
+    &__control {
+      margin-top: 1.3rem;
+    }
+  }
+  /**
+   * Unpaid events block
+   */
+  &__unpaid-events {
+    @extend .text--alert;
+    line-height: (18/14);
+    padding-right: 3rem;
+    &__list {
+      padding: 0.2rem 0 2rem 2.2rem;
+    }
+    &__description {
+      margin: 0;
+    }
+    .competition-check-in-outstanding-fees + & {
+      margin-top: 3rem;
+    }
+  }
+  /**
+   * Block containing credential and gift checkboxes
+   */
+  &__confirmations {
+    &__controls {
+      display: flex;
+      margin: 0.8rem -1.5rem 0;
+      &__control {
+        padding: 0 1.5rem;
+      }
+    }
+    &__notice {
+      @extend .text--alert;
+      font-size: 1.2rem;
+      margin-bottom: 0;
+      margin-top: 1.2rem;
+    }
+  }
+  /**
+   * Notice when entity is ineligible to compete
+   */
+  &__ineligible-notice {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  /**
+   * Block containing a submit button and response message
+   */
+  &__submit-block {
+    position: relative;
+    p.input-error {
+      left: 0;
+      padding-bottom: 1rem;
+      position: absolute;
+      text-align: center;
+      top: 0;
+      transform: translateY(-100%);
+      width: 100%;
+    }
+  }
+  /**
+   * Override section spacing
+   */
+  .entity-check-in-subpage__section {
+    &--confirmations {
+      padding-top: 0.5rem;
+    }
+    &--submit {
+      padding-top: 5rem;
+    }
+  }
+  /**
+   * Override checkbox styles
+   */
+  .usfsa-checkbox {
+    display: block;
+    padding-left: 3.5rem;
+    &__text {
+      @include not-ie {
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+.pricing-group {
+  line-height: percentage(24/14);
+  &__name {
+    margin: 0;
+  }
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    @include clearfix;
+    color: $light-gray-text;
+    li {
+      display: block;
+      float: left;
+      &:not(:last-child):after {
+        content: "|";
+        display: inline-block;
+        width: 12px;
+        text-align: center;
+      }
+    }
+  }
+  &__packages {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+    color: $light-gray-text;
+  }
+  + .pricing-group {
+    margin-top: 1rem;
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "1": {
+    "name": "Practice Ice",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "practice_ice",
+    "practice_ice_types": [
+      "upi",
+      "opi"
+    ]
+  },
+  "2": {
+    "name": "Practice Ice",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "practice_ice",
+    "practice_ice_types": [
+      "upi"
+    ],
+    "location":"Location Name"
+  },
+  "3": {
+    "name": "Practice Ice",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "practice_ice",
+    "practice_ice_types": [
+      "opi"
+    ]
+  },
+  "4":{
+    "name": "Warm Up",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "warm_up"
+  },
+  "5":{
+    "name": "Intermediate Ladies",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "event",
+    "event_type": "Ladies",
+    "event_ids":[1]
+  },
+  "6":{
+    "name": "Resurface",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 0,
+    "slots_available": 0,
+    "type_key": "resurface"
+  },
+  "7":{
+    "name": "Intermediate Pairs",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 12,
+    "slots_available": 24,
+    "type_key": "event",
+    "icon_color":"#acd373",
+    "event_type": "Showcase",
+    "event_ids":[2]
+  },
+  "8": {
+    "name": "Practice Ice",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 15,
+    "slots_available": 15,
+    "type_key": "practice_ice",
+    "practice_ice_types": [
+      "upi"
+    ]
+  },
+  "9":{
+    "name": "Advanced Pairs",
+    "time_start": "March 21, 2018 8:15:00",
+    "date": "March 21, 2018 00:00:00",
+    "time_end": "March 21, 2018 8:45:00",
+    "slots_registered": 6,
+    "slots_available": 15,
+    "type_key": "event",
+    "event_type": "Ladies",
+    "event_ids":[3]
+  }
+}

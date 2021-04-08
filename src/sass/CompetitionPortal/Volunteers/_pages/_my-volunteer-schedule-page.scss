@@ -1,0 +1,49 @@
+.my-volunteer-schedule-page {
+  &__links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.2rem;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+
+    > a {
+      line-height: (22/14);
+      margin: 1rem 0 0.8rem;
+    }
+  }
+
+  &__information {
+    margin: 0.8rem 0 2.5rem;
+
+    .page-alert__content-container {
+      background-color: white;
+    }
+  }
+
+  &__schedule {
+    .schedule-card {
+      margin: 2.5rem 0;
+      $card-selector: '.my-volunteer-schedule-shift-card';
+
+      #{$card-selector} {
+        background-color: transparent;
+        margin: -1px -2rem 0;
+        $incomplete-selector: ':not(#{$card-selector}--compliance-incomplete)';
+
+        &#{$incomplete-selector} + #{$card-selector}#{$incomplete-selector} {
+          border-top: solid 1px $gray-light;
+        }
+      }
+    }
+  }
+
+  .page-heading__lead {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 275px;
+  }
+
+  .popup {
+    max-width: 335px;
+  }
+}

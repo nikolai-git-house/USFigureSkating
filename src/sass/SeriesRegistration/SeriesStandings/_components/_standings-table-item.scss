@@ -1,0 +1,60 @@
+.standings-table-item {
+  align-items: center;
+  display: flex;
+  padding: 0.5rem 0;
+
+  &__badge {
+    flex-basis: 47px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 47px;
+  }
+
+  &__description {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    line-height: (14/12);
+    margin: 0 9px;
+    padding-top: 0.2rem;
+
+    &__datum {
+      margin: 0;
+
+      + #{&} {
+        margin-top: 2px;
+
+        &--small {
+          margin-top: 3px;
+        }
+      }
+
+      &--small {
+        font-size: 1rem;
+        line-height: (12/10);
+      }
+    }
+  }
+
+  &__score {
+    flex-grow: 0;
+    font-size: 1.2rem;
+    line-height: (14/12);
+  }
+
+  &--expanded {
+    align-items: flex-start;
+    padding: 1.5rem 0;
+
+    .standings-table-item {
+      &__score {
+        font-size: 1.6rem;
+        line-height: 1;
+        padding-top: 0.3rem;
+      }
+
+      &__description {
+        padding-top: 0.2rem;
+      }
+    }
+  }
+}

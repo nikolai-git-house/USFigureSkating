@@ -1,0 +1,20 @@
+.competition-tile-banner {
+  height: 26px;
+  line-height: 26px;
+  padding: 0 1rem;
+  color: white;
+  font-size: 1.2rem;
+  background-position: 10px center;
+  text-transform: uppercase;
+  &--registered {
+    padding-left: 2.3rem;
+    @extend .icon-registered-badge--white;
+    background-size: 9px 12px;
+    background-position: 8px 7px;
+    background-color: $USFSA-blue;
+  }
+}
+
+.competition-tile-banner + .competition-tile-banner {
+  margin-right: 0.1rem;
+}

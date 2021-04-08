@@ -1,0 +1,97 @@
+$coach-result-footer-height: 50px;
+$pagination-list-floatpoint: 335px;
+.my-coaches-search-results,
+.member-search-results,
+.search-results {
+  &__results {
+    background-color: $gray-light;
+    min-height: 100vh; // - $footer-height - $overlay-header-height - $page-title;
+    margin-top: 1.3rem;
+    padding-top: 0.5rem;
+    padding-bottom: $coach-result-footer-height + 100px;
+  }
+  &__footer {
+    @extend .pagination-footer;
+  }
+  &__pagination {
+    @include grid-container;
+    max-width: $pagination-list-floatpoint;
+    margin: 0 auto;
+    @include flex-compatible {
+      max-width: none;
+      margin: 0;
+    }
+  }
+  .pagination {
+    &__list-item--ellipses {
+      @media screen and (max-width: $pagination-list-floatpoint) {
+        display: block;
+        margin: 0 0 5px;
+      }
+    }
+  }
+}
+
+.member-search-results {
+  &__results {
+    .grid-container {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+}
+
+.my-coaches-search-result,
+.member-search-result {
+  position: relative;
+  .popup {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transform-style: preserve-3d;
+    left: 10px;
+    right: 10px;
+    @include z-index('coach-search-popup');
+  }
+}
+
+.coach-result-notice {
+
+  display: block;
+  &__icon {
+    display: block;
+    margin: 0 auto;
+    background-position: center center;
+  }
+  &__text {
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  &--ineligible {
+    margin-bottom: 1rem;
+    .coach-result-notice__icon {
+      @extend .icon-alert-red;
+      width: 23px;
+      height: 20px;
+      background-size: 23px 20px;
+    }
+    .coach-result-notice__text {
+      color: $alert-red;
+      text-decoration: underline;
+    }
+  }
+  &--selected {
+    .coach-result-notice__icon {
+      @extend .icon-check-tag;
+      width: 18px;
+      height: 20px;
+      background-size: 18px 20px;
+    }
+    .coach-result-notice__text {
+      color: $USFSA-blue;
+    }
+  }
+}

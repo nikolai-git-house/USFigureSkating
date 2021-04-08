@@ -1,0 +1,36 @@
+.create-account-landing {
+  &__section {
+    padding: 0 1rem;
+    &__content {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+      position: relative;
+    }
+    &__heading {
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &__text {
+        max-width: 185px;
+        padding-right: 1.5rem;
+        box-sizing: content-box;
+      }
+      .icon-button {
+        flex-shrink: 0;
+        flex-grow: 0;
+        padding: 0;
+        @include pseudo-touch;
+      }
+    }
+    &__button {
+      margin: 2rem 0 0;
+    }
+  }
+  &__divider {
+    border-color: $divider-color;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    margin: 1rem 0;
+  }
+}

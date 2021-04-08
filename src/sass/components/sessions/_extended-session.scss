@@ -1,0 +1,31 @@
+.session--extended {
+  padding-left: 1rem;
+  &__content {
+    padding-top: 1.2rem;
+  }
+  &__rink {
+    margin: 0;
+  }
+  .session-skater-list {
+    @include grid-row(0);
+    .session-skater-list__label {
+      margin: 0;
+      @include grid-column(80px, 0);
+    }
+    .session-skater-list__value {
+      @include grid-column(calc(100% - 80px), 0);
+    }
+  }
+  &__secondary {
+    @include clearfix;
+    color: $light-gray-text;
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  &__skater-count {
+    float: left;
+  }
+  &__type-description {
+    float: right;
+  }
+}

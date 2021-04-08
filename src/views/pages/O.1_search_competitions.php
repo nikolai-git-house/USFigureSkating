@@ -1,0 +1,1 @@
+<search-competitions v-cloak></search-competitions>

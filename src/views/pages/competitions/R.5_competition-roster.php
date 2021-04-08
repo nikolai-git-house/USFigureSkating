@@ -1,0 +1,1 @@
+<competition-roster-page></competition-roster-page>

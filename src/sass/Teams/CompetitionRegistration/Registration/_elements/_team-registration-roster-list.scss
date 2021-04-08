@@ -1,0 +1,86 @@
+.team-registration-roster-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    border-top: solid 1px $gray-light;
+    padding: 1rem 0;
+    position: relative;
+
+    &:last-child {
+      border-bottom: solid 1px $gray-light;
+    }
+  }
+
+  &__entity {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    min-height: 40px;
+    @include screen-tablet {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    @at-root .team-registration-roster-list__item.disabled & {
+      &, .text--muted {
+        color: $gray-80;
+      }
+    }
+    &:after {
+      @include pseudo;
+      background-color: #FFEFF0;
+      bottom: -1px;
+      left: -20px;
+      opacity: 0;
+      right: -20px;
+      top: -1px;
+      transition: opacity .2s ease-in-out;
+      z-index: -1;
+      @include screen-tablet {
+        left: 0;
+        right: 0;
+      }
+    }
+
+    @at-root .team-registration-roster-list__item.invalid & {
+      .text--muted {
+        color: $gray-80;
+      }
+
+      &:after {
+        opacity: 1;
+      }
+    }
+    &__content {
+      line-height: $line-height-standard;
+      @include ie-only {
+        flex-grow: 1;
+      }
+    }
+
+    &__action {
+      @include ie-only {
+        flex-grow: 0;
+      }
+    }
+
+    &__action {
+      /**
+       * Proper box calculations for flex layout
+       */
+      .usfsa-checkbox {
+        display: block;
+      }
+    }
+
+    &__description {
+      margin: 0;
+    }
+
+    &__invalid-message {
+      font-size: 1.2rem;
+      margin: 0.7rem 0 0;
+    }
+  }
+}

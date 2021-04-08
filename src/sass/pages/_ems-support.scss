@@ -1,0 +1,79 @@
+$ems-support-pad-h: 1rem;
+$ems-form-input-pad-h: 1.5rem;
+//PAGE STYLE OVERRIDES
+.page--ems-support {
+  .page__lead {
+    margin-top: 0;
+    margin-bottom: 2.8rem;
+  }
+  .page__heading {
+    padding-bottom: 2rem;
+  }
+}
+
+//COMPONENT STYLES
+.ems-support {
+  &__form {
+    padding: 0 $ems-support-pad-h;
+  }
+  &__footer {
+    padding: 0.5rem $ems-support-pad-h;
+  }
+  &__legend {
+    color: $alert-red;
+    text-align: right;
+    margin: 0 $ems-support-pad-h 0 0;
+  }
+  &__confirmation {
+    padding: 6.3rem 2.5rem;
+    font-size: 1.6rem;
+    line-height: percentage(20/16);
+    text-align: center;
+  }
+}
+
+//FORM STYLES
+.ems-support-form {
+  .form-field {
+    padding: 0 $ems-form-input-pad-h;
+  }
+  .appearance & .form-group select {
+    padding: 0 $ems-form-input-pad-h;
+    background-position: calc(100% - #{$ems-form-input-pad-h}) center;
+  }
+  textarea.form-field {
+    height: 120px;
+    padding: 1rem $ems-form-input-pad-h;
+  }
+  .form-group + .button {
+    margin-top: 3rem;
+  }
+}
+
+//CONTACT LIST STYLES
+.ems-support-contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 4rem 0 0;
+  &__item {
+    padding: 4px 0 3px;
+  }
+  &__label {
+    font-weight: bold;
+    display: inline-block;
+    padding-left: 2.7rem;
+    background-position: left center;
+    &--hours {
+      @extend .icon-time;
+      background-size: 17px 17px;
+    }
+    &--email {
+      @extend .icon-email;
+      background-size: 17px 14px;
+    }
+    &--phone {
+      @extend .icon-phone;
+      background-size: 16px 17px;
+    }
+  }
+}

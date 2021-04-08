@@ -1,0 +1,197 @@
+@font-face {
+  font-family: Futura;
+  src: url('/fonts/Futura Std Book.otf'), url('/fonts/Futura Std Book.woff');
+}
+
+body {
+  //letter-spacing: .01em;
+}
+
+a.standard-link {
+  &:not(.standard-link--no-underline) {
+    text-decoration: underline;
+  }
+  color: $USFSA-blue-light;
+  &:visited, &.visited {
+    &:not(.standard-link--no-visited) {
+      color: $link-visited-color;
+    }
+  }
+  &[disabled] {
+    opacity: $disabled-opacity;
+    cursor: not-allowed;
+  }
+}
+
+.u-t-align-center {
+  text-align: center;
+}
+
+p {
+  margin: 1.75rem 0;
+}
+
+p.alert, .text--alert {
+  color: $alert-red;
+}
+
+.text--highlight {
+  color: $blue-light-alt2;
+  @at-root a#{&} {
+    &:hover,&:active{
+      color: darken($blue-light-alt2, 10%);
+    }
+  }
+}
+
+.text--success {
+  color: $state-green;
+  .ada-text &{
+    color: $ada-green-bg;
+  }
+  @at-root a#{&} {
+    &:hover,&:active{
+      color: darken($state-green, 10%);
+      .ada-text &{
+        color: darken($ada-green-bg, 10%);
+      }
+    }
+  }
+}
+
+.text--warning {
+  color: $warning-text;
+  .ada-text &{
+    color: $ada-orange-bg;
+  }
+
+  @at-root a#{&} {
+    &:hover,&:active{
+      color: darken($warning-text, 10%);
+      .ada-text &{
+        color: darken($ada-orange-bg, 10%);
+      }
+    }
+  }
+}
+
+.text--error {
+  color: $alert-red;
+  .ada-text &{
+    color: $ada-red-text;
+  }
+  @at-root a#{&} {
+    &:hover,&:active{
+      color: darken($alert-red, 10%);
+      .ada-text &{
+        color: darken($ada-red-text, 10%);
+      }
+    }
+  }
+}
+
+.text--muted {
+  color: $light-gray-text;
+  @at-root a#{&} {
+    &:hover,&:active{
+      color: darken($light-gray-text, 10%);
+    }
+  }
+}
+
+.text--standard {
+  color: $text-color;
+}
+
+.text--underline {
+  text-decoration: underline;
+}
+
+.text--icon-warning {
+  &:before {
+    @extend .icon-warning;
+  }
+}
+
+.text--icon-warning-alt {
+  &:before {
+    @extend .icon-warning-alt;
+  }
+}
+
+.text--icon-danger-alt {
+  &:before {
+    @extend .icon-danger-alt;
+  }
+}
+
+.warning-notice {
+  $offset: 7px;
+  padding-left: $offset;
+  text-indent: -1 * $offset;
+  white-space: normal;
+
+  .inline-icon {
+    background-size: contain;
+    height: 13px;
+    width: 13px;
+  }
+
+  &--aligned {
+    .inline-icon {
+      margin-right: 1px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+[class^=text--icon] {
+  display: inline-block;
+  line-height: (20/12);
+  padding-left: (20em/12);
+  position: relative;
+
+  &:before {
+    @include pseudo;
+    background-position: center;
+    background-size: contain;
+    height: 14px;
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+  }
+}
+
+.text--icon-danger {
+  &:before {
+    @extend .icon-danger;
+  }
+}
+
+.info-link {
+  @extend .icon-info;
+  background-size: 16px 16px;
+  white-space: nowrap;
+  background-position: left center;
+  display: inline-block;
+  padding: 0 0 0 21px;
+  text-decoration: underline;
+  &, &:hover, &:active, &:focus {
+    color: $USFSA-blue-light;
+  }
+}
+
+.list {
+  &__text {
+    .list--light & {
+      color: $light-gray-text;
+    }
+  }
+}
+
+.nowrap {
+  white-space: nowrap;
+}

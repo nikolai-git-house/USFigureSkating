@@ -1,0 +1,18 @@
+.competition-tile-list {
+  padding-bottom: $competition-tile-spacing;
+  padding-top: 4rem;
+  &__no-results {
+    margin: 0;
+  }
+  .competition-tile + .competition-tile {
+    margin-top: $competition-tile-spacing;
+  }
+  .competition-tile {
+    &--with-banners {
+      padding-top: 3rem;
+      &:not(:first-child) {
+        margin-top: $competition-tile-spacing + 0.5rem;
+      }
+    }
+  }
+}

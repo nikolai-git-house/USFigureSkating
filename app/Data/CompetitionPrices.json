@@ -1,0 +1,90 @@
+{
+  "six_point_zero": [
+    {
+      "category": "Singles",
+      "first_price": 31,
+      "second_price": 31,
+      "third_price": 31,
+      "combined_price": 201
+    },
+    {
+      "category": "Specialty",
+      "first_price": 32,
+      "second_price": 32,
+      "third_price": 32,
+      "combined_price": 202
+    },
+    {
+      "category": "Showcase",
+      "first_price": 33,
+      "second_price": 33,
+      "third_price": 33,
+      "combined_price": null
+    },
+    {
+      "category": "Solo Dance",
+      "first_price": null,
+      "second_price": null,
+      "third_price": null,
+      "combined_price": null
+    },
+    {
+      "category": "Adaptive Skating",
+      "first_price": 35,
+      "second_price": 35,
+      "third_price": 35,
+      "combined_price": 205
+    },
+    {
+      "category": "Compete USA Singles",
+      "first_price": 36,
+      "second_price": 36,
+      "third_price": 36,
+      "combined_price": 206
+    }
+  ],
+  "ijs": [
+    {
+      "category": "Singles",
+      "first_price": 41,
+      "second_price": 41,
+      "third_price": 41,
+      "combined_price": 101
+    },
+    {
+      "category": "Specialty",
+      "first_price": 42,
+      "second_price": 42,
+      "third_price": 42,
+      "combined_price": 102
+    },
+    {
+      "category": "Showcase",
+      "first_price": 43,
+      "second_price": 43,
+      "third_price": 43,
+      "combined_price": null
+    },
+    {
+      "category": "Solo Dance",
+      "first_price": null,
+      "second_price": null,
+      "third_price": null,
+      "combined_price": null
+    },
+    {
+      "category": "Adaptive Skating",
+      "first_price": 45,
+      "second_price": 45,
+      "third_price": 45,
+      "combined_price": 105
+    },
+    {
+      "category": "Compete USA Singles",
+      "first_price": 46,
+      "second_price": 46,
+      "third_price": 46,
+      "combined_price": 106
+    }
+  ]
+}

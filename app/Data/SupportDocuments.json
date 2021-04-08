@@ -1,0 +1,236 @@
+[
+  {
+    "name": "EMS - Skaters and Coaches",
+    "subcategories": [
+      {
+        "name": "Basics",
+        "documents": [
+          {
+            "name": "Competition Registration",
+            "link": "#"
+          },
+          {
+            "name": "My Coaches",
+            "link": "#"
+          },
+          {
+            "name": "Competition Information",
+            "link": "#"
+          },
+          {
+            "name": "My Coaches",
+            "link": "#"
+          },
+          {
+            "name": "My Schedule",
+            "link": "#"
+          },
+          {
+            "name": "Accreditation: Upload Photo",
+            "link": "#"
+          },
+          {
+            "name": "Checkout: Registration, Practice Ice, and Fees",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Practice Ice Sales",
+        "documents": [
+          {
+            "name": "Practice Ice: Pre Purchase",
+            "link": "#"
+          },
+          {
+            "name": "Practice Ice: Session Selection",
+            "link": "#"
+          },
+          {
+            "name": "Practice Ice: Open Sales",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Music and Planned Program Content",
+        "documents": [
+          {
+            "name": "Planned Program Content",
+            "link": "#"
+          },
+          {
+            "name": "Music and Copyright Information",
+            "link": "#"
+          },
+          {
+            "name": "Planned Program Content",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Coaches",
+        "documents": [
+          {
+            "name": "Coach: Schedule",
+            "link": "#"
+          },
+          {
+            "name": "Coach Schedule",
+            "link": "#"
+          },
+          {
+            "name": "My Skaters",
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EMS - Volunteers",
+    "subcategories": [
+      {
+        "name": null,
+        "documents": [
+          {
+            "name": "Volunteer Request",
+            "link": "#"
+          },
+          {
+            "name": "Volunteer Signup & Shift Select",
+            "link": "#"
+          },
+          {
+            "name": "Accreditation: Upload Photo",
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "EMS – Admin Users",
+    "subcategories": [
+      {
+        "name": "Set Up Resources",
+        "documents": [
+          {
+            "name": "EMS: Competition Set Up",
+            "link": "#"
+          },
+          {
+            "name": "Competition Schedule",
+            "link": "#"
+          },
+          {
+            "name": "Practice Ice Management",
+            "link": "#"
+          },
+          {
+            "name": "Officials Management",
+            "link": "#"
+          },
+          {
+            "name": "Volunteer Management",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Entry Info",
+        "documents": [
+          {
+            "name": "Registered Skaters",
+            "link": "#"
+          },
+          {
+            "name": "Using the Skater Information Page",
+            "link": "#"
+          },
+          {
+            "name": "Incomplete Registrations",
+            "link": "#"
+          },
+          {
+            "name": "Foreign Skaters",
+            "link": "#"
+          },
+          {
+            "name": "Added/Removed Events",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Compliance, Communication, and Reporting",
+        "documents": [
+          {
+            "name": "Onsite Check In: Coach",
+            "link": "#"
+          },
+          {
+            "name": "Onsite Check In: Skater",
+            "link": "#"
+          },
+          {
+            "name": "Compliance: Coaches and Team Personnel",
+            "link": "#"
+          },
+          {
+            "name": "Communication",
+            "link": "#"
+          },
+          {
+            "name": "EMS Reports",
+            "link": "#"
+          },
+          {
+            "name": "Financial Reports",
+            "link": "#"
+          },
+          {
+            "name": "Print Credentials",
+            "link": "#"
+          },
+          {
+            "name": "Announcer: Skater Pronunciation",
+            "link": "#"
+          },
+          {
+            "name": "Ice Monitor",
+            "link": "#"
+          }
+        ]
+      },
+      {
+        "name": "Music and Planned Program Content",
+        "documents": [
+          {
+            "name": "Music: File Download",
+            "link": "#Music: File Download"
+          },
+          {
+            "name": "Manage PPC",
+            "link": "#Manage PPC"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Non-Members",
+    "subcategories": [
+      {
+        "name": null,
+        "documents": [
+          {
+            "name": "Non Member Account Creation",
+            "link": "#"
+          }
+        ]
+      }
+    ]
+  }
+]

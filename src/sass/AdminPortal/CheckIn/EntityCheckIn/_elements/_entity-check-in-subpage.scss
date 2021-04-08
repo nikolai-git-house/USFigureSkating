@@ -1,0 +1,116 @@
+/**
+ * Abstract entity check-in subpage styles
+ */
+.entity-check-in-subpage {
+  $standard-bg-color: white;
+  min-height: calc(100vh + 1px); //ensure full window height is achieved to avoid ios issues
+  padding-bottom: 4rem;
+  /**
+   * Version with accent background
+   */
+  &--accent {
+    background: $gray-light;
+    &__standard-content {
+      background-color: $standard-bg-color;
+    }
+  }
+  /**
+   * Header block
+   */
+  &__header {
+    $header-selector: &;
+    &:not(#{$header-selector}--bleed) {
+      @extend .grid-container;
+    }
+    background-color: $standard-bg-color;
+    padding-bottom: 2rem;
+    padding-top: 3rem;
+    &__title {
+      @extend .admin-portal-primary-heading;
+      margin: 5rem 0 0;
+      text-align: center;
+      &--constrained {
+        @media screen and (max-width: 425px) {
+          max-width: 245px;
+          margin-left: auto;
+          margin-right: auto;
+          box-sizing: content-box;
+        }
+      }
+      &--expanded {
+        @media screen and (max-width: 425px) {
+          margin-left: -10px;
+          margin-right: -10px;
+        }
+      }
+    }
+    &__subtitle {
+      @extend .admin-portal-subheading;
+      margin: 0.5rem 0 0;
+      text-align: center;
+    }
+    &--overlay {
+      padding-top: 2rem;
+      #{$header-selector} {
+        &__title {
+          margin: 0;
+        }
+      }
+    }
+  }
+  /**
+   * Secondary header within content section of subpage
+   */
+  &__content-header {
+    background-color: $standard-bg-color;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    &--no-pad {
+      padding-bottom: 0;
+      padding-top: 0;
+    }
+  }
+  /**
+   * Lead element
+   */
+  &__lead {
+    line-height: (18/14);
+    text-align: center;
+  }
+  /**
+   * Container that wraps all content within each page element
+   */
+  &__content-container {
+    @extend .grid-container;
+    &--pad-sm {
+      padding-top: 2rem;
+    }
+    &--pad-lg {
+      padding-top: 4rem;
+    }
+  }
+  /**
+   * Displays loading information or error
+   */
+  &__notice {
+
+  }
+  /**
+   * Abstract section
+   */
+  &__section {
+    margin: 3rem 0;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  /**
+   * Page footer
+   */
+  &__footer {
+    @extend .pagination-footer;
+    &__content {
+      @extend .grid-container;
+    }
+  }
+}

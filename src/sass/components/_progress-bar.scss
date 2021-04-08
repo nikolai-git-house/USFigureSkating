@@ -1,0 +1,47 @@
+$progress-bar-height: 5px;
+.progress-bar {
+  display: flex;
+  align-items: center;
+  /**
+   * The progress bar itself
+   */
+  &__bar {
+    position: relative;
+    flex-grow: 1;
+  }
+  /**
+   * The steps count
+   */
+  &__steps {
+    padding-top: 0.5rem;
+    padding-left: 0.2rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    line-height: 1;
+    color: $light-gray-text;
+  }
+  /**
+   * The full track for the progress
+   */
+  &__track {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: $progress-bar-height;
+    background: $gray-light;
+  }
+  /**
+   * The filled part of the track indicating progress
+   */
+  &__progress {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    z-index: 1;
+    height: $progress-bar-height;
+    background: $blue-light-alt2;
+  }
+}

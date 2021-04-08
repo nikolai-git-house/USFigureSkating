@@ -1,0 +1,330 @@
+{
+  "1": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "February 21, 2018 8:00:00",
+        "end_datetime_timestamp": "February 30, 2018 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "February 30, 2018 8:00:00",
+        "end_datetime_timestamp": "March 30, 2018 8:00:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "March 30, 2018 8:00:00",
+        "end_datetime_timestamp": "July 21, 2019 7:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "July 21, 2019 7:00:00",
+        "end_datetime_timestamp": "September 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "tomorrow",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "+2 days",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "This competition is configured for OPI, UPI and WU to all be selectable.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2,
+      3
+    ],
+    "schedulable_session_types": [
+      "upi",
+      "wu",
+      "opi"
+    ]
+  },
+  "2": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "February 21, 2017 8:00:00",
+        "end_datetime_timestamp": "February 30, 2017 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "February 30, 2017 8:00:00",
+        "end_datetime_timestamp": "April 22, 2018 8:10:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "April 22, 2018 8:10:00",
+        "end_datetime_timestamp": "July 21, 2019 7:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "July 21, 2019 7:00:00",
+        "end_datetime_timestamp": "September 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "The event segments within this competition have been configured so that neither Music nor PPC are required.",
+    "ppc_deadline": false,
+    "music_deadline": false,
+    "practice_ice_instructions": "This competition is configured for UPI and WU to be selectable.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2,
+      3
+    ],
+    "schedulable_session_types": [
+      "upi",
+      "wu"
+    ]
+  },
+  "3": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "February 21, 2017 8:00:00",
+        "end_datetime_timestamp": "February 30, 2017 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "February 30, 2017 8:00:00",
+        "end_datetime_timestamp": "April 22, 2018 8:10:01"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "April 22, 2018 8:10:01",
+        "end_datetime_timestamp": "July 21, 2019 7:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "July 21, 2019 7:00:00",
+        "end_datetime_timestamp": "September 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "June 21, 2019 8:10:01",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "June 22, 2019 8:10:01",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "This competition is configured for UPI and OPI to be selectable.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2
+    ],
+    "schedulable_session_types": [
+      "opi",
+      "upi"
+    ]
+  },
+  "4": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "February 21, 2020 8:00:00",
+        "end_datetime_timestamp": "February 30, 2020 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "February 30, 2020 8:00:00",
+        "end_datetime_timestamp": "April 22, 2020 8:00:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "April 22, 2020 8:00:00",
+        "end_datetime_timestamp": "July 21, 2020 7:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "July 21, 2020 7:00:00",
+        "end_datetime_timestamp": "September 22, 2020 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "April 22, 2020 8:00:00",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "April 22, 2020 8:00:00",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2
+    ],
+    "schedulable_session_types": [
+      "opi"
+    ]
+  },
+  "5": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "May 21, 2018 8:00:00",
+        "end_datetime_timestamp": "June 15, 2019 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "June 15, 2019 8:00:00",
+        "end_datetime_timestamp": "June 18, 2019 8:00:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "June 18, 2019 8:00:00",
+        "end_datetime_timestamp": "June 20, 2019 8:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "June 20, 2019 8:00:00",
+        "end_datetime_timestamp": "September 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "June 18, 2019 8:00:00",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "June 18, 2019 8:00:00",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2
+    ],
+    "schedulable_session_types": [
+      "opi"
+    ]
+  },
+  "6": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "May 21, 2017 8:00:00",
+        "end_datetime_timestamp": "June 1, 2018 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "June 1, 2018 8:00:00",
+        "end_datetime_timestamp": "June 18, 2019 8:00:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "June 18, 2019 8:00:00",
+        "end_datetime_timestamp": "June 20, 2019 8:00:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "June 20, 2019 8:00:00",
+        "end_datetime_timestamp": "September 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "June 18, 2019 8:00:00",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "June 18, 2019 8:00:00",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2
+    ],
+    "schedulable_session_types": [
+      "upi",
+      "wu",
+      "opi"
+    ],
+    "pricing_message": "Practice Ice sessions will be available for purchase again when the Open Sales period begins."
+  },
+  "7": {
+    "sales_windows": [
+      {
+        "key": "pre_purchase",
+        "name": "Pre-Purchase Sales",
+        "start_datetime_timestamp": "May 21, 2016 8:00:00",
+        "end_datetime_timestamp": "June 1, 2016 8:00:00"
+      },
+      {
+        "key": "selection",
+        "name": "Pre-Purchase Selection",
+        "start_datetime_timestamp": "June 1, 2016 8:00:00",
+        "end_datetime_timestamp": "June 19, 2016 8:00:00"
+      },
+      {
+        "key": "open_sales",
+        "name": "Open Sales",
+        "start_datetime_timestamp": "June 19, 2016 8:00:00",
+        "end_datetime_timestamp": "May 21, 2018 8:10:00"
+      },
+      {
+        "key": "on_site",
+        "name": "On-Site Sales",
+        "start_datetime_timestamp": "May 21, 2018 8:10:00",
+        "end_datetime_timestamp": "May 22, 2019 8:10:00"
+      }
+    ],
+    "music_ppc_deadline_description": "In preparation for the competition you complete planned program content (PPC) for the events in which you are registered. This registration component must be complete prior to the deadline(s) listed below.",
+    "ppc_deadline": {
+      "formatted": "March 19, 2018 8:00:00",
+      "late_fee": "$10.25"
+    },
+    "music_deadline": {
+      "formatted": "March 19, 2018 8:00:00",
+      "late_fee": "$11.25"
+    },
+    "practice_ice_instructions": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "practice_ice_terminology": "Et non tenetur. Alias dignissimos nisi nemo provident ut omnis occaecati. Quo numquam quo aut non. Repudiandae voluptate neque earum. Sunt temporibus et. Cupiditate rerum consequatur delectus.",
+    "source_skating_events": [
+      1,
+      2,
+      3
+    ],
+    "schedulable_session_types": [
+      "upi",
+      "wu",
+      "opi"
+    ]
+  }
+}

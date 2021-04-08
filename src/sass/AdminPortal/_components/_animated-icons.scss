@@ -1,0 +1,23 @@
+.animated-icon {
+  &__svg {
+    display: block;
+    width: 100%;
+  }
+}
+
+.animated-check-icon {
+  &__circle {
+    @include not-ms {
+      stroke-dashoffset: 244;
+    }
+  }
+  &__check {
+    @include not-ms {
+      stroke-dashoffset: 56;
+    }
+  }
+}
+
+.animated-email-icon {
+
+}

@@ -1,0 +1,42 @@
+.team-registration-personnel-page {
+  &__editor-cta {
+    text-align: center;
+  }
+
+  &__new {
+    padding: 5rem 0 4.5rem;
+
+    &--alt {
+      padding: 2.5rem 0 6.5rem;
+    }
+  }
+
+  &__review {
+    &--alt {
+      margin-bottom: 5rem;
+    }
+
+    .team-registration-personnel-page__editor-cta {
+      margin: 2.5rem 0;
+    }
+
+    .team-registration-roster-summary {
+      margin: 2.2rem 0 1rem;
+
+      &__secondary {
+        color: $text-color;
+        padding-bottom: 0.5rem;
+      }
+    }
+
+    .team-registration__roster-list {
+      margin-top: 1rem;
+    }
+  }
+
+  &__no-personnel-notice {
+    line-height: (22/14);
+    margin: 1.5rem 0 0;
+    text-align: center;
+  }
+}

@@ -1,0 +1,166 @@
+.competition-roster-page {
+  /**
+   * Confirmation block
+   */
+  &__confirmation {
+    left: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    /**
+     * Session feedback within confirmation
+     */
+    .session-feedback {
+      &__content {
+        background-color: white;
+      }
+    }
+  }
+
+  /**
+   * Block containing key page-alert
+   */
+  &__key {
+    margin: 2.5rem 0;
+    /**
+     * Override page alert within context
+     */
+    .page-alert {
+      &__content-container {
+        padding: 1rem 1.5rem 2.5rem 1.5rem;
+      }
+    }
+  }
+
+  /**
+   * Roster summary block
+   */
+  &__summary {
+    margin: 2.5rem 0 1.5rem;
+  }
+
+  /**
+   * Download link block
+   */
+  &__download {
+    padding: 2rem 0 1.7rem;
+    text-align: center;
+  }
+
+  /**
+   * Roster list block
+   */
+  &__roster {
+    margin-bottom: 6rem;
+
+    > p {
+      margin: 0;
+    }
+
+    &:first-child {
+      @extend .page__accent-content;
+    }
+
+    /**
+     * Override status entity card in block
+     */
+    .status-entity-card {
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &__row {
+        padding: 1.5rem 1.3rem 1.8rem 1rem;
+      }
+
+      &__column {
+        &--actions {
+          padding-right: 0;
+
+          > button {
+            position: relative;
+            top: 2px;
+          }
+        }
+
+        &--description {
+          position: relative;
+          top: 4px;
+        }
+      }
+
+      &__expand-content {
+        margin-top: 0;
+        padding-left: 4.6rem;
+      }
+    }
+  }
+
+  /**
+   * Block within card containing compliance information
+   */
+  &__member-compliance {
+    /**
+     * Notice that displays when age verification is not complete
+     */
+    &__age-notice {
+      font-size: 1.2rem;
+      line-height: (18/12);
+      margin: 0.5rem 0 0;
+      max-width: 245px;
+    }
+
+    /**
+     * Section within block
+     */
+    &__section {
+      /**
+       * Heading text for section
+       */
+      &__heading {
+        background-position: left calc(50% - 1px);
+        color: $text-color;
+        font-size: 1.4rem;
+        margin: 0 0 1rem;
+        padding-left: 2rem;
+
+        &--complete {
+          background-size: 15px 17px;
+          @extend .icon-status-check;
+        }
+
+        &--incomplete {
+          background-size: 12px 12px;
+          @extend .icon-status-x;
+        }
+      }
+
+      .status-summary {
+        margin-left: 2rem;
+      }
+
+      + #{&} {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+
+  /**
+   * Footer block
+   */
+  &__footer {
+    @extend .pagination-footer;
+  }
+
+  /**
+   * Override page heading
+   */
+  .page-heading {
+    padding-bottom: 0;
+
+    &__intro {
+      position: relative;
+    }
+  }
+}

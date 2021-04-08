@@ -1,0 +1,117 @@
+$music-player-thumb-height: 6px;
+@mixin music-track {
+  width: 100%;
+  cursor: pointer;
+  border-color: transparent;
+  border-width: 0;
+  box-shadow: none;
+  color: transparent;
+  background-color: transparent;
+  height: $music-player-thumb-height;
+}
+
+@mixin music-thumb {
+  appearance: none;
+  border: none;
+  width: 4px;
+  height: $music-player-thumb-height;
+  background: $USFSA-blue-light;
+  cursor: pointer;
+  border-radius: 0;
+  @include z-index('music-player-input');
+}
+
+.music-player {
+  position: relative;
+  &__input {
+    appearance: none;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: $music-player-thumb-height;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    @include z-index('music-player-input');
+
+    //FOCUS
+    &::-moz-focus-outer {
+      border: 0;
+    }
+    &:focus {
+      outline: none;
+    }
+    :focus::-webkit-slider-runnable-track {
+      background: transparent;
+    }
+    //TRACK
+    &::-webkit-slider-runnable-track {
+      @include music-track;
+    }
+    &::-moz-range-track {
+      @include music-track
+    }
+    &::-ms-track {
+      @include music-track
+    }
+    &::-ms-fill-lower {
+      display: none;
+    }
+    &:focus::-ms-fill-lower {
+      display: none;
+    }
+    &::-ms-fill-upper {
+      display: none;
+    }
+    &:focus::-ms-fill-upper {
+      display: none;
+    }
+
+    // THUMB
+    &::-webkit-slider-thumb {
+      @include music-thumb;
+    }
+
+    &::-moz-range-thumb {
+      @include music-thumb;
+    }
+    &::-ms-thumb {
+      @include music-thumb;
+    }
+
+  }
+  .progress {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    @include vertical-center;
+    height: 2px;
+    @include z-index('music-player-scrub-track');
+  }
+}
+
+.progress {
+  position: relative;
+  pointer-events: none;
+  &__track, &__progress, &__buffer {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+  }
+  &__track {
+    background: $gray-dark;
+    @include z-index('music-player-scrub-track');
+  }
+  &__progress {
+    background-color: $USFSA-blue-light;
+    @include z-index('music-player-scrub-progress');
+  }
+  &__buffer {
+    background-color: #bcbcbc;
+    @include z-index('music-player-scrub-buffer');
+  }
+}

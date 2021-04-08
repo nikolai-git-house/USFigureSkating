@@ -1,0 +1,1 @@
+export {default as MyCompetitionsTeamsPage} from './MyCompetitionsTeamsPage.vue';

@@ -1,0 +1,20 @@
+.competition-registration-index {
+  $tabs-height: 47px;
+  $header-height: 85px;
+  $content-min-height: calc(100vh - #{$rendered-nav-height} - #{$tabs-height} - #{$header-height});
+  &__content {
+    padding-top: 3.5rem;
+    min-height: $content-min-height;
+    padding-bottom: 5rem;
+    position: relative;
+  }
+  &__competition-list {
+    @extend .competition-tile-list;
+    &__no-results {
+      margin: 0;
+    }
+  }
+  &__footer {
+    @extend .pagination-footer;
+  }
+}

@@ -1,0 +1,23 @@
+.competition-volunteer-cta {
+  &__phase-message {
+    font-size: 1.2rem;
+    line-height: (14/12);
+    margin: 0 0 1rem;
+    text-align: center;
+    .inline-icon {
+      background-size: contain;
+      &.icon-status-check {
+        width: 1.2rem;
+      }
+      &.icon-status-x {
+        width: 1rem;
+      }
+    }
+  }
+  &__status-message {
+    font-size: 1.6rem;
+    line-height: (18/16);
+    margin: 1.5rem 0 0;
+    text-align: center;
+  }
+}

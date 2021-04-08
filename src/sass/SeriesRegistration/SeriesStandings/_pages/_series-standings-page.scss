@@ -1,0 +1,91 @@
+.series-standings-page {
+
+  &__update-notice {
+    margin-bottom: 2rem;
+    margin-top: 2.8rem;
+
+    &__description {
+      line-height: (19/14);
+      margin: 2.5rem 0 0;
+      text-align: left;
+    }
+  }
+
+  &__granular-filter {
+    margin: 2rem 0 2.5rem;
+  }
+
+  &__resources {
+    margin: 2rem 0;
+
+    > p {
+      margin: 0 0 2px;
+    }
+  }
+
+  &__resource-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 295px;
+    padding: 0;
+
+    &__item {
+      margin: 0.5rem 0;
+      padding: 0 1.8rem;
+      text-align: center;
+      width: 33%;
+
+      &:nth-child(3n+2),
+      &:nth-child(3n+3) {
+        position: relative;
+
+        &:before {
+          @include pseudo;
+          background: $divider-color;
+          height: 20px;
+          left: 0;
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 1px;
+        }
+      }
+
+      &:nth-child(3n+1) {
+        text-align: right;
+      }
+
+      &:nth-child(3n+3) {
+        text-align: left;
+      }
+
+      a {
+        background-position: left 50%;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  &__no-results {
+    margin: 0;
+  }
+
+  .page-heading {
+    padding-bottom: 2.5rem;
+  }
+
+  .accordion {
+    &__content {
+      background-color: white;
+      padding: 0;
+    }
+
+    + .accordion {
+      margin-top: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,80 @@
+/**
+ * Full Check-in index filters block
+ */
+.check-in-index-filters {
+  .accordion {
+    &__content {
+      padding: 13px 23px 23px 23px;
+    }
+    &__trigger {
+      background-position: calc(100% - 18px) center;
+      padding-left: 1.5rem;
+      padding-right: 4rem;
+    }
+  }
+  .form-field--search {
+    padding-left: 1.5rem;
+    padding-right: 4rem;
+  }
+  .field-label {
+    margin-bottom: 0;
+  }
+  .form-group + .form-group {
+    margin-top: 2.5rem;
+  }
+}
+
+/**
+ * Status filter sub-block
+ */
+.check-in-index-status-filter {
+  /**
+   * Element showing summary of selected filters
+   */
+  &__active-label {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    /**
+     * Active label markup component element
+     *
+     * Wraps each filter and its count
+     */
+    &__component {
+      display: inline-block;
+      /**
+       * Element showing the count of an individual filter
+       */
+      &__count {
+        @extend .text--highlight;
+      }
+    }
+  }
+}
+
+/**
+ * Status filter edit sub-block
+ */
+.check-in-index-status-filter-edit {
+  /**
+   * Block containing individual status filters
+   */
+  &__status-filters {
+    padding: 1.1rem 0 2.3rem 3.2rem;
+    .check-list > li + li {
+      margin-top: 1.1rem;
+    }
+  }
+  /**
+   * Override checkbox styles
+   */
+  .usfsa-checkbox {
+    padding-left: 3.5rem;
+    &__text {
+      @include not-ie {
+        vertical-align: middle;
+      }
+    }
+  }
+}

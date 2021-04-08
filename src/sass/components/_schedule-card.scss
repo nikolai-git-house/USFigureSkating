@@ -1,0 +1,19 @@
+.schedule-card {
+  background: white;
+  border-radius: $border-radius-base;
+  padding: 2.3rem 2rem 0;
+  &__heading {
+    border-bottom: solid 1px $USFSA-blue;
+    line-height: percentage(24/20);
+    margin: 0;
+    padding-bottom: 2px;
+  }
+  &__content {
+    .session-list {
+      padding: 0;
+    }
+  }
+  + .schedule-card {
+    margin-top: 1.5rem;
+  }
+}
